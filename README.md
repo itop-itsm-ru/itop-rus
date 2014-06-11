@@ -1,5 +1,5 @@
-itop-rus
-========
+iTop по-русски
+==============
 
 Русский перевод интерфейса [Combodo iTop Service Desk](www.combodo.com/itop).
 
