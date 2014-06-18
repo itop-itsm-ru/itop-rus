@@ -16,3 +16,8 @@ iTop по-русски
 5. На второй странице установщика выберите **Upgrade an existing iTop instance** и следуйте дальнейшим инструкциям установщика.
 
 Ответы на вопросы по установке и использованию переводов, а также на любые другие вопросы по iTop всегда можно получить на [сайте сообщества iTop по-русски](http://community.itop-itsm.ru).
+
+### Ссылки
+ - [Обсуждение локализации интерфейса](http://community.itop-itsm.ru/t/lokalizacziya-interfejsa)
+ - [Официальный сайт Combodo iTop](http://www.combodo.com/itop)
+ - [Cайт сообщества iTop по-русски](http://community.itop-itsm.ru)
