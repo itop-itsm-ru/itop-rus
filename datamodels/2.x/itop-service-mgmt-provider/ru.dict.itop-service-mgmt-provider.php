@@ -42,13 +42,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:ServiceType' => 'Типы услуг',
 'Menu:ServiceType+' => 'Типы услуг',
 'Menu:ProviderContract' => 'Договоры с поставщиками',
-'Menu:ProviderContract+' => 'Provider contracts',
+'Menu:ProviderContract+' => 'Договоры с поставщиками',
 'Menu:CustomerContract' => 'Договоры с заказчиками',
-'Menu:CustomerContract+' => 'Customer contracts',
+'Menu:CustomerContract+' => 'Договоры с заказчиками',
 'Menu:ServiceSubcategory' => 'Подкатегории услуг',
 'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
 'Menu:Service' => 'Услуги',
-'Menu:Service+' => 'Services',
+'Menu:Service+' => 'Услуги',
 'Menu:ServiceElement' => 'Элементы услуг',
 'Menu:ServiceElement+' => 'Sevice elements',
 'Menu:SLA' => 'SLA',
@@ -56,19 +56,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:SLT' => 'SLT',
 'Menu:SLT+' => 'Целевые показатели уровня услуг',
 'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Delivery models',
+'Menu:DeliveryModel+' => 'Модели предоставления услуг',
 
 ));
 
-
-/*
-	'UI:ServiceManagementMenu' => 'Gestion des Services',
-	'UI:ServiceManagementMenu+' => 'Gestion des Services',
-	'UI:ServiceManagementMenu:Title' => 'Résumé des services & contrats',
-	'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Contrats par niveau de service',
-	'UI-ServiceManagementMenu-ContractsByStatus' => 'Contrats par état',
-	'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Contrats se terminant dans moins de 30 jours',
-*/
 
 //
 // Class: Organization
@@ -264,15 +255,15 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:status' => 'Статус',
 	'Class:Service/Attribute:status+' => '',
 	'Class:Service/Attribute:status/Value:implementation' => 'Внедрение',
-	'Class:Service/Attribute:status/Value:implementation+' => 'implementation',
+	'Class:Service/Attribute:status/Value:implementation+' => '',
 	'Class:Service/Attribute:status/Value:obsolete' => 'Устаревшее',
 	'Class:Service/Attribute:status/Value:obsolete+' => '',
 	'Class:Service/Attribute:status/Value:production' => 'Производство',
 	'Class:Service/Attribute:status/Value:production+' => '',
 	'Class:Service/Attribute:customercontracts_list' => 'Договоры с заказчиками',
 	'Class:Service/Attribute:customercontracts_list+' => 'Договоры с заказчиками',
-	'Class:Service/Attribute:servicesubcategories_list' => 'Типы запросов',
-	'Class:Service/Attribute:servicesubcategories_list+' => 'Типы запросов',
+	'Class:Service/Attribute:servicesubcategories_list' => 'Подкатегории услуги',
+	'Class:Service/Attribute:servicesubcategories_list+' => 'Подкатегории услуги',
 ));
 
 //

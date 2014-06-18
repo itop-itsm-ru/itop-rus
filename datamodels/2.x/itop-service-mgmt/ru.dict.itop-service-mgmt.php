@@ -35,32 +35,32 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:ServiceManagement+' => 'Управление услугами',
 'Menu:Service:Overview' => 'Обзор',
 'Menu:Service:Overview+' => '',
-'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню сервиса',
+'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуг',
 'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
 'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
 
 'Menu:ServiceType' => 'Типы услуг',
-'Menu:ServiceType+' => 'Service Types',
+'Menu:ServiceType+' => 'Типы услуг',
 'Menu:ProviderContract' => 'Договоры с поставщиками',
-'Menu:ProviderContract+' => 'Provider contracts',
+'Menu:ProviderContract+' => 'Договоры с поставщиками',
 'Menu:CustomerContract' => 'Договоры с заказчиками',
-'Menu:CustomerContract+' => 'Customer contracts',
-'Menu:ServiceSubcategory' => 'Типы запросов',
-'Menu:ServiceSubcategory+' => 'Service subcategories',
+'Menu:CustomerContract+' => 'Договоры с заказчиками',
+'Menu:ServiceSubcategory' => 'Подкатегории услуг',
+'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
 'Menu:Service' => 'Услуги',
-'Menu:Service+' => 'Services',
+'Menu:Service+' => 'Услуги',
 'Menu:ServiceElement' => 'Элементы услуг',
-'Menu:ServiceElement+' => 'Sevice elements',
+'Menu:ServiceElement+' => 'Элементы услуг',
 'Menu:SLA' => 'SLA',
 'Menu:SLA+' => 'Соглашения об уровне услуг',
 'Menu:SLT' => 'SLT',
 'Menu:SLT+' => 'Целевые показатели уровня услуг',
 'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Delivery models',
+'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery models)',
 'Menu:ServiceFamily' => 'Пакеты услуг',
-'Menu:ServiceFamily+' => 'Service families',
+'Menu:ServiceFamily+' => 'Пакеты услуг',
 'Menu:Procedure' => 'Каталог процедур',
-'Menu:Procedure+' => 'All procedures catalog',
+'Menu:Procedure+' => 'Каталог процедур',
 
 
 
@@ -261,7 +261,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:status' => 'Статус',
 	'Class:Service/Attribute:status+' => '',
 	'Class:Service/Attribute:status/Value:implementation' => 'Внедрение',
-	'Class:Service/Attribute:status/Value:implementation+' => 'implementation',
+	'Class:Service/Attribute:status/Value:implementation+' => '',
 	'Class:Service/Attribute:status/Value:obsolete' => 'Устаревшее',
 	'Class:Service/Attribute:status/Value:obsolete+' => '',
 	'Class:Service/Attribute:status/Value:production' => 'Производство',
@@ -272,8 +272,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:providercontracts_list+' => 'Договоры с поставщиками',
 	'Class:Service/Attribute:functionalcis_list' => 'Зависимость от КЕ',
 	'Class:Service/Attribute:functionalcis_list+' => 'Зависимость услуги от конфигурационных единиц',
-	'Class:Service/Attribute:servicesubcategories_list' => 'Типы запросов',
-	'Class:Service/Attribute:servicesubcategories_list+' => 'Типы запросов',
+	'Class:Service/Attribute:servicesubcategories_list' => 'Подкатегории услуги',
+	'Class:Service/Attribute:servicesubcategories_list+' => 'Подкатегории услуги',
 ));
 
 //
@@ -315,7 +315,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:ServiceSubcategory' => 'Типы запросов',
+	'Class:ServiceSubcategory' => 'Подкатегория услуги',
 	'Class:ServiceSubcategory+' => '',
 	'Class:ServiceSubcategory/Attribute:name' => 'Название',
 	'Class:ServiceSubcategory/Attribute:name+' => '',

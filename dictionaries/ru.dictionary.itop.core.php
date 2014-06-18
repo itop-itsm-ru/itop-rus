@@ -309,8 +309,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:EventNotificationEmail' => 'Отправка сообщений на e-mail',
-	'Class:EventNotificationEmail+' => 'Отслеживание отправленных писем',
+	'Class:EventNotificationEmail' => 'Уведомление по email',
+	'Class:EventNotificationEmail+' => 'Уведомление по email',
 	'Class:EventNotificationEmail/Attribute:to' => 'Кому',
 	'Class:EventNotificationEmail/Attribute:to+' => 'Кому',
 	'Class:EventNotificationEmail/Attribute:cc' => 'Копия',
@@ -425,16 +425,16 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:ActionEmail' => 'Уведомление по e-mail',
+	'Class:ActionEmail' => 'Уведомление по email',
 	'Class:ActionEmail+' => '',
 	'Class:ActionEmail/Attribute:test_recipient' => 'Проверочный получатель',
 	'Class:ActionEmail/Attribute:test_recipient+' => 'Получатель, если уведомление в статусе "Проходит проверку"',
 	'Class:ActionEmail/Attribute:from' => 'От',
-	'Class:ActionEmail/Attribute:from+' => 'Будет отослано в заголовке e-mail',
+	'Class:ActionEmail/Attribute:from+' => 'Будет отослано в заголовке email',
 	'Class:ActionEmail/Attribute:reply_to' => 'Ответить на',
-	'Class:ActionEmail/Attribute:reply_to+' => 'Будет отослано в заголовке e-mail',
+	'Class:ActionEmail/Attribute:reply_to+' => 'Будет отослано в заголовке email',
 	'Class:ActionEmail/Attribute:to' => 'Кому',
-	'Class:ActionEmail/Attribute:to+' => 'Получатель e-mail',
+	'Class:ActionEmail/Attribute:to+' => 'Получатель email',
 	'Class:ActionEmail/Attribute:cc' => 'Копия',
 	'Class:ActionEmail/Attribute:cc+' => 'Копия',
 	'Class:ActionEmail/Attribute:bcc' => 'Скр. копия',
