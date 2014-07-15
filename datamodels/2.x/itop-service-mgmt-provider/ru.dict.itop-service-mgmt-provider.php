@@ -50,13 +50,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:Service' => 'Услуги',
 'Menu:Service+' => 'Услуги',
 'Menu:ServiceElement' => 'Элементы услуг',
-'Menu:ServiceElement+' => 'Sevice elements',
+'Menu:ServiceElement+' => 'Элементы услуг',
 'Menu:SLA' => 'SLA',
 'Menu:SLA+' => 'Соглашения об уровне услуг',
 'Menu:SLT' => 'SLT',
 'Menu:SLT+' => 'Целевые показатели уровня услуг',
 'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Модели предоставления услуг',
+'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
 
 ));
 
@@ -66,9 +66,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:Organization/Attribute:deliverymodel_id' => 'Delivery model',
-	'Class:Organization/Attribute:deliverymodel_id+' => '',
-	'Class:Organization/Attribute:deliverymodel_name' => 'Delivery model name',
+	'Class:Organization/Attribute:deliverymodel_id' => 'Модель предоставления услуг',
+	'Class:Organization/Attribute:deliverymodel_id+' => 'Модель предоставления услуг (Delivery Model)',
+	'Class:Organization/Attribute:deliverymodel_name' => 'Модель предоставления услуг',
 	'Class:Organization/Attribute:deliverymodel_name+' => '',
 ));
 
@@ -318,17 +318,17 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceSubcategory/Attribute:status' => 'Статус',
 	'Class:ServiceSubcategory/Attribute:status+' => '',
 	'Class:ServiceSubcategory/Attribute:status/Value:implementation' => 'Внедрение',
-	'Class:ServiceSubcategory/Attribute:status/Value:implementation+' => 'implementation',
+	'Class:ServiceSubcategory/Attribute:status/Value:implementation+' => 'Внедрение',
 	'Class:ServiceSubcategory/Attribute:status/Value:obsolete' => 'Устаревшее',
-	'Class:ServiceSubcategory/Attribute:status/Value:obsolete+' => 'obsolete',
+	'Class:ServiceSubcategory/Attribute:status/Value:obsolete+' => 'Устаревшее',
 	'Class:ServiceSubcategory/Attribute:status/Value:production' => 'Производство',
-	'Class:ServiceSubcategory/Attribute:status/Value:production+' => 'production',
+	'Class:ServiceSubcategory/Attribute:status/Value:production+' => 'Производство',
 	'Class:ServiceSubcategory/Attribute:request_type' => 'Тип запроса',
 	'Class:ServiceSubcategory/Attribute:request_type+' => '',
 	'Class:ServiceSubcategory/Attribute:request_type/Value:incident' => 'Инцидент',
-	'Class:ServiceSubcategory/Attribute:request_type/Value:incident+' => 'incident',
+	'Class:ServiceSubcategory/Attribute:request_type/Value:incident+' => 'Инцидент',
 	'Class:ServiceSubcategory/Attribute:request_type/Value:service_request' => 'Запрос на обслуживание',
-	'Class:ServiceSubcategory/Attribute:request_type/Value:service_request+' => 'service request',
+	'Class:ServiceSubcategory/Attribute:request_type/Value:service_request+' => 'Запрос на обслуживание',
 ));
 
 //

@@ -56,7 +56,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:SLT' => 'SLT',
 'Menu:SLT+' => 'Целевые показатели уровня услуг',
 'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery models)',
+'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
 'Menu:ServiceFamily' => 'Пакеты услуг',
 'Menu:ServiceFamily+' => 'Пакеты услуг',
 'Menu:Procedure' => 'Каталог процедур',
@@ -71,9 +71,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:Organization/Attribute:deliverymodel_id' => 'Delivery model',
-	'Class:Organization/Attribute:deliverymodel_id+' => '',
-	'Class:Organization/Attribute:deliverymodel_name' => 'Delivery model name',
+	'Class:Organization/Attribute:deliverymodel_id' => 'Модель предоставления услуг',
+	'Class:Organization/Attribute:deliverymodel_id+' => 'Модель предоставления услуг (Delivery Model)',
+	'Class:Organization/Attribute:deliverymodel_name' => 'Модель предоставления услуг',
 
 ));
 

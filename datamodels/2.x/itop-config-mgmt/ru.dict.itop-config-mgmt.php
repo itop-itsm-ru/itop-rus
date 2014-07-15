@@ -172,7 +172,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:Person' => 'Человек',
+	'Class:Person' => 'Персона',
 	'Class:Person+' => '',
 	'Class:Person/Attribute:name' => 'Фамилия',
 	'Class:Person/Attribute:name+' => '',
@@ -191,7 +191,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Person/Attribute:manager_name' => 'Имя руководителя',
 	'Class:Person/Attribute:manager_name+' => '',
 	'Class:Person/Attribute:team_list' => 'Команды',
-	'Class:Person/Attribute:team_list+' => 'Команды с участием человека',
+	'Class:Person/Attribute:team_list+' => 'Команды с участием персоны',
 	'Class:Person/Attribute:tickets_list' => 'Тикеты',
 	'Class:Person/Attribute:tickets_list+' => 'Связанные тикеты',
 	'Class:Person/Attribute:manager_id_friendlyname' => 'Имя руководителя',
@@ -1688,19 +1688,19 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:lnkPersonToTeam' => 'Человек/Команда',
+	'Class:lnkPersonToTeam' => 'Связь Персона/Команда',
 	'Class:lnkPersonToTeam+' => '',
 	'Class:lnkPersonToTeam/Attribute:team_id' => 'Команда',
 	'Class:lnkPersonToTeam/Attribute:team_id+' => '',
-	'Class:lnkPersonToTeam/Attribute:team_name' => 'Название команды',
+	'Class:lnkPersonToTeam/Attribute:team_name' => 'Команда',
 	'Class:lnkPersonToTeam/Attribute:team_name+' => '',
-	'Class:lnkPersonToTeam/Attribute:person_id' => 'Человек',
+	'Class:lnkPersonToTeam/Attribute:person_id' => 'Персона',
 	'Class:lnkPersonToTeam/Attribute:person_id+' => '',
-	'Class:lnkPersonToTeam/Attribute:person_name' => 'Имя',
+	'Class:lnkPersonToTeam/Attribute:person_name' => 'Персона',
 	'Class:lnkPersonToTeam/Attribute:person_name+' => '',
 	'Class:lnkPersonToTeam/Attribute:role_id' => 'Роль',
 	'Class:lnkPersonToTeam/Attribute:role_id+' => '',
-	'Class:lnkPersonToTeam/Attribute:role_name' => 'Название роли',
+	'Class:lnkPersonToTeam/Attribute:role_name' => 'Роль',
 	'Class:lnkPersonToTeam/Attribute:role_name+' => '',
 ));
 
