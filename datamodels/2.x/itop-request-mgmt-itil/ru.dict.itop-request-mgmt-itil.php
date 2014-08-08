@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -97,9 +97,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:UserRequest/Attribute:request_type/Value:service_request+' => 'Service request',
 	'Class:UserRequest/Attribute:impact' => 'Влияние',
 	'Class:UserRequest/Attribute:impact+' => '',
-	'Class:UserRequest/Attribute:impact/Value:1' => 'Отдел',
+	'Class:UserRequest/Attribute:impact/Value:1' => 'Департамент',
 	'Class:UserRequest/Attribute:impact/Value:1+' => '',
-	'Class:UserRequest/Attribute:impact/Value:2' => 'Услуга',
+	'Class:UserRequest/Attribute:impact/Value:2' => 'Служба',
 	'Class:UserRequest/Attribute:impact/Value:2+' => '',
 	'Class:UserRequest/Attribute:impact/Value:3' => 'Персона',
 	'Class:UserRequest/Attribute:impact/Value:3+' => '',
