@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -324,8 +324,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'UI:WelcomeMenu:RightBlock' => '<p>iTop ориентирован на предоставления сервисов, он позволяет IT специалистам легко управляться с несколькими заказчиками или организациями.
 <ul>iTop обеспечивает многофункциональный набор бизнес-процессов, которые:
-<li>Повышают эффективность управления IT</li> 
-<li>Повышают производительность IT-операция</li> 
+<li>Повышают эффективность управления IT</li>
+<li>Повышают производительность IT-операций</li>
 <li>Улучшают удовлетворенность клиентов и обеспечивают понимание бизнес-процессов.</li>
 </ul>
 </p>
@@ -374,7 +374,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Button:Rename' => ' Переименовать...',
 	'UI:Button:ChangePassword' => ' Сменить пароль ',
 	'UI:Button:ResetPassword' => ' Сбросить пароль ',
-	
+
 	'UI:SearchToggle' => 'Поиск',
 	'UI:ClickToCreateNew' => 'Создать: %1$s',
 	'UI:SearchFor_Class' => 'Поиск: %1$s',
@@ -393,7 +393,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Error:CannotWriteToTmp_Dir' => ' Невозможно записать временный файл на диск. upload_tmp_dir = "%1$s".',
 	'UI:Error:UploadStoppedByExtension_FileName' => 'Загрузка остановлена по расширению. (Имя файла = "%1$s").',
 	'UI:Error:UploadFailedUnknownCause_Code' => 'Загрузка файла не удалась по неизвестной причине. (Код ошибки = "%1$s").',
-	
+
 	'UI:Error:1ParametersMissing' => 'Ошибка: следующий параметр должен быть указан для этой операции: %1$s.',
 	'UI:Error:2ParametersMissing' => 'Ошибка: следующие параметры должен быть указан для этой операции: %1$s и %2$s.',
 	'UI:Error:3ParametersMissing' => 'Ошибка: следующие параметры должен быть указан для этой операции: %1$s, %2$s и %3$s.',
@@ -409,8 +409,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Error:ObjectAlreadyCloned' => 'Ошибка: объект уже клонирован!',
 	'UI:Error:ObjectAlreadyCreated' => 'Ошибка: объект уже создан!',
 	'UI:Error:Invalid_Stimulus_On_Object_In_State' => 'Ошибка: недействительный стимул "%1$s" на объекте %2$s в состоянии "%3$s".',
-	
-	
+
+
 	'UI:GroupBy:Count' => 'Счётчик',
 	'UI:GroupBy:Count+' => 'Количество элементов',
 	'UI:CountOfObjects' => '%1$d объектов соответствует критериям.',
@@ -571,7 +571,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:CSVImport:HeaderSearch' => 'Поиск?',
 	'UI:CSVImport:AlertIncompleteMapping' => 'Необходимо выбрать распределение для каждой ячейки.',
 	'UI:CSVImport:AlertNoSearchCriteria' => 'Необходимо выбрать, по крайней мере один критерий',
-	'UI:CSVImport:Encoding' => 'Кодировка символов',	
+	'UI:CSVImport:Encoding' => 'Кодировка символов',
 	'UI:UniversalSearchTitle' => 'iTop - Универсальный поиск',
 	'UI:UniversalSearch:Error' => 'Ошибка: %1$s',
 	'UI:UniversalSearch:LabelSelectTheClass' => 'Выбор класса для поиска: ',
@@ -661,7 +661,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Schema:Label' => 'Метка',
 	'UI:Schema:Label+' => 'Метка атрибута',
 	'UI:Schema:Type' => 'Тип',
-	
+
 	'UI:Schema:Type+' => 'Тип данных атрибута',
 	'UI:Schema:Origin' => 'Происхождение',
 	'UI:Schema:Origin+' => 'Базовый класс, в котором этот атрибут определен',
@@ -743,7 +743,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Delete:CannotUpdateBecause_Issue' => 'Должно быть автоматически обновлено, но: %1$s',
 	'UI:Delete:WillAutomaticallyUpdate_Fields' => 'Будет обновлено автоматически (сброс: %1$s)',
 	'UI:Delete:Count_Objects/LinksReferencing_Object' => '%1$d объектов/связей ссылаются на %2$s.',
-	'UI:Delete:Count_Objects/LinksReferencingTheObjects' => '%1$d объектов/связей ссылаются на удаляемые объекты.',	
+	'UI:Delete:Count_Objects/LinksReferencingTheObjects' => '%1$d объектов/связей ссылаются на удаляемые объекты.',
 	'UI:Delete:ReferencesMustBeDeletedToEnsureIntegrity' => 'Для обеспечения целостности базы данных необходимо очистить все ссылки на удаляемые объекты.',
 	'UI:Delete:Class' => 'Класс',
 	'UI:Delete:Class+' => 'Класс',
@@ -823,7 +823,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:UserManagement:GrantMatrix' => 'Матрица разрешений',
 	'UI:UserManagement:LinkBetween_User_And_Profile' => 'Связь между %1$s и %2$s',
 	'UI:UserManagement:LinkBetween_User_And_Org' => 'Связь между %1$s и %2$s',
-	
+
 	'Menu:AdminTools' => 'Инструменты админа',
 	'Menu:AdminTools+' => 'Административные инструменты',
 	'Menu:AdminTools?' => 'Инструменты доступны только для пользователей, имеющих профиль администратора',
@@ -874,13 +874,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'Menu:CSVImportMenu' => 'Импорт CSV',
 	'Menu:CSVImportMenu+' => 'Пакетное создание или обновление',
-	
+
 	'Menu:DataModelMenu' => 'Модель данных',
 	'Menu:DataModelMenu+' => 'Обзор модели данных',
-	
+
 	'Menu:ExportMenu' => 'Экспорт',
 	'Menu:ExportMenu+' => 'Экспорт результатов любого запроса в HTML, CSV или XML',
-	
+
 	'Menu:NotificationsMenu' => 'Уведомления',
 	'Menu:NotificationsMenu+' => 'Конфигурация уведомлений',
 	'UI:NotificationsMenu:Title' => 'Конфигурация <span class="hilite">Уведомлений</span>',
@@ -907,23 +907,23 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:NotificationsMenu:OnStateLeave' => 'При выходе объекта из заданного состояния',
 	'UI:NotificationsMenu:Actions' => 'Действия',
 	'UI:NotificationsMenu:AvailableActions' => 'Доступные действия',
-	
+
 	'Menu:AuditCategories' => 'Категории аудита',
 	'Menu:AuditCategories+' => 'Категории аудита',
 	'Menu:Notifications:Title' => 'Категории аудита',
-	
+
 	'Menu:RunQueriesMenu' => 'Выполнение запросов',
 	'Menu:RunQueriesMenu+' => 'Выполнение любых запросов',
-	
+
 	'Menu:QueryMenu' => 'Книга запросов',
 	'Menu:QueryMenu+' => 'Query phrasebook',
-	
+
 	'Menu:DataAdministration' => 'Административные данные',
 	'Menu:DataAdministration+' => 'Административные данные',
-	
+
 	'Menu:UniversalSearchMenu' => 'Универсальный поиск',
 	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...',
-	
+
 	'Menu:ApplicationLogMenu' => 'Логгирование приложения',
 	'Menu:ApplicationLogMenu+' => 'Логгирование приложения',
 	'Menu:ApplicationLogMenu:Title' => 'Логгирование приложения',
@@ -937,7 +937,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'Menu:UserAccountsMenu' => 'Учетные записи пользователей',
 	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей',
-	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей',	
+	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей',
 
 	'UI:iTopVersion:Short' => 'iTop версия %1$s',
 	'UI:iTopVersion:Long' => 'iTop версия %1$s-%2$s основан на %3$s',
@@ -949,9 +949,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Download-CSV' => 'Загрузка %1$s~~',
 
 	'UI:DeadlineMissedBy_duration' => 'Пропущен %1$s',
-	'UI:Deadline_LessThan1Min' => '< 1 мин',		
-	'UI:Deadline_Minutes' => '%1$d мин',			
-	'UI:Deadline_Hours_Minutes' => '%1$dч %2$dмин',			
+	'UI:Deadline_LessThan1Min' => '< 1 мин',
+	'UI:Deadline_Minutes' => '%1$d мин',
+	'UI:Deadline_Hours_Minutes' => '%1$dч %2$dмин',
 	'UI:Deadline_Days_Hours_Minutes' => '%1$dд %2$dч %3$dмин',
 	'UI:Help' => 'Помощь',
 	'UI:PasswordConfirm' => '(Подтвердить)',
@@ -963,7 +963,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:ElementsDisplayed' => 'Фильтрация',
 
 	'Portal:Title' => 'Пользовательский портал iTop',
-	'Portal:NoRequestMgmt' => 'Уважаемый %1$s, Вы были перенаправлены на потрал, потому что Ваш аккаунт содержить профиль \'Portal user\'. К сожалению, iTop не содержит модуля \'Request Management\'. Пожалуйста, свяжитель с системным администратором.',
+	'Portal:NoRequestMgmt' => 'Уважаемый %1$s, вы были перенаправлены на потрал, потому что ваш аккаунт содержит профиль \'Portal user\'. К сожалению, iTop не содержит модуля \'Request Management\'. Пожалуйста, свяжитесь с вашим администратором.',
 	'Portal:Refresh' => 'Обновить',
 	'Portal:Back' => 'Назад',
 	'Portal:WelcomeUserOrg' => 'Добро пожаловать, %1$s (%2$s)',
@@ -976,7 +976,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:OpenRequests' => 'Мои открытые запросы',
 	'Portal:ClosedRequests'  => 'Мои закрытые запросы',
 	'Portal:ResolvedRequests'  => 'Мои решённые запросы',
-	'Portal:SelectService' => 'Выбери сервис из каталога:',
+	'Portal:SelectService' => 'Выбери услугу из каталога:',
 	'Portal:PleaseSelectOneService' => 'Пожалуйста, выберите услугу для создания запроса',
 	'Portal:SelectSubcategoryFrom_Service' => 'Выберите подкатегорию для услуги %1$s:',
 	'Portal:PleaseSelectAServiceSubCategory' => 'Пожалуйста, выберите подкатегорию услуги для создания запроса',
@@ -984,16 +984,16 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:TitleRequestDetailsFor_Request' => 'Подробности запроса %1$s:',
 	'Portal:NoOpenRequest' => 'Нет запросов в этой категории.',
 	'Portal:NoClosedRequest' => 'Нет запросов в этой категории',
-	'Portal:Button:ReopenTicket' => 'Открыть эту заявку',
-	'Portal:Button:CloseTicket' => 'Закрыть эту заявку"',
+	'Portal:Button:ReopenTicket' => 'Вновь открыть запрос',
+	'Portal:Button:CloseTicket' => 'Закрыть запрос',
 	'Portal:Button:UpdateRequest' => 'Обновить запрос',
-	'Portal:EnterYourCommentsOnTicket' => 'Введите ваши каментарии по решению этого "тикета":',
-	'Portal:ErrorNoContactForThisUser' => 'Ошибка: текющий пользователь не ассоциирован с Контактом/Человеком. Пожалуйста свяжитесь с вашим администратором.',
+	'Portal:EnterYourCommentsOnTicket' => 'Введите ваши комментарии по решению этого запроса:',
+	'Portal:ErrorNoContactForThisUser' => 'Ошибка: текущий пользователь не ассоциирован с Контактом/Персоной. Пожалуйста, свяжитесь с вашим администратором.',
 	'Portal:Attachments' => 'Вложения',
 	'Portal:AddAttachment' => 'Добавить вложения',
 	'Portal:RemoveAttachment' => ' Удалить вложения',
 	'Portal:Attachment_No_To_Ticket_Name' => 'Вложение #%1$d to %2$s (%3$s)~~',
-	'Enum:Undefined' => 'Неопределён',	
+	'Enum:Undefined' => 'Неопределён',
 	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s Days %2$s час %3$s мин %4$s сек~~',
 	'UI:ModifyAllPageTitle' => 'Изменить все',
 	'UI:Modify_N_ObjectsOf_Class' => 'Изменение %1$d объектов класса %2$s~~',
@@ -1005,7 +1005,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:BulkModifyStatus' => 'Операция',
 	'UI:BulkModifyStatus+' => 'Status of the operation',
 	'UI:BulkModifyErrors' => 'Ошибки (если есть)~~',
-	'UI:BulkModifyErrors+' => 'Errors preventing the modification',	
+	'UI:BulkModifyErrors+' => 'Errors preventing the modification',
 	'UI:BulkModifyStatusOk' => 'Ok~~',
 	'UI:BulkModifyStatusError' => 'Ошибка',
 	'UI:BulkModifyStatusModified' => 'Изменен',
@@ -1085,8 +1085,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'UI:DashboardEdit:Layout' => 'Макет',
 	'UI:DashboardEdit:Properties' => 'Свойства дашборда',
-	'UI:DashboardEdit:Dashlets' => 'Доступные дашлеты',	
-	'UI:DashboardEdit:DashletProperties' => 'Свойства дашлета',	
+	'UI:DashboardEdit:Dashlets' => 'Доступные дашлеты',
+	'UI:DashboardEdit:DashletProperties' => 'Свойства дашлета',
 
 	'UI:Form:Property' => 'Свойство',
 	'UI:Form:Value' => 'Значение',
@@ -1184,7 +1184,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ShortcutOQL/Attribute:auto_reload_sec+' => 'The minimum allowed is 5 seconds',
 
 	'UI:FillAllMandatoryFields' => 'Пожалуйста, заполните все обязательные поля.',
-	
+
 	'UI:CSVImportConfirmTitle' => 'Please confirm the operation',
 	'UI:CSVImportConfirmMessage' => 'Are you sure you want to do this?',
 	'UI:CSVImportError_items' => 'Errors: %1$d',
