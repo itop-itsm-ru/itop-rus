@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -603,7 +603,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'SynchroDataSource:Definition' => 'Definition~~',
 	'Core:SynchroAttributes' => 'Аттрибуты~~',
 	'Core:SynchroStatus' => 'Свойства~~',
-	'Core:Synchro:ErrorsLabel' => 'Ошибки~~',	
+	'Core:Synchro:ErrorsLabel' => 'Ошибки~~',
 	'Core:Synchro:CreatedLabel' => 'Создан~~',
 	'Core:Synchro:ModifiedLabel' => 'Изменен~~',
 	'Core:Synchro:UnchangedLabel' => 'Неизменен~~',
@@ -630,7 +630,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Synchro:label_obj_disappeared_errors' => 'Ошибки (%1$s)~~',
 	'Core:Synchro:label_obj_disappeared_no_action' => 'No Action (%1$s)~~',
 	'Core:Synchro:label_obj_unchanged' => 'Unchanged (%1$s)~~',
-	'Core:Synchro:label_obj_updated' => 'Обновлен (%1$s)~~', 
+	'Core:Synchro:label_obj_updated' => 'Обновлен (%1$s)~~',
 	'Core:Synchro:label_obj_updated_errors' => 'Ошибки (%1$s)~~',
 	'Core:Synchro:label_obj_new_unchanged' => 'Unchanged (%1$s)~~',
 	'Core:Synchro:label_obj_new_updated' => 'Обновлен (%1$s)~~',
@@ -640,8 +640,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:SynchroLogTitle' => '%1$s - %2$s~~',
 	'Core:Synchro:Nb_Replica' => 'Replica processed: %1$s~~',
 	'Core:Synchro:Nb_Class:Objects' => '%1$s: %2$s~~',
-	'Class:SynchroDataSource/Error:AtLeastOneReconciliationKeyMustBeSpecified' => 'At Least one reconciliation key must be specified, or the reconciliation policy must be to use the primary key.~~',			
-	'Class:SynchroDataSource/Error:DeleteRetentionDurationMustBeSpecified' => 'A delete retention period must be specified, since objects are to be deleted after being marked as obsolete~~',			
+	'Class:SynchroDataSource/Error:AtLeastOneReconciliationKeyMustBeSpecified' => 'At Least one reconciliation key must be specified, or the reconciliation policy must be to use the primary key.~~',
+	'Class:SynchroDataSource/Error:DeleteRetentionDurationMustBeSpecified' => 'A delete retention period must be specified, since objects are to be deleted after being marked as obsolete~~',
 	'Class:SynchroDataSource/Error:DeletePolicyUpdateMustBeSpecified' => 'Obsolete objects are to be updated, but no update is specified.~~',
 	'Class:SynchroDataSource/Error:DataTableAlreadyExists' => 'Строка %1$s уже есть в базе. Пожалуйста, используйте другое значение для синхронизаций.~~',
 	'Core:SynchroReplica:PublicData' => 'Public Data~~',
@@ -774,10 +774,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 // Attribute Duration
 //
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Core:Duration_Seconds'	=> '%1$ds~~',	
-	'Core:Duration_Minutes_Seconds'	=>'%1$dmin %2$ds~~',	
-	'Core:Duration_Hours_Minutes_Seconds' => '%1$dh %2$dmin %3$ds~~',		
-	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$sd %2$dh %3$dmin %4$ds~~',		
+	'Core:Duration_Seconds'	=> '%1$d с',
+	'Core:Duration_Minutes_Seconds'	=>'%1$d мин %2$d с',
+	'Core:Duration_Hours_Minutes_Seconds' => '%1$d ч %2$d мин %3$d с',
+	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$s д %2$d ч %3$d мин %4$d с',		
 ));
 
 ?>
