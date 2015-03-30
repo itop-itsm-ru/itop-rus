@@ -1173,7 +1173,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Shortcut' => 'Ссылка',
 	'Class:Shortcut+' => '',
 	'Class:Shortcut/Attribute:name' => 'Название',
-	'Class:Shortcut/Attribute:name+' => 'Label used in the menu and page title',
+	'Class:Shortcut/Attribute:name+' => 'Используется в меню и заголовке страницы',
 	'Class:ShortcutOQL' => 'Search result shortcut~~',
 	'Class:ShortcutOQL+' => '',
 	'Class:ShortcutOQL/Attribute:oql' => 'Запрос',
@@ -1185,6 +1185,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ShortcutOQL/Attribute:auto_reload_sec+' => 'The minimum allowed is 5 seconds',
 
 	'UI:FillAllMandatoryFields' => 'Пожалуйста, заполните все обязательные поля.',
+	'UI:ValueMustBeSet' => 'Пожалуйста, укажите значение',
+	'UI:ValueMustBeChanged' => 'Пожалуйста, измените значение',
+	'UI:ValueInvalidFormat' => 'Недопустимый формат',
 
 	'UI:CSVImportConfirmTitle' => 'Please confirm the operation',
 	'UI:CSVImportConfirmMessage' => 'Are you sure you want to do this?',
