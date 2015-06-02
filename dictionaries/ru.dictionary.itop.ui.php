@@ -441,7 +441,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Menu:Add' => 'Добавить...',
 	'UI:Menu:Manage' => 'Управление...',
 	'UI:Menu:EMail' => 'Отправить ссылку по email',
-	'UI:Menu:CSVExport' => 'Экспортировать в CSV',
+	'UI:Menu:CSVExport' => 'Экспорт в CSV',
 	'UI:Menu:Modify' => 'Изменить...',
 	'UI:Menu:Delete' => 'Удалить...',
 	'UI:Menu:Manage' => 'Управление...',
@@ -1206,5 +1206,16 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:About:Support' => 'Информация для технической поддержки',
 	'UI:About:Licenses' => 'Лицензии',
 	'UI:About:Modules' => 'Установленные модули',
+
+	'ExcelExporter:ExportMenu' => 'Экспорт в Excel...',
+	'ExcelExporter:ExportDialogTitle' => 'Экспорт в Excel',
+	'ExcelExporter:ExportButton' => 'Экспорт',
+	'ExcelExporter:DownloadButton' => 'Загрузить %1$s',
+	'ExcelExporter:RetrievingData' => 'Извлечение данных...',
+	'ExcelExporter:BuildingExcelFile' => 'Формирование файла Excel...',
+	'ExcelExporter:Done' => 'Готово',
+	'ExcelExport:AutoDownload' => 'Начать загрузку файла автоматически по готовности',
+	'ExcelExport:PreparingExport' => 'Подготовка к экспорту...',
+	'ExcelExport:Statistics' => 'Статистика',
 ));
 ?>

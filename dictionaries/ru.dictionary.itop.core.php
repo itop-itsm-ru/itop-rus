@@ -238,13 +238,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Change:ObjectCreated' => 'Объект создан',
 	'Change:ObjectDeleted' => 'Объект удалён',
-	'Change:ObjectModified' => 'Object modified~~',
-	'Change:AttName_SetTo_NewValue_PreviousValue_OldValue' => '%1$s установлено в %2$s (предыдущее значение: %3$s)',
-	'Change:AttName_SetTo' => '%1$s установлено в %2$s',
-	'Change:Text_AppendedTo_AttName' => '%1$s добавлено к %2$s',
-	'Change:AttName_Changed_PreviousValue_OldValue' => '%1$s изменено, предыдущее значение: %2$s',
-	'Change:AttName_Changed' => '%1$s изменено',
-	'Change:AttName_EntryAdded' => '%1$s изменено, добавлено новое значение.',
+	'Change:ObjectModified' => 'Объект изменён',
+	'Change:AttName_SetTo_NewValue_PreviousValue_OldValue' => 'В поле "%1$s" установлено значение "%2$s" (предыдущее значение "%3$s")',
+	'Change:AttName_SetTo' => 'В поле "%1$s" установлено значение "%2$s".',
+	'Change:Text_AppendedTo_AttName' => 'Новое значение "%1$s" добавлено к полю "%2$s".',
+	'Change:AttName_Changed_PreviousValue_OldValue' => 'Поле "%1$s" изменено (предыдущее значение "%2$s").',
+	'Change:AttName_Changed' => 'Поле "%1$s" изменено.',
+	'Change:AttName_EntryAdded' => 'В поле "%1$s" добавлено новое значение.',
 	'Change:LinkSet:Added' => 'добавлен %1$s~~',
 	'Change:LinkSet:Removed' => 'удален %1$s~~',
 	'Change:LinkSet:Modified' => 'изменен %1$s~~',
@@ -777,7 +777,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Duration_Seconds'	=> '%1$d с',
 	'Core:Duration_Minutes_Seconds'	=>'%1$d мин %2$d с',
 	'Core:Duration_Hours_Minutes_Seconds' => '%1$d ч %2$d мин %3$d с',
-	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$s д %2$d ч %3$d мин %4$d с',		
+	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$s д %2$d ч %3$d мин %4$d с',
 ));
 
 ?>

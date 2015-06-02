@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -372,8 +372,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Rack' => 'Стойка',
 	'Class:Rack+' => '',
-	'Class:Rack/Attribute:nb_u' => 'Высота, U',
-	'Class:Rack/Attribute:nb_u+' => '',
+	'Class:Rack/Attribute:nb_u' => 'Высота (U)',
+	'Class:Rack/Attribute:nb_u+' => 'Количество юнитов',
 	'Class:Rack/Attribute:device_list' => 'Устройства',
 	'Class:Rack/Attribute:device_list+' => 'Устройства в стойке',
 	'Class:Rack/Attribute:enclosure_list' => 'Крейты',
@@ -459,8 +459,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:DatacenterDevice/Attribute:enclosure_id+' => '',
 	'Class:DatacenterDevice/Attribute:enclosure_name' => 'Название крейта',
 	'Class:DatacenterDevice/Attribute:enclosure_name+' => '',
-	'Class:DatacenterDevice/Attribute:nb_u' => 'Высота, U',
-	'Class:DatacenterDevice/Attribute:nb_u+' => '',
+	'Class:DatacenterDevice/Attribute:nb_u' => 'Высота (U)',
+	'Class:DatacenterDevice/Attribute:nb_u+' => 'Количество занимаемых юнитов',
 	'Class:DatacenterDevice/Attribute:managementip' => 'IP-адрес управления',
 	'Class:DatacenterDevice/Attribute:managementip+' => '',
 	'Class:DatacenterDevice/Attribute:powerA_id' => 'Источник питания А',
@@ -662,8 +662,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Enclosure/Attribute:rack_id+' => '',
 	'Class:Enclosure/Attribute:rack_name' => 'Название стойки',
 	'Class:Enclosure/Attribute:rack_name+' => '',
-	'Class:Enclosure/Attribute:nb_u' => 'Высота, U',
-	'Class:Enclosure/Attribute:nb_u+' => '',
+	'Class:Enclosure/Attribute:nb_u' => 'Высота (U)',
+	'Class:Enclosure/Attribute:nb_u+' => 'Количество юнитов',
 	'Class:Enclosure/Attribute:device_list' => 'Устройства',
 	'Class:Enclosure/Attribute:device_list+' => 'Устройства в крейте',
 ));
@@ -1167,16 +1167,16 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:OSLicence' => 'OS Licence',
+	'Class:OSLicence' => 'Лицензия ОС',
 	'Class:OSLicence+' => '',
 	'Class:OSLicence/Attribute:osversion_id' => 'Версия ОС',
 	'Class:OSLicence/Attribute:osversion_id+' => '',
-	'Class:OSLicence/Attribute:osversion_name' => 'Имя версии ОС',
+	'Class:OSLicence/Attribute:osversion_name' => 'Версия ОС',
 	'Class:OSLicence/Attribute:osversion_name+' => '',
 	'Class:OSLicence/Attribute:virtualmachines_list' => 'Виртуальные машины',
-	'Class:OSLicence/Attribute:virtualmachines_list+' => 'All the virtual machines where this licence is used',
+	'Class:OSLicence/Attribute:virtualmachines_list+' => 'Все виртуальные машины, где используется данная лицензия',
 	'Class:OSLicence/Attribute:servers_list' => 'Серверы',
-	'Class:OSLicence/Attribute:servers_list+' => 'All the servers where this licence is used',
+	'Class:OSLicence/Attribute:servers_list+' => 'Все серверы, где используется данная лицензия',
 ));
 
 //
@@ -1188,7 +1188,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SoftwareLicence+' => '',
 	'Class:SoftwareLicence/Attribute:software_id' => 'ПО',
 	'Class:SoftwareLicence/Attribute:software_id+' => '',
-	'Class:SoftwareLicence/Attribute:software_name' => 'Имя ПО',
+	'Class:SoftwareLicence/Attribute:software_name' => 'ПО',
 	'Class:SoftwareLicence/Attribute:software_name+' => '',
 	'Class:SoftwareLicence/Attribute:softwareinstance_list' => 'Экземпляры ПО',
 	'Class:SoftwareLicence/Attribute:softwareinstance_list+' => 'Экземпляры ПО',
@@ -1203,11 +1203,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkDocumentToLicence+' => '',
 	'Class:lnkDocumentToLicence/Attribute:licence_id' => 'Лицензия',
 	'Class:lnkDocumentToLicence/Attribute:licence_id+' => '',
-	'Class:lnkDocumentToLicence/Attribute:licence_name' => 'Имя лицензии',
+	'Class:lnkDocumentToLicence/Attribute:licence_name' => 'Лицензия',
 	'Class:lnkDocumentToLicence/Attribute:licence_name+' => '',
-	'Class:lnkDocumentToLicence/Attribute:document_id' => 'Документы',
+	'Class:lnkDocumentToLicence/Attribute:document_id' => 'Документ',
 	'Class:lnkDocumentToLicence/Attribute:document_id+' => '',
-	'Class:lnkDocumentToLicence/Attribute:document_name' => 'Имя документа',
+	'Class:lnkDocumentToLicence/Attribute:document_name' => 'Документ',
 	'Class:lnkDocumentToLicence/Attribute:document_name+' => '',
 ));
 
@@ -1233,7 +1233,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:OSVersion+' => '',
 	'Class:OSVersion/Attribute:osfamily_id' => 'Семейство ОС',
 	'Class:OSVersion/Attribute:osfamily_id+' => '',
-	'Class:OSVersion/Attribute:osfamily_name' => 'Имя семейства ОС',
+	'Class:OSVersion/Attribute:osfamily_name' => 'Семейство ОС',
 	'Class:OSVersion/Attribute:osfamily_name+' => '',
 ));
 
@@ -1272,7 +1272,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Brand' => 'Бренд',
 	'Class:Brand+' => '',
 	'Class:Brand/Attribute:physicaldevices_list' => 'Устройства',
-	'Class:Brand/Attribute:physicaldevices_list+' => 'Устройства',
+	'Class:Brand/Attribute:physicaldevices_list+' => 'Все устройства данного бренда',
 ));
 
 //
@@ -1284,7 +1284,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Model+' => '',
 	'Class:Model/Attribute:brand_id' => 'Бренд',
 	'Class:Model/Attribute:brand_id+' => '',
-	'Class:Model/Attribute:brand_name' => 'Имя бренда',
+	'Class:Model/Attribute:brand_name' => 'Бренд',
 	'Class:Model/Attribute:brand_name+' => '',
 	'Class:Model/Attribute:type' => 'Тип устройства',
 	'Class:Model/Attribute:type+' => '',
@@ -1336,7 +1336,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:NetworkDeviceType' => 'Тип сетевого устройства',
 	'Class:NetworkDeviceType+' => '',
 	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list' => 'Устройства',
-	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list+' => 'Сетевые устройства',
+	'Class:NetworkDeviceType/Attribute:networkdevicesdevices_list+' => 'Все сетевые устройства данного типа',
 ));
 
 //
@@ -1348,7 +1348,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:IOSVersion+' => '',
 	'Class:IOSVersion/Attribute:brand_id' => 'Бренд',
 	'Class:IOSVersion/Attribute:brand_id+' => '',
-	'Class:IOSVersion/Attribute:brand_name' => 'Имя бренда',
+	'Class:IOSVersion/Attribute:brand_name' => 'Бренд',
 	'Class:IOSVersion/Attribute:brand_name+' => '',
 ));
 
@@ -1361,11 +1361,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkDocumentToPatch+' => '',
 	'Class:lnkDocumentToPatch/Attribute:patch_id' => 'Патч',
 	'Class:lnkDocumentToPatch/Attribute:patch_id+' => '',
-	'Class:lnkDocumentToPatch/Attribute:patch_name' => 'Имя патча',
+	'Class:lnkDocumentToPatch/Attribute:patch_name' => 'Патч',
 	'Class:lnkDocumentToPatch/Attribute:patch_name+' => '',
 	'Class:lnkDocumentToPatch/Attribute:document_id' => 'Документ',
 	'Class:lnkDocumentToPatch/Attribute:document_id+' => '',
-	'Class:lnkDocumentToPatch/Attribute:document_name' => 'Имя документа',
+	'Class:lnkDocumentToPatch/Attribute:document_name' => 'Документ',
 	'Class:lnkDocumentToPatch/Attribute:document_name+' => '',
 ));
 
@@ -1378,11 +1378,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkSoftwareInstanceToSoftwarePatch+' => '',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id' => 'Патч ПО',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_id+' => '',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name' => 'Имя патча ПО',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name' => 'Патч ПО',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwarepatch_name+' => '',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_id' => 'Экземпляр ПО',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_id+' => '',
-	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name' => 'Имя экземпляра ПО',
+	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name' => 'Экземпляр ПО',
 	'Class:lnkSoftwareInstanceToSoftwarePatch/Attribute:softwareinstance_name+' => '',
 ));
 
@@ -1395,11 +1395,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkFunctionalCIToOSPatch+' => '',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_id' => 'Патч ОС',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_id+' => '',
-	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_name' => 'OS patch name',
+	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_name' => 'Патч ОС',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:ospatch_name+' => '',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:functionalci_id' => 'Функциональная КЕ',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:functionalci_id+' => '',
-	'Class:lnkFunctionalCIToOSPatch/Attribute:functionalci_name' => 'Functionalci name',
+	'Class:lnkFunctionalCIToOSPatch/Attribute:functionalci_name' => 'Функциональная КЕ',
 	'Class:lnkFunctionalCIToOSPatch/Attribute:functionalci_name+' => '',
 ));
 
@@ -1412,11 +1412,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkDocumentToSoftware+' => '',
 	'Class:lnkDocumentToSoftware/Attribute:software_id' => 'ПО',
 	'Class:lnkDocumentToSoftware/Attribute:software_id+' => '',
-	'Class:lnkDocumentToSoftware/Attribute:software_name' => 'Имя ПО',
+	'Class:lnkDocumentToSoftware/Attribute:software_name' => 'ПО',
 	'Class:lnkDocumentToSoftware/Attribute:software_name+' => '',
 	'Class:lnkDocumentToSoftware/Attribute:document_id' => 'Документ',
 	'Class:lnkDocumentToSoftware/Attribute:document_id+' => '',
-	'Class:lnkDocumentToSoftware/Attribute:document_name' => 'Имя документа',
+	'Class:lnkDocumentToSoftware/Attribute:document_name' => 'Документ',
 	'Class:lnkDocumentToSoftware/Attribute:document_name+' => '',
 ));
 
@@ -1429,11 +1429,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkContactToFunctionalCI+' => '',
 	'Class:lnkContactToFunctionalCI/Attribute:functionalci_id' => 'Функциональная КЕ',
 	'Class:lnkContactToFunctionalCI/Attribute:functionalci_id+' => '',
-	'Class:lnkContactToFunctionalCI/Attribute:functionalci_name' => 'Имя функциональной КЕ',
+	'Class:lnkContactToFunctionalCI/Attribute:functionalci_name' => 'Функциональная КЕ',
 	'Class:lnkContactToFunctionalCI/Attribute:functionalci_name+' => '',
 	'Class:lnkContactToFunctionalCI/Attribute:contact_id' => 'Контакт',
 	'Class:lnkContactToFunctionalCI/Attribute:contact_id+' => '',
-	'Class:lnkContactToFunctionalCI/Attribute:contact_name' => 'Имя контакта',
+	'Class:lnkContactToFunctionalCI/Attribute:contact_name' => 'Контакт',
 	'Class:lnkContactToFunctionalCI/Attribute:contact_name+' => '',
 ));
 
@@ -1446,11 +1446,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkDocumentToFunctionalCI+' => '',
 	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_id' => 'Функциональная КЕ',
 	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_id+' => '',
-	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_name' => 'Имя функциональной КЕ',
+	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_name' => 'Функциональная КЕ',
 	'Class:lnkDocumentToFunctionalCI/Attribute:functionalci_name+' => '',
 	'Class:lnkDocumentToFunctionalCI/Attribute:document_id' => 'Документ',
 	'Class:lnkDocumentToFunctionalCI/Attribute:document_id+' => '',
-	'Class:lnkDocumentToFunctionalCI/Attribute:document_name' => 'Имя документа',
+	'Class:lnkDocumentToFunctionalCI/Attribute:document_name' => 'Документ',
 	'Class:lnkDocumentToFunctionalCI/Attribute:document_name+' => '',
 ));
 
@@ -1467,7 +1467,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Subnet/Attribute:subnet_name+' => '',
 	'Class:Subnet/Attribute:org_id' => 'Организация',
 	'Class:Subnet/Attribute:org_id+' => '',
-	'Class:Subnet/Attribute:org_name' => 'Имя организации',
+	'Class:Subnet/Attribute:org_name' => 'Организация',
 	'Class:Subnet/Attribute:org_name+' => 'Common name',
 	'Class:Subnet/Attribute:ip' => 'IP-адрес',
 	'Class:Subnet/Attribute:ip+' => '',
