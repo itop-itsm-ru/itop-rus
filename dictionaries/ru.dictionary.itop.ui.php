@@ -916,10 +916,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:RunQueriesMenu+' => 'Выполнение любых запросов',
 
 	'Menu:QueryMenu' => 'Книга запросов',
-	'Menu:QueryMenu+' => 'Query phrasebook',
+	'Menu:QueryMenu+' => 'Книга запросов',
 
-	'Menu:DataAdministration' => 'Административные данные',
-	'Menu:DataAdministration+' => 'Административные данные',
+	'Menu:DataAdministration' => 'Администрирование данных',
+	'Menu:DataAdministration+' => 'Администрирование данных',
 
 	'Menu:UniversalSearchMenu' => 'Универсальный поиск',
 	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...',
