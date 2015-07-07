@@ -216,9 +216,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChangeOpSetAttribute' => 'изменение объекта',
+	'Class:CMDBChangeOpSetAttribute' => 'Изменение объекта',
 	'Class:CMDBChangeOpSetAttribute+' => 'Отслеживание изменения объекта',
-	'Class:CMDBChangeOpSetAttribute/Attribute:attcode' => 'Атрибут',
+	'Class:CMDBChangeOpSetAttribute/Attribute:attcode' => 'с',
 	'Class:CMDBChangeOpSetAttribute/Attribute:attcode+' => 'код изменённого свойства',
 ));
 
@@ -227,19 +227,19 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChangeOpSetAttributeScalar' => 'изменение свойства',
+	'Class:CMDBChangeOpSetAttributeScalar' => 'Изменение свойства',
 	'Class:CMDBChangeOpSetAttributeScalar+' => 'Отслеживание изменения скалярного свойства объекта',
 	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue' => 'Предыдущее значение',
-	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue+' => 'предыдущее значение атрибута',
+	'Class:CMDBChangeOpSetAttributeScalar/Attribute:oldvalue+' => 'Предыдущее значение атрибута',
 	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue' => 'Новое значение',
-	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue+' => 'новое значение атрибута',
+	'Class:CMDBChangeOpSetAttributeScalar/Attribute:newvalue+' => 'Новое значение атрибута',
 ));
 // Used by CMDBChangeOp... & derived classes
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Change:ObjectCreated' => 'Объект создан',
-	'Change:ObjectDeleted' => 'Объект удалён',
-	'Change:ObjectModified' => 'Объект изменён',
-	'Change:AttName_SetTo_NewValue_PreviousValue_OldValue' => 'В поле "%1$s" установлено значение "%2$s" (предыдущее значение "%3$s")',
+	'Change:ObjectCreated' => 'Объект создан.',
+	'Change:ObjectDeleted' => 'Объект удалён.',
+	'Change:ObjectModified' => 'Объект изменён.',
+	'Change:AttName_SetTo_NewValue_PreviousValue_OldValue' => 'В поле "%1$s" установлено значение "%2$s" (предыдущее значение "%3$s").',
 	'Change:AttName_SetTo' => 'В поле "%1$s" установлено значение "%2$s".',
 	'Change:Text_AppendedTo_AttName' => 'Новое значение "%1$s" добавлено к полю "%2$s".',
 	'Change:AttName_Changed_PreviousValue_OldValue' => 'Поле "%1$s" изменено (предыдущее значение "%2$s").',
