@@ -245,9 +245,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Change:AttName_Changed_PreviousValue_OldValue' => 'Поле "%1$s" изменено (предыдущее значение "%2$s").',
 	'Change:AttName_Changed' => 'Поле "%1$s" изменено.',
 	'Change:AttName_EntryAdded' => 'В поле "%1$s" добавлено новое значение.',
-	'Change:LinkSet:Added' => 'добавлен %1$s~~',
-	'Change:LinkSet:Removed' => 'удален %1$s~~',
-	'Change:LinkSet:Modified' => 'изменен %1$s~~',
+	'Change:LinkSet:Added' => 'добавлен объект %1$s.',
+	'Change:LinkSet:Removed' => 'удалён объект %1$s.',
+	'Change:LinkSet:Modified' => 'изменён объект %1$s.',
 ));
 
 //
