@@ -164,12 +164,14 @@ Operators:<br/>
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChange' => 'Изменение',
-	'Class:CMDBChange+' => 'Отслеживание изменений',
-	'Class:CMDBChange/Attribute:date' => 'дата',
-	'Class:CMDBChange/Attribute:date+' => 'Дата и время регистрации изменений',
-	'Class:CMDBChange/Attribute:userinfo' => 'разная информация',
-	'Class:CMDBChange/Attribute:userinfo+' => 'изменение определённые -вызвавшим-',
+	'Class:CMDBChange' => 'Изменение CMDB',
+	'Class:CMDBChange+' => 'Отслеживание изменений CMDB',
+	'Class:CMDBChange/Attribute:date' => 'Дата',
+	'Class:CMDBChange/Attribute:date+' => 'Дата и время изменения',
+	'Class:CMDBChange/Attribute:origin' => 'Источник',
+	'Class:CMDBChange/Attribute:origin+' => 'Источник приосхождения изменения',
+	'Class:CMDBChange/Attribute:userinfo' => 'Пользователь',
+	'Class:CMDBChange/Attribute:userinfo+' => 'Кто произвёл изменение',
 ));
 
 //
@@ -177,19 +179,19 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChangeOp' => 'Операция изменения',
-	'Class:CMDBChangeOp+' => 'Отслеживание операции изменения',
-	'Class:CMDBChangeOp/Attribute:change' => 'изменение',
-	'Class:CMDBChangeOp/Attribute:change+' => 'изменение',
-	'Class:CMDBChangeOp/Attribute:date' => 'дата',
-	'Class:CMDBChangeOp/Attribute:date+' => 'дата и время изменения',
-	'Class:CMDBChangeOp/Attribute:userinfo' => 'пользователь',
-	'Class:CMDBChangeOp/Attribute:userinfo+' => 'кто сделал изменение',
-	'Class:CMDBChangeOp/Attribute:objclass' => 'класс объекта',
-	'Class:CMDBChangeOp/Attribute:objclass+' => 'класс объекта',
-	'Class:CMDBChangeOp/Attribute:objkey' => 'id объекта',
-	'Class:CMDBChangeOp/Attribute:objkey+' => 'id объекта',
-	'Class:CMDBChangeOp/Attribute:finalclass' => 'тип',
+	'Class:CMDBChangeOp' => 'Операция изменения CMDB',
+	'Class:CMDBChangeOp+' => 'Отслеживание операции изменения CMDB',
+	'Class:CMDBChangeOp/Attribute:change' => 'Изменение CMDB',
+	'Class:CMDBChangeOp/Attribute:change+' => 'Изменение CMDB',
+	'Class:CMDBChangeOp/Attribute:date' => 'Дата',
+	'Class:CMDBChangeOp/Attribute:date+' => 'Дата и время изменения',
+	'Class:CMDBChangeOp/Attribute:userinfo' => 'Пользователь',
+	'Class:CMDBChangeOp/Attribute:userinfo+' => 'Кто произвёл изменение',
+	'Class:CMDBChangeOp/Attribute:objclass' => 'Класс объекта',
+	'Class:CMDBChangeOp/Attribute:objclass+' => 'Класс объекта',
+	'Class:CMDBChangeOp/Attribute:objkey' => 'ID объекта',
+	'Class:CMDBChangeOp/Attribute:objkey+' => 'ID объекта',
+	'Class:CMDBChangeOp/Attribute:finalclass' => 'Итоговый класс',
 	'Class:CMDBChangeOp/Attribute:finalclass+' => '',
 ));
 
@@ -198,7 +200,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChangeOpCreate' => 'создание объекта',
+	'Class:CMDBChangeOpCreate' => 'Операция создания объекта',
 	'Class:CMDBChangeOpCreate+' => 'Отслеживание создания объекта',
 ));
 
@@ -207,7 +209,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:CMDBChangeOpDelete' => 'удаление объекта',
+	'Class:CMDBChangeOpDelete' => 'Операция удаления объекта',
 	'Class:CMDBChangeOpDelete+' => 'Отслеживание удаления объекта',
 ));
 
@@ -218,8 +220,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:CMDBChangeOpSetAttribute' => 'Изменение объекта',
 	'Class:CMDBChangeOpSetAttribute+' => 'Отслеживание изменения объекта',
-	'Class:CMDBChangeOpSetAttribute/Attribute:attcode' => 'с',
-	'Class:CMDBChangeOpSetAttribute/Attribute:attcode+' => 'код изменённого свойства',
+	'Class:CMDBChangeOpSetAttribute/Attribute:attcode' => 'Свойство',
+	'Class:CMDBChangeOpSetAttribute/Attribute:attcode+' => 'Код изменённого свойства',
 ));
 
 //
