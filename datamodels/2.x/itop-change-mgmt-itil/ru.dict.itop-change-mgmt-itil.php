@@ -197,7 +197,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ApprovedChange+' => '',
 	'Class:ApprovedChange/Attribute:approval_date' => 'Дата утверждения',
 	'Class:ApprovedChange/Attribute:approval_date+' => '',
-	'Class:ApprovedChange/Attribute:approval_comment' => 'Коментарий утверждения',
+	'Class:ApprovedChange/Attribute:approval_comment' => 'Комментарий утверждения',
 	'Class:ApprovedChange/Attribute:approval_comment+' => '',
 	'Class:ApprovedChange/Stimulus:ev_validate' => 'Подтвердить',
 	'Class:ApprovedChange/Stimulus:ev_validate+' => '',
