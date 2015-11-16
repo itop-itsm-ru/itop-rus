@@ -95,8 +95,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkContactToTicket/Attribute:contact_id+' => '',
 	'Class:lnkContactToTicket/Attribute:contact_email' => 'Email контакта',
 	'Class:lnkContactToTicket/Attribute:contact_email+' => '',
-	'Class:lnkContactToTicket/Attribute:role' => 'Роль',
+	'Class:lnkContactToTicket/Attribute:role' => 'Роль (текст)',
 	'Class:lnkContactToTicket/Attribute:role+' => '',
+	'Class:lnkContactToTicket/Attribute:role_code' => 'Роль',
+	'Class:lnkContactToTicket/Attribute:role_code/Value:manual' => 'Добавлено вручную',
+	'Class:lnkContactToTicket/Attribute:role_code/Value:computed' => 'Вычислено',
+	'Class:lnkContactToTicket/Attribute:role_code/Value:do_not_notify' => 'Не уведомлять',
 ));
 
 //
