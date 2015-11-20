@@ -112,14 +112,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkFunctionalCIToTicket+' => '',
 	'Class:lnkFunctionalCIToTicket/Attribute:ticket_id' => 'Тикет',
 	'Class:lnkFunctionalCIToTicket/Attribute:ticket_id+' => '',
-	'Class:lnkFunctionalCIToTicket/Attribute:ticket_ref' => 'Связь',
+	'Class:lnkFunctionalCIToTicket/Attribute:ticket_ref' => 'Тикет',
 	'Class:lnkFunctionalCIToTicket/Attribute:ticket_ref+' => '',
 	'Class:lnkFunctionalCIToTicket/Attribute:functionalci_id' => 'КЕ',
 	'Class:lnkFunctionalCIToTicket/Attribute:functionalci_id+' => '',
-	'Class:lnkFunctionalCIToTicket/Attribute:functionalci_name' => 'Имя КЕ',
+	'Class:lnkFunctionalCIToTicket/Attribute:functionalci_name' => 'КЕ',
 	'Class:lnkFunctionalCIToTicket/Attribute:functionalci_name+' => '',
-	'Class:lnkFunctionalCIToTicket/Attribute:impact' => 'Влияние',
+	'Class:lnkFunctionalCIToTicket/Attribute:impact' => 'Влияние (текст)',
 	'Class:lnkFunctionalCIToTicket/Attribute:impact+' => '',
+	'Class:lnkFunctionalCIToTicket/Attribute:impact_code' => 'Влияние',
+	'Class:lnkFunctionalCIToTicket/Attribute:impact_code/Value:manual' => 'Добавлено вручную',
+	'Class:lnkFunctionalCIToTicket/Attribute:impact_code/Value:computed' => 'Вычислено',
+	'Class:lnkFunctionalCIToTicket/Attribute:impact_code/Value:not_impacted' => 'Не влияет',
 ));
 
 

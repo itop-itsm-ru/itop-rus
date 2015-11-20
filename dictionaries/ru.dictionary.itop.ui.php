@@ -1196,9 +1196,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:CSVImportModified_items' => 'Modified: %1$d',
 	'UI:CSVImportUnchanged_items' => 'Unchanged: %1$d',
 
-	'UI:Button:Remove' => 'Remove',
-	'UI:AddAnExisting_Class' => 'Add objects of type %1$s...',
-	'UI:SelectionOf_Class' => 'Selection of objects of type %1$s',
+	'UI:Button:Remove' => 'Удалить',
+	'UI:AddAnExisting_Class' => 'Добавить объекты класса %1$s...',
+	'UI:SelectionOf_Class' => 'Выбор объектов класса %1$s',
 
 	'UI:AboutBox' => 'Об этом iTop...',
 	'UI:About:Title' => 'Об этом iTop',
