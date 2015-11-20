@@ -29,21 +29,6 @@
 // Class:<class_name>/Stimulus:<stimulus_code>
 // Class:<class_name>/Stimulus:<stimulus_code>+
 
-//////////////////////////////////////////////////////////////////////
-// Classes in 'bizmodel'
-//////////////////////////////////////////////////////////////////////
-//
-
-// Dictionnay conventions
-// Class:<class_name>
-// Class:<class_name>+
-// Class:<class_name>/Attribute:<attribute_code>
-// Class:<class_name>/Attribute:<attribute_code>+
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>+
-// Class:<class_name>/Stimulus:<stimulus_code>
-// Class:<class_name>/Stimulus:<stimulus_code>+
-
 //
 // Class: KnownError
 //
@@ -166,16 +151,17 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:FAQCategory/Attribute:faq_list' => 'ЧаВо',
 	'Class:FAQCategory/Attribute:faq_list+' => 'All the frequently asked questions related to this category',
 ));
+
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Menu:ProblemManagement' => 'Problem Management',
-	'Menu:ProblemManagement+' => 'Problem Management',
-	'Menu:Problem:Shortcuts' => 'Shortcuts',
+	'Menu:ProblemManagement' => 'Управление проблемами',
+	'Menu:ProblemManagement+' => 'Управление проблемами',
+	'Menu:Problem:Shortcuts' => 'Ярлыки',
 	'Menu:NewError' => 'Создать известную ошибку',
-	'Menu:NewError+' => 'Creation of a new known error',
+	'Menu:NewError+' => 'Создать известную ошибку',
 	'Menu:SearchError' => 'Найти известную ошибку',
-	'Menu:SearchError+' => 'Search for known errors',
-        'Menu:Problem:KnownErrors' => 'Известные ошибки',
-        'Menu:Problem:KnownErrors+' => 'База известных ошибок',
+	'Menu:SearchError+' => 'Найти известную ошибку',
+    'Menu:Problem:KnownErrors' => 'Известные ошибки',
+    'Menu:Problem:KnownErrors+' => 'База известных ошибок',
 	'Menu:FAQCategory' => 'Категории FAQ',
 	'Menu:FAQCategory+' => 'Категории FAQ',
 	'Menu:FAQ' => 'FAQ',

@@ -29,38 +29,20 @@
 // Class:<class_name>/Stimulus:<stimulus_code>
 // Class:<class_name>/Stimulus:<stimulus_code>+
 
-//////////////////////////////////////////////////////////////////////
-// Classes in 'bizmodel'
-//////////////////////////////////////////////////////////////////////
-//
-
-// Dictionnay conventions
-// Class:<class_name>
-// Class:<class_name>+
-// Class:<class_name>/Attribute:<attribute_code>
-// Class:<class_name>/Attribute:<attribute_code>+
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>+
-// Class:<class_name>/Stimulus:<stimulus_code>
-// Class:<class_name>/Stimulus:<stimulus_code>+
-
-
-
-
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-        'Menu:ProblemManagement' => 'Управление проблемами',
-        'Menu:ProblemManagement+' => 'Управление проблемами',
-    	'Menu:Problem:Overview' => 'Обзор',
-    	'Menu:Problem:Overview+' => 'Overview',
-    	'Menu:NewProblem' => 'Создать проблему',
-    	'Menu:NewProblem+' => 'Новая проблема',
-    	'Menu:SearchProblems' => 'Найти проблему',
-    	'Menu:SearchProblems+' => 'Search for problems',
-    	'Menu:Problem:Shortcuts' => 'Ярлыки',
-        'Menu:Problem:MyProblems' => 'Назначенные мне проблемы',
-        'Menu:Problem:MyProblems+' => 'Мои проблемы',
-        'Menu:Problem:OpenProblems' => 'Открытые проблемы',
-        'Menu:Problem:OpenProblems+' => 'Все открытые проблемы',
+	'Menu:ProblemManagement' => 'Управление проблемами',
+	'Menu:ProblemManagement+' => 'Управление проблемами',
+	'Menu:Problem:Overview' => 'Обзор',
+	'Menu:Problem:Overview+' => 'Управление проблемами - Обзор',
+	'Menu:NewProblem' => 'Создать проблему',
+	'Menu:NewProblem+' => 'Создать проблему',
+	'Menu:SearchProblems' => 'Найти проблему',
+	'Menu:SearchProblems+' => 'Найти проблему',
+	'Menu:Problem:Shortcuts' => 'Ярлыки',
+	'Menu:Problem:MyProblems' => 'Назначенные мне проблемы',
+	'Menu:Problem:MyProblems+' => 'Назначенные мне проблемы',
+	'Menu:Problem:OpenProblems' => 'Открытые проблемы',
+	'Menu:Problem:OpenProblems+' => 'Все открытые проблемы',
 	'UI-ProblemManagementOverview-ProblemByService' => 'Проблемы по сервису',
 	'UI-ProblemManagementOverview-ProblemByService+' => 'Проблемы по сервису',
 	'UI-ProblemManagementOverview-ProblemByPriority' => 'Проблемы по приоритету',

@@ -79,11 +79,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Query' => 'Запрос',
 	'Class:Query+' => 'Запрос - это набор данных, определенных динамическим путем',
-	'Class:Query/Attribute:name' => 'Имя~~',
+	'Class:Query/Attribute:name' => 'Название',
 	'Class:Query/Attribute:name+' => 'Идентифицирует запрос',
-	'Class:Query/Attribute:description' => 'Расшифровка~~',
+	'Class:Query/Attribute:description' => 'Описание',
 	'Class:Query/Attribute:description+' => 'Длинное описание запроса (назначение, использование и т.д.)',
-	'Class:Query/Attribute:fields' => 'Значения~~',
+	'Class:Query/Attribute:fields' => 'Экспорт. поля',
 	'Class:Query/Attribute:fields+' => 'Список атрибутов для экспорта, разделённых запятыми (или alias.attribute)',
 
 	'Class:QueryOQL' => 'OQL запрос',
@@ -138,9 +138,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:URP_Profiles' => 'Профиль',
 	'Class:URP_Profiles+' => 'Пользовательский профиль',
 	'Class:URP_Profiles/Attribute:name' => 'Название',
-	'Class:URP_Profiles/Attribute:name+' => 'метка',
+	'Class:URP_Profiles/Attribute:name+' => 'Название',
 	'Class:URP_Profiles/Attribute:description' => 'Описание',
-	'Class:URP_Profiles/Attribute:description+' => 'однострочное описание',
+	'Class:URP_Profiles/Attribute:description+' => 'Описание',
 	'Class:URP_Profiles/Attribute:user_list' => 'Пользователи',
 	'Class:URP_Profiles/Attribute:user_list+' => 'Пользователи, имеющие эту роль',
 ));
@@ -303,8 +303,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'BooleanLabel:yes' => 'yes',
-	'BooleanLabel:no' => 'no',
+	'BooleanLabel:yes' => 'да',
+	'BooleanLabel:no' => 'нет',
 	'Menu:WelcomeMenu' => 'Добро пожаловать',
 	'Menu:WelcomeMenu+' => 'Добро пожаловать в iTop',
 	'Menu:WelcomeMenuPage' => 'Добро пожаловать',
@@ -924,9 +924,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:UniversalSearchMenu' => 'Универсальный поиск',
 	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...',
 
-	'Menu:ApplicationLogMenu' => 'Логгирование приложения',
-	'Menu:ApplicationLogMenu+' => 'Логгирование приложения',
-	'Menu:ApplicationLogMenu:Title' => 'Логгирование приложения',
+	'Menu:ApplicationLogMenu' => 'Логирование приложения',
+	'Menu:ApplicationLogMenu+' => 'Логирование приложения',
+	'Menu:ApplicationLogMenu:Title' => 'Логирование приложения',
 
 	'Menu:UserManagementMenu' => 'Управление пользователями',
 	'Menu:UserManagementMenu+' => 'Управление пользователями',
@@ -945,7 +945,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'UI:OpenDocumentInNewWindow_' => 'Открыть этот документ в новом окне: %1$s',
 	'UI:DownloadDocument_' => 'Скачать этот документ: %1$s',
-	'UI:Document:NoPreview' => 'Не доступен предварительный просомтр для документов данного типа',
+	'UI:Document:NoPreview' => 'Предварительный просмотр недоступен для документов данного типа',
 	'UI:Download-CSV' => 'Загрузка %1$s~~',
 
 	'UI:DeadlineMissedBy_duration' => 'Пропущен %1$s',

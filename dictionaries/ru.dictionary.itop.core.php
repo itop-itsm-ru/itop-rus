@@ -546,8 +546,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:lnkTriggerAction' => 'Действие/Триггер',
-	'Class:lnkTriggerAction+' => 'Связь между триггером и действий',
+	'Class:lnkTriggerAction' => 'Связь Триггер/Действие',
+	'Class:lnkTriggerAction+' => 'Связь между триггером и действиями',
 	'Class:lnkTriggerAction/Attribute:action_id' => 'Действие',
 	'Class:lnkTriggerAction/Attribute:action_id+' => 'Выполняемое действие',
 	'Class:lnkTriggerAction/Attribute:action_name' => 'Действие',
@@ -621,8 +621,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Synchro:NeverRun' => 'Синхронизация не запускалась. Логи отсутсвуют.~~',
 	'Core:Synchro:SynchroEndedOn_Date' => 'Синхронизация была закончена в %1$s.~~',
 	'Core:Synchro:SynchroRunningStartedOn_Date' => 'Синхронизация запущена в %1$s сейчас в процессе...~~',
-	'Menu:DataSources' => 'Синхронизация данных',
-	'Menu:DataSources+' => 'All Synchronization Data Sources',
+	'Menu:DataSources' => 'Источники данных',
+	'Menu:DataSources+' => 'Источники синхронизируемых данных',
 	'Core:Synchro:label_repl_ignored' => 'Игнор. (%1$s)~~',
 	'Core:Synchro:label_repl_disappeared' => 'Невид. (%1$s)~~',
 	'Core:Synchro:label_repl_existing' => 'Existing (%1$s)~~',
@@ -638,7 +638,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Synchro:label_obj_new_updated' => 'Обновлен (%1$s)~~',
 	'Core:Synchro:label_obj_created' => 'Создан (%1$s)~~',
 	'Core:Synchro:label_obj_new_errors' => 'Ошибки (%1$s)~~',
-	'Core:Synchro:History' => 'История синхронизаций~~',
+	'Core:Synchro:History' => 'История синхронизаций',
 	'Core:SynchroLogTitle' => '%1$s - %2$s~~',
 	'Core:Synchro:Nb_Replica' => 'Replica processed: %1$s~~',
 	'Core:Synchro:Nb_Class:Objects' => '%1$s: %2$s~~',

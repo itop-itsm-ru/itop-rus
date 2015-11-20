@@ -34,7 +34,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Menu:ServiceManagement' => 'Управление услугами',
 'Menu:ServiceManagement+' => 'Управление услугами',
 'Menu:Service:Overview' => 'Обзор',
-'Menu:Service:Overview+' => '',
+'Menu:Service:Overview+' => 'Управление услугами - Обзор',
 'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуг',
 'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
 'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
