@@ -405,10 +405,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Action/Attribute:status/Value:test+' => 'Проходит проверку',
 	'Class:Action/Attribute:status/Value:enabled' => 'В производстве',
 	'Class:Action/Attribute:status/Value:enabled+' => 'В производстве',
-	'Class:Action/Attribute:status/Value:disabled' => 'Неактивный',
-	'Class:Action/Attribute:status/Value:disabled+' => 'Неактивный',
+	'Class:Action/Attribute:status/Value:disabled' => 'Неактивно',
+	'Class:Action/Attribute:status/Value:disabled+' => 'Неактивно',
 	'Class:Action/Attribute:trigger_list' => 'Связанные триггеры',
-	'Class:Action/Attribute:trigger_list+' => 'Триггеры привызанные к этому действию',
+	'Class:Action/Attribute:trigger_list+' => 'Триггеры, которые запускают данное действие',
 	'Class:Action/Attribute:finalclass' => 'Тип',
 	'Class:Action/Attribute:finalclass+' => '',
 ));
@@ -432,27 +432,27 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ActionEmail/Attribute:test_recipient' => 'Проверочный получатель',
 	'Class:ActionEmail/Attribute:test_recipient+' => 'Получатель, если уведомление в статусе "Проходит проверку"',
 	'Class:ActionEmail/Attribute:from' => 'От',
-	'Class:ActionEmail/Attribute:from+' => 'Будет отослано в заголовке email',
+	'Class:ActionEmail/Attribute:from+' => 'Будет отправлено в заголовке email',
 	'Class:ActionEmail/Attribute:reply_to' => 'Ответить на',
-	'Class:ActionEmail/Attribute:reply_to+' => 'Будет отослано в заголовке email',
+	'Class:ActionEmail/Attribute:reply_to+' => 'Будет отправлено в заголовке email',
 	'Class:ActionEmail/Attribute:to' => 'Кому',
 	'Class:ActionEmail/Attribute:to+' => 'Получатель email',
 	'Class:ActionEmail/Attribute:cc' => 'Копия',
 	'Class:ActionEmail/Attribute:cc+' => 'Копия',
 	'Class:ActionEmail/Attribute:bcc' => 'Скр. копия',
 	'Class:ActionEmail/Attribute:bcc+' => 'Скрытая копия',
-	'Class:ActionEmail/Attribute:subject' => 'тема',
+	'Class:ActionEmail/Attribute:subject' => 'Тема',
 	'Class:ActionEmail/Attribute:subject+' => 'Заголовок письма',
-	'Class:ActionEmail/Attribute:body' => 'тело',
+	'Class:ActionEmail/Attribute:body' => 'Тело',
 	'Class:ActionEmail/Attribute:body+' => 'Содержимое письма',
-	'Class:ActionEmail/Attribute:importance' => 'значение',
-	'Class:ActionEmail/Attribute:importance+' => 'Флаг значения',
-	'Class:ActionEmail/Attribute:importance/Value:low' => 'низкий',
-	'Class:ActionEmail/Attribute:importance/Value:low+' => 'низкий',
-	'Class:ActionEmail/Attribute:importance/Value:normal' => 'нормальный',
-	'Class:ActionEmail/Attribute:importance/Value:normal+' => 'нормальный',
-	'Class:ActionEmail/Attribute:importance/Value:high' => 'высокий',
-	'Class:ActionEmail/Attribute:importance/Value:high+' => 'высокий',
+	'Class:ActionEmail/Attribute:importance' => 'Важность',
+	'Class:ActionEmail/Attribute:importance+' => 'Флаг важности',
+	'Class:ActionEmail/Attribute:importance/Value:low' => 'Низкая',
+	'Class:ActionEmail/Attribute:importance/Value:low+' => 'Низкая',
+	'Class:ActionEmail/Attribute:importance/Value:normal' => 'Нормальная',
+	'Class:ActionEmail/Attribute:importance/Value:normal+' => 'Нормальная',
+	'Class:ActionEmail/Attribute:importance/Value:high' => 'Высокая',
+	'Class:ActionEmail/Attribute:importance/Value:high+' => 'Высокая',
 ));
 
 //
@@ -461,11 +461,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Trigger' => 'Триггер',
-	'Class:Trigger+' => 'Заказной триггер события',
+	'Class:Trigger+' => 'Пользовательский обработчик событий',
 	'Class:Trigger/Attribute:description' => 'Описание',
-	'Class:Trigger/Attribute:description+' => 'однострочное описание',
+	'Class:Trigger/Attribute:description+' => 'Описание триггера',
 	'Class:Trigger/Attribute:action_list' => 'Действия триггера',
-	'Class:Trigger/Attribute:action_list+' => 'Действия, выполняемые при активации триггера',
+	'Class:Trigger/Attribute:action_list+' => 'Действия, выполняемые при срабатывании триггера',
 	'Class:Trigger/Attribute:finalclass' => 'Тип',
 	'Class:Trigger/Attribute:finalclass+' => '',
 ));
@@ -475,10 +475,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnObject' => 'Триггер (в зависимости класс)',
-	'Class:TriggerOnObject+' => 'Триггер по даному классу объектов',
+	'Class:TriggerOnObject' => 'Триггер (на класс объекта)',
+	'Class:TriggerOnObject+' => 'Триггер на события объектов данного класса',
 	'Class:TriggerOnObject/Attribute:target_class' => 'Целевой класс',
-	'Class:TriggerOnObject/Attribute:target_class+' => '',
+	'Class:TriggerOnObject/Attribute:target_class+' => 'Класс объектов, для которых будет срабатывать данный триггер',
+	'Class:TriggerOnObject/Attribute:filter' => 'Фильтр OQL',
+	'Class:TriggerOnObject/Attribute:filter+' => 'Позволяет ограничить список объектов, для которых будет срабатывать триггер',
 ));
 
 //
@@ -486,8 +488,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnPortalUpdate' => 'Триггер (при обновлении из портала)',
-	'Class:TriggerOnPortalUpdate+' => 'Trigger on a end-user\'s update from the portal',
+	'Class:TriggerOnPortalUpdate' => 'Триггер (обновление из портала)',
+	'Class:TriggerOnPortalUpdate+' => 'Триггер на обновление объекта пользователем портала',
 ));
 
 //
@@ -495,10 +497,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnStateChange' => 'Триггер (на изменение состояния)',
-	'Class:TriggerOnStateChange+' => 'Триггер на изменение состояния объекта',
+	'Class:TriggerOnStateChange' => 'Триггер (изменение статуса)',
+	'Class:TriggerOnStateChange+' => 'Триггер на изменение статуса объекта',
 	'Class:TriggerOnStateChange/Attribute:state' => 'Статус',
-	'Class:TriggerOnStateChange/Attribute:state+' => '',
+	'Class:TriggerOnStateChange/Attribute:state+' => 'Код статуса объекта, например "resolved"',
 ));
 
 //
@@ -506,8 +508,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnStateEnter' => 'Триггер (на начало состояния)',
-	'Class:TriggerOnStateEnter+' => 'Триггер на изменению состояния объекта - начало',
+	'Class:TriggerOnStateEnter' => 'Триггер (на вход в статус)',
+	'Class:TriggerOnStateEnter+' => 'Триггер на вход объекта в статус',
 ));
 
 //
@@ -515,8 +517,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnStateLeave' => 'Триггер (на окончание состояния)',
-	'Class:TriggerOnStateLeave+' => 'Триггер на изменению состояния объекта - окончание',
+	'Class:TriggerOnStateLeave' => 'Триггер (на выход из статуса)',
+	'Class:TriggerOnStateLeave+' => 'Триггер на выход объекта из статуса',
 ));
 
 //
@@ -525,7 +527,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:TriggerOnObjectCreate' => 'Триггер (на создание объекта)',
-	'Class:TriggerOnObjectCreate+' => 'Триггер на создание объекта [дочерний класс] данного класса',
+	'Class:TriggerOnObjectCreate+' => 'Триггер на создание объекта данного или дочернего класса',
 ));
 
 //
@@ -533,12 +535,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:TriggerOnThresholdReached' => 'Триггер (пороговое)~~',
-	'Class:TriggerOnThresholdReached+' => 'Trigger on Stop-Watch threshold reached',
-	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code' => 'Секундомер~~',
-	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code+' => '',
-	'Class:TriggerOnThresholdReached/Attribute:threshold_index' => 'Порог~~',
-	'Class:TriggerOnThresholdReached/Attribute:threshold_index+' => '',
+	'Class:TriggerOnThresholdReached' => 'Триггер (на пороговое значение)',
+	'Class:TriggerOnThresholdReached+' => 'Триггер на достижение секундомером порогового значения (TTO, TTR)',
+	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code' => 'Секундомер',
+	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code+' => 'По умолчанию для Инцидентов и Запросов доступны "ttr" и "tto"',
+	'Class:TriggerOnThresholdReached/Attribute:threshold_index' => 'Порог',
+	'Class:TriggerOnThresholdReached/Attribute:threshold_index+' => 'Пороговое значние секундомера, по умолчанию "75" и "100"',
 ));
 
 //
@@ -692,7 +694,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревший~~',
 	'Class:SynchroDataSource/Attribute:status/Value:production' => 'Производство~~',
 	'Class:SynchroDataSource/Attribute:scope_restriction' => 'Объем ограничений',
-	'Class:SynchroDataSource/Attribute:reconciliation_policy/Value:use_attributes' => 'Использовать аттрибуты',
+	'Class:SynchroDataSource/Attribute:reconciliation_policy/Value:use_attributes' => 'Использовать атрибуты',
 	'Class:SynchroDataSource/Attribute:reconciliation_policy/Value:use_primary_key' => 'Использовать primary_key значение',
 	'Class:SynchroDataSource/Attribute:action_on_zero/Value:create' => 'Создать~~',
 	'Class:SynchroDataSource/Attribute:action_on_zero/Value:error' => 'Ошибка~~',
@@ -712,7 +714,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SynchroDataSource/Attribute:user_delete_policy/Value:nobody' => 'Никто',
 	'Class:SynchroAttribute' => 'Синх.характеристики~~',
 	'Class:SynchroAttribute/Attribute:sync_source_id' => 'Синхронизация данных',
-	'Class:SynchroAttribute/Attribute:attcode' => 'Код аттрибута',
+	'Class:SynchroAttribute/Attribute:attcode' => 'Код атрибута',
 	'Class:SynchroAttribute/Attribute:update' => 'Обновить',
 	'Class:SynchroAttribute/Attribute:reconcile' => 'Согласование',
 	'Class:SynchroAttribute/Attribute:update_policy' => 'Обновить политику',
@@ -724,7 +726,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SynchroAttExtKey/Attribute:reconciliation_attcode' => 'Аттрибут согласования',
 	'Class:SynchroAttLinkSet' => 'Synchro Attribute (Linkset)~~',
 	'Class:SynchroAttLinkSet/Attribute:row_separator' => 'Разделитель строк',
-	'Class:SynchroAttLinkSet/Attribute:attribute_separator' => 'Делитель аттрибутов',
+	'Class:SynchroAttLinkSet/Attribute:attribute_separator' => 'Разделитель атрибутов',
 	'Class:SynchroLog' => 'Synchr Log~~',
 	'Class:SynchroLog/Attribute:sync_source_id' => 'Синх.исходные данные',
 	'Class:SynchroLog/Attribute:start_date' => 'Стартовать в',

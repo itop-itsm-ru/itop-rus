@@ -20,15 +20,27 @@
  */
 
 //////////////////////////////////////////////////////////////////////
-// Relations
+// Relations for iTop version >= 2.2.0
+//////////////////////////////////////////////////////////////////////
+//
+
+Dict::Add('EN US', 'English', 'English', array(
+	'Relation:impacts/Description' => 'Элементы, на которые влияет',
+	'Relation:impacts/DownStream' => 'Влияет на...',
+	'Relation:impacts/UpStream' => 'Зависит от...',
+	'Relation:depends on/Description' => 'Элементы, от которых зависит',
+	'Relation:depends on/DownStream' => 'Зависит от...',
+	'Relation:depends on/UpStream' => 'Влияет на...',
+));
+
+//////////////////////////////////////////////////////////////////////
+// Relations for iTop version < 2.2.0
 //////////////////////////////////////////////////////////////////////
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Relation:impacts/Description' => 'Элементы, на которые влияет',
 	'Relation:impacts/VerbUp' => 'Влияние...',
 	'Relation:impacts/VerbDown' => 'Элементы, на которые влияет...',
-	'Relation:depends on/Description' => 'Элементы, от которых зависит',
 	'Relation:depends on/VerbUp' => 'Зависимость...',
 	'Relation:depends on/VerbDown' => 'Влияние...',
 ));
@@ -324,6 +336,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:FunctionalCI/Attribute:tickets_list+' => 'Связанные тикеты',
 	'Class:FunctionalCI/Attribute:finalclass' => 'Тип',
 	'Class:FunctionalCI/Attribute:finalclass+' => '',
+	'Class:FunctionalCI/Tab:OpenedTickets' => 'Активные тикеты',
 ));
 
 //
