@@ -41,6 +41,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI-ChangeManagementOverview-Last-7-days' => 'Количество изменений за 7 дней',
 	'UI-ChangeManagementOverview-ChangeByDomain-last-7-days' => 'Изменения по домену за 7 дней',
 	'UI-ChangeManagementOverview-ChangeByStatus-last-7-days' => 'Изменения по статусу за 7 дней',
+	'Tickets:Related:OpenChanges' => 'Открытые изменения',
+	'Tickets:Related:RecentChanges' => 'Недавнее изменение (72ч)',
+
 ));
 
 // Dictionnay conventions

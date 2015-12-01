@@ -53,6 +53,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:UserRequest:MyWorkOrders' => 'Назначенные мне наряды на работу',
 	'Menu:UserRequest:MyWorkOrders+' => 'Назначенные мне наряды на работу',
 	'Class:Problem:KnownProblemList' => 'Известные проблемы',
+	'Tickets:Related:OpenIncidents' => 'Открытые инциденты',
 ));
 
 // Dictionnay conventions

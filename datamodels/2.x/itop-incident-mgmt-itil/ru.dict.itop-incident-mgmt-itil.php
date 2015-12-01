@@ -45,6 +45,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI-IncidentManagementOverview-OpenIncidentByStatus' => 'Открытые инциденты по статусу',
 	'UI-IncidentManagementOverview-OpenIncidentByAgent' => 'Открытые инциденты по агенту',
 	'UI-IncidentManagementOverview-OpenIncidentByCustomer' => 'Открытые инциденты по заказчику',
+	'Tickets:Related:OpenIncidents' => 'Открытые инциденты',
 ));
 
 
