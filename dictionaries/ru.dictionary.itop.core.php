@@ -393,20 +393,20 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:Action' => 'Заказное действие',
-	'Class:Action+' => 'Действие определённое пользователем',
-	'Class:Action/Attribute:name' => 'Имя',
+	'Class:Action' => 'Действие',
+	'Class:Action+' => 'Действие, определённое пользователем',
+	'Class:Action/Attribute:name' => 'Название',
 	'Class:Action/Attribute:name+' => '',
 	'Class:Action/Attribute:description' => 'Описание',
 	'Class:Action/Attribute:description+' => '',
 	'Class:Action/Attribute:status' => 'Статус',
-	'Class:Action/Attribute:status+' => 'В производстве или ?',
-	'Class:Action/Attribute:status/Value:test' => 'Проходит проверку',
-	'Class:Action/Attribute:status/Value:test+' => 'Проходит проверку',
-	'Class:Action/Attribute:status/Value:enabled' => 'В производстве',
-	'Class:Action/Attribute:status/Value:enabled+' => 'В производстве',
-	'Class:Action/Attribute:status/Value:disabled' => 'Неактивно',
-	'Class:Action/Attribute:status/Value:disabled+' => 'Неактивно',
+	'Class:Action/Attribute:status+' => '',
+	'Class:Action/Attribute:status/Value:test' => 'Тест',
+	'Class:Action/Attribute:status/Value:test+' => 'Тест',
+	'Class:Action/Attribute:status/Value:enabled' => 'Включено',
+	'Class:Action/Attribute:status/Value:enabled+' => 'Включено',
+	'Class:Action/Attribute:status/Value:disabled' => 'Выключено',
+	'Class:Action/Attribute:status/Value:disabled+' => 'Выключено',
 	'Class:Action/Attribute:trigger_list' => 'Связанные триггеры',
 	'Class:Action/Attribute:trigger_list+' => 'Триггеры, которые запускают данное действие',
 	'Class:Action/Attribute:finalclass' => 'Тип',
@@ -419,7 +419,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ActionNotification' => 'Уведомление',
-	'Class:ActionNotification+' => 'Уведомление (выдержка)',
+	'Class:ActionNotification+' => 'Уведомление',
 ));
 
 //
@@ -429,8 +429,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ActionEmail' => 'Уведомление по email',
 	'Class:ActionEmail+' => '',
-	'Class:ActionEmail/Attribute:test_recipient' => 'Проверочный получатель',
-	'Class:ActionEmail/Attribute:test_recipient+' => 'Получатель, если уведомление в статусе "Проходит проверку"',
+	'Class:ActionEmail/Attribute:test_recipient' => 'Тестовый получатель',
+	'Class:ActionEmail/Attribute:test_recipient+' => 'Получатель, если уведомление в статусе "Тест"',
 	'Class:ActionEmail/Attribute:from' => 'От',
 	'Class:ActionEmail/Attribute:from+' => 'Будет отправлено в заголовке email',
 	'Class:ActionEmail/Attribute:reply_to' => 'Ответить на',
@@ -689,10 +689,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:CMDBChangeOpSetAttributeEncrypted/Attribute:prevstring' => 'Предыдущее значение~~',
 	'Class:CMDBChangeOpSetAttributeCaseLog' => 'Лог',
 	'Class:CMDBChangeOpSetAttributeCaseLog/Attribute:lastentry' => 'Посл.значение',
-	'Class:SynchroDataSource' => 'Синх.исходные данные',
-	'Class:SynchroDataSource/Attribute:status/Value:implementation' => 'Имплементация',
-	'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревший~~',
-	'Class:SynchroDataSource/Attribute:status/Value:production' => 'Производство~~',
+	
+	'Class:SynchroDataSource' => 'Источник синхронизации данных',
+	'Class:SynchroDataSource/Attribute:status/Value:implementation' => 'Внедрение',
+	'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревшее',
+	'Class:SynchroDataSource/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:SynchroDataSource/Attribute:scope_restriction' => 'Объем ограничений',
 	'Class:SynchroDataSource/Attribute:reconciliation_policy/Value:use_attributes' => 'Использовать атрибуты',
 	'Class:SynchroDataSource/Attribute:reconciliation_policy/Value:use_primary_key' => 'Использовать primary_key значение',
@@ -712,6 +713,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SynchroDataSource/Attribute:user_delete_policy/Value:administrators' => 'Только администраторы~~',
 	'Class:SynchroDataSource/Attribute:user_delete_policy/Value:everybody' => 'Каждый может удалить объект',
 	'Class:SynchroDataSource/Attribute:user_delete_policy/Value:nobody' => 'Никто',
+
 	'Class:SynchroAttribute' => 'Синх.характеристики~~',
 	'Class:SynchroAttribute/Attribute:sync_source_id' => 'Синхронизация данных',
 	'Class:SynchroAttribute/Attribute:attcode' => 'Код атрибута',
