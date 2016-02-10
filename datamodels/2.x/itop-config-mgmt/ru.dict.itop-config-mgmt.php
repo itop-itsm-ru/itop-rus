@@ -1212,7 +1212,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:lnkDocumentToLicence' => 'Документ/Лицензия',
+	'Class:lnkDocumentToLicence' => 'Связь Документ/Лицензия',
 	'Class:lnkDocumentToLicence+' => '',
 	'Class:lnkDocumentToLicence/Attribute:licence_id' => 'Лицензия',
 	'Class:lnkDocumentToLicence/Attribute:licence_id+' => '',
