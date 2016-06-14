@@ -40,7 +40,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:Incident:UnassignedIncidents+' => 'Неназначенные инциденты',
 	'Menu:Incident:HelpdeskIncidents' => 'Инциденты, назначенные на 2-ю линию',
 	'Menu:Incident:HelpdeskIncidents+' => 'Инциденты, назначенные на 2-ю линию',
-	'UI-IncidentManagementOverview-IncidentByPriority-last-14-days' => 'Инциденты по проиритету за 14 дней',
+	'UI-IncidentManagementOverview-IncidentByPriority-last-14-days' => 'Инциденты по приоритету за 14 дней',
 	'UI-IncidentManagementOverview-Last-14-days' => 'Количество инцидентов на 14 дней',
 	'UI-IncidentManagementOverview-OpenIncidentByStatus' => 'Открытые инциденты по статусу',
 	'UI-IncidentManagementOverview-OpenIncidentByAgent' => 'Открытые инциденты по агенту',
