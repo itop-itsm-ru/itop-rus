@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -37,7 +37,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:UserExternal' => 'Внешний пользователь',
 	'Class:UserExternal+' => 'Пользователь, аутентифицированный вне iTop',
 ));
-
-
-
-?>

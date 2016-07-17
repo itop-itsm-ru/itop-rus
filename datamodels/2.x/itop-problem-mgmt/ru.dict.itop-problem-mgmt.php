@@ -129,5 +129,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Problem/Stimulus:ev_close' => 'Закрыть',
 	'Class:Problem/Stimulus:ev_close+' => '',
 ));
-
-?>

@@ -288,5 +288,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:LanguageChangedTo_Lang' => 'Язык изменен на',
 	'Portal:ChooseYourFavoriteLanguage' => 'Выберите язык',
 ));
-
-?>

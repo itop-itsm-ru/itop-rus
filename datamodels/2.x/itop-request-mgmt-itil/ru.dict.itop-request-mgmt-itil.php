@@ -258,7 +258,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:UserRequest/Stimulus:ev_wait_for_approval+' => '',
 	'Class:UserRequest/Error:CannotAssignParentRequestIdToSelf' => 'Cannot assign the Parent request to the request itself',
 ));
-
-
-
-?>

@@ -689,7 +689,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:CMDBChangeOpSetAttributeEncrypted/Attribute:prevstring' => 'Предыдущее значение~~',
 	'Class:CMDBChangeOpSetAttributeCaseLog' => 'Лог',
 	'Class:CMDBChangeOpSetAttributeCaseLog/Attribute:lastentry' => 'Посл.значение',
-	
+
 	'Class:SynchroDataSource' => 'Источник синхронизации данных',
 	'Class:SynchroDataSource/Attribute:status/Value:implementation' => 'Внедрение',
 	'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревшее',
@@ -785,5 +785,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Duration_Hours_Minutes_Seconds' => '%1$d ч %2$d мин %3$d с',
 	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$s д %2$d ч %3$d мин %4$d с',
 ));
-
-?>

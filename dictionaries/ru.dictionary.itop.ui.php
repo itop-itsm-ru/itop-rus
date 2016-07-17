@@ -41,7 +41,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditCategory/Attribute:name+' => 'Краткое название для этой категории',
 	'Class:AuditCategory/Attribute:description' => 'Описание категории аудита',
 	'Class:AuditCategory/Attribute:description+' => 'Полное описание категории аудита',
-	'Class:AuditCategory/Attribute:definition_set' => 'Набор определений',
+	'Class:AuditCategory/Attribute:definition_set' => 'Набор объектов',
 	'Class:AuditCategory/Attribute:definition_set+' => 'OQL выражение, определяющее набор объектов для проверки',
 	'Class:AuditCategory/Attribute:rules_list' => 'Правила аудита',
 	'Class:AuditCategory/Attribute:rules_list+' => 'Правила аудита для этой категории',
@@ -58,8 +58,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditRule/Attribute:name+' => 'Краткое название этого правила',
 	'Class:AuditRule/Attribute:description' => 'Описание правила аудита',
 	'Class:AuditRule/Attribute:description+' => 'Полное описание этого правила аудита',
-	'Class:AuditRule/Attribute:query' => 'Запрос на исполнение',
-	'Class:AuditRule/Attribute:query+' => 'OQL выражение на исполнение',
+	'Class:AuditRule/Attribute:query' => 'Запрос для выполнения',
+	'Class:AuditRule/Attribute:query+' => 'OQL выражение, выполняющее проверку набора объектов категории аудита',
 	'Class:AuditRule/Attribute:valid_flag' => 'Действительные объекты?',
 	'Class:AuditRule/Attribute:valid_flag+' => 'Истина, если правило возвращает действительный объект, иначе ложь',
 	'Class:AuditRule/Attribute:valid_flag/Value:true' => 'истина',
@@ -67,9 +67,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditRule/Attribute:valid_flag/Value:false' => 'ложь',
 	'Class:AuditRule/Attribute:valid_flag/Value:false+' => 'ложь',
 	'Class:AuditRule/Attribute:category_id' => 'Категория',
-	'Class:AuditRule/Attribute:category_id+' => 'Категория этого правила',
+	'Class:AuditRule/Attribute:category_id+' => 'Категория для этого правила',
 	'Class:AuditRule/Attribute:category_name' => 'Категория',
-	'Class:AuditRule/Attribute:category_name+' => 'Название категории для этого правила',
+	'Class:AuditRule/Attribute:category_name+' => 'Категория для этого правила',
 ));
 
 //
@@ -1247,4 +1247,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'ExcelExport:PreparingExport' => 'Подготовка к экспорту...',
 	'ExcelExport:Statistics' => 'Статистика',
 ));
-?>

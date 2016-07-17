@@ -1875,4 +1875,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'Class:Subnet/Tab:FreeIPs-explain' => 'Here is an extract of 10 free IP addresses',
 'Class:Document:PreviewTab' => 'Preview',
 ));
-?>

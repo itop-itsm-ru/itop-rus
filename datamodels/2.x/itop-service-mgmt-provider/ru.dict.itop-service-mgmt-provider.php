@@ -2,13 +2,13 @@
 
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
- * 
+ *
  * @author   Vladimir Kunin <v.b.kunin@gmail.com>
  * @license   http://opensource.org/licenses/AGPL-3.0
  *
- * 
+ *
  * Инструкция по установке
- * 
+ *
  * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
  * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
  * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
@@ -248,6 +248,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:organization_name+' => '',
 	'Class:Service/Attribute:description' => 'Описание',
 	'Class:Service/Attribute:description+' => '',
+	'Class:Service/Attribute:servicefamily_id' => 'Пакет услуг',
+	'Class:Service/Attribute:servicefamily_id+' => '',
+	'Class:Service/Attribute:servicefamily_name' => 'Пакет услуг',
+	'Class:Service/Attribute:servicefamily_name+' => '',
 	'Class:Service/Attribute:documents_list' => 'Документы',
 	'Class:Service/Attribute:documents_list+' => 'Связанные документы',
 	'Class:Service/Attribute:contacts_list' => 'Контакты',
@@ -506,5 +510,3 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkDeliveryModelToContact/Attribute:role_name' => 'Роль',
 	'Class:lnkDeliveryModelToContact/Attribute:role_name+' => '',
 ));
-
-?>
