@@ -41,7 +41,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditRule/Attribute:query' => 'Запрос для выполнения',
 	'Class:AuditRule/Attribute:query+' => 'OQL выражение, выполняющее проверку набора объектов категории аудита',
 	'Class:AuditRule/Attribute:valid_flag' => 'Валидные объекты?',
-	'Class:AuditRule/Attribute:valid_flag+' => 'Выберите \"Истина\", если правило возвращает объекты, успешно прошедшие проверку, иначе выберите \"Ложь\".',
+	'Class:AuditRule/Attribute:valid_flag+' => 'Выберите \'Истина\', если правило возвращает объекты, успешно прошедшие проверку, иначе выберите \'Ложь\'.',
 	'Class:AuditRule/Attribute:valid_flag/Value:true' => 'Истина',
 	'Class:AuditRule/Attribute:valid_flag/Value:true+' => 'Возвращаемые объекты считаются прошедшими проверку',
 	'Class:AuditRule/Attribute:valid_flag/Value:false' => 'Ложь',
