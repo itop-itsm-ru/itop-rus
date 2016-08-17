@@ -3,32 +3,12 @@
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
- * @author   Vladimir Kunin <v.b.kunin@gmail.com>
- * @license   http://opensource.org/licenses/AGPL-3.0
- *
- *
- * Инструкция по установке
- *
- * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
- * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
- * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
- *  3. Перейдите по адресу "http://адрес/вашего/itop/setup", при этом файл "путь/до/вашего/itop/conf/production/config-itop.php" должен быть доступен для записи.
- *  4. На второй странице установщика выберите "Upgrade an existing iTop instance" и следуйте дальнейшим инструкциям установщика.
- *
- * Ответы на вопросы по установке и использованию переводов, а также на любые другие вопросы по iTop всегда можно получить на сайте сообщества iTop по-русски http://community.itop-itsm.ru.
+ * @author      Vladimir Kunin <v.b.kunin@gmail.com>
+ * @link        http://community.itop-itsm.ru  iTop Russian Community
+ * @link        https://github.com/itop-itsm-ru/itop-rus
+ * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-
-
-//////////////////////////////////////////////////////////////////////
-// Classes in 'gui'
-//////////////////////////////////////////////////////////////////////
-//
-
-//////////////////////////////////////////////////////////////////////
-// Classes in 'application'
-//////////////////////////////////////////////////////////////////////
-//
 
 //
 // Class: AuditCategory
@@ -60,12 +40,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditRule/Attribute:description+' => 'Полное описание этого правила аудита',
 	'Class:AuditRule/Attribute:query' => 'Запрос для выполнения',
 	'Class:AuditRule/Attribute:query+' => 'OQL выражение, выполняющее проверку набора объектов категории аудита',
-	'Class:AuditRule/Attribute:valid_flag' => 'Действительные объекты?',
-	'Class:AuditRule/Attribute:valid_flag+' => 'Истина, если правило возвращает действительный объект, иначе ложь',
-	'Class:AuditRule/Attribute:valid_flag/Value:true' => 'истина',
-	'Class:AuditRule/Attribute:valid_flag/Value:true+' => 'истина',
-	'Class:AuditRule/Attribute:valid_flag/Value:false' => 'ложь',
-	'Class:AuditRule/Attribute:valid_flag/Value:false+' => 'ложь',
+	'Class:AuditRule/Attribute:valid_flag' => 'Валидные объекты?',
+	'Class:AuditRule/Attribute:valid_flag+' => 'Выберите "Истина", если правило возвращает объекты, успешно прошедшие проверку, иначе выберите "Ложь".',
+	'Class:AuditRule/Attribute:valid_flag/Value:true' => 'Истина',
+	'Class:AuditRule/Attribute:valid_flag/Value:true+' => 'Возвращаемые объекты считаются прошедшими проверку',
+	'Class:AuditRule/Attribute:valid_flag/Value:false' => 'Ложь',
+	'Class:AuditRule/Attribute:valid_flag/Value:false+' => 'Возвращаемые объекты считаются НЕ прошедшими проверку',
 	'Class:AuditRule/Attribute:category_id' => 'Категория',
 	'Class:AuditRule/Attribute:category_id+' => 'Категория для этого правила',
 	'Class:AuditRule/Attribute:category_name' => 'Категория',
@@ -123,11 +103,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:User/Attribute:language/Value:FR FR' => 'Французский',
 	'Class:User/Attribute:language/Value:FR FR+' => 'Французский (Франция)',
 	'Class:User/Attribute:profile_list' => 'Профили',
-	'Class:User/Attribute:profile_list+' => 'Роли, предоставляющие права этому пользователю',
+	'Class:User/Attribute:profile_list+' => 'Профили, предоставляющие права этому пользователю',
 	'Class:User/Attribute:allowed_org_list' => 'Разрешённые организации',
 	'Class:User/Attribute:allowed_org_list+' => 'Пользователь может видеть данные только указанных ниже организации. Оставьте поле пустым для доступа ко всем данным.',
+	'Class:User/Attribute:status' => 'Статус',
+	'Class:User/Attribute:status+' => 'Учетная запись пользователя включена или отключена.',
+	'Class:User/Attribute:status/Value:enabled' => 'Включен',
+	'Class:User/Attribute:status/Value:disabled' => 'Отключен',
 	'Class:User/Error:LoginMustBeUnique' => 'Логин должен быть уникальным - "%1s" уже используется.',
 	'Class:User/Error:AtLeastOneProfileIsNeeded' => 'Как минимум один профиль должен быть назначен данному пользователю.',
+
+	'Class:UserInternal' => 'Внутренний пользователь',
+	'Class:UserInternal+' => 'Учетная запись создана внутри iTop',
 ));
 
 //
@@ -343,7 +330,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:WelcomeMenu:AllConfigItems' => 'Кофигурационные единицы: %1$d',
 	'UI:WelcomeMenu:MyIncidents' => 'Инциденты назначенные на меня',
 	'UI:AllOrganizations' => ' Все организации ',
-	'UI:YourSearch' => 'Ваш поиск',
+	'UI:YourSearch' => 'Поиск',
 	'UI:LoggedAsMessage' => 'Вы вошли как %1$s',
 	'UI:LoggedAsMessage+Admin' => 'Вы вошли как %1$s (Администратор)',
 	'UI:Button:Logoff' => 'Выход',
@@ -372,8 +359,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Button:Create' => ' Создать ',
 	'UI:Button:Delete' => ' Удалить ! ',
 	'UI:Button:Rename' => ' Переименовать...',
-	'UI:Button:ChangePassword' => ' Сменить пароль ',
+	'UI:Button:ChangePassword' => ' Изменить пароль ',
 	'UI:Button:ResetPassword' => ' Сбросить пароль ',
+	'UI:Button:Insert' => 'Вставить',
 
 	'UI:SearchToggle' => 'Поиск',
 	'UI:ClickToCreateNew' => 'Создать: %1$s',
@@ -563,13 +551,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:CSVImport:CommentsAndHeader' => 'Коментарии и заголовок',
 	'UI:CSVImport:SelectClass' => 'Выбор класса импорта:',
 	'UI:CSVImport:AdvancedMode' => 'Расширенный режим',
-	'UI:CSVImport:AdvancedMode+' => 'In advanced mode the "id" (primary key) of the objects can be used to update and rename objects.' .
-									'However the column "id" (if present) can only be used as a search criteria and can not be combined with any other search criteria.',
-	'UI:CSVImport:SelectAClassFirst' => 'Для настройки рапределения, в первую очередь выберите класс.',
+	'UI:CSVImport:AdvancedMode+' => 'In advanced mode the "id" (primary key) of the objects can be used to update and rename objects. However the column "id" (if present) can only be used as a search criteria and can not be combined with any other search criteria.',
+	'UI:CSVImport:SelectAClassFirst' => 'Выберите класс импортируемых объетов для настройки распределения полей',
 	'UI:CSVImport:HeaderFields' => 'Поля',
 	'UI:CSVImport:HeaderMappings' => 'Распределение',
 	'UI:CSVImport:HeaderSearch' => 'Поиск?',
 	'UI:CSVImport:AlertIncompleteMapping' => 'Необходимо выбрать распределение для каждой ячейки.',
+	'UI:CSVImport:AlertMultipleMapping' => 'Please make sure that a target field is mapped only once.',
 	'UI:CSVImport:AlertNoSearchCriteria' => 'Необходимо выбрать, по крайней мере один критерий',
 	'UI:CSVImport:Encoding' => 'Кодировка символов',
 	'UI:UniversalSearchTitle' => 'iTop - Универсальный поиск',
@@ -643,6 +631,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:RunQuery:SerializedFilter' => 'Сериализованные фильты: ',
 	'UI:RunQuery:Error' => 'Ошибка при выполнении запроса: %1$s',
 	'UI:Query:UrlForExcel' => 'URL to use for MS-Excel web queries~~',
+	'UI:Query:UrlV1' => 'The list of fields has been left unspecified. The page <em>export-V2.php</em> cannot be invoked without this information. Therefore, the URL suggested here below points to the legacy page: <em>export.php</em>. This legacy version of the export has the following limitation: the list of exported fields may vary depending on the output format and the data model of iTop. <br/>Should you want to garantee that the list of exported columns will remain stable on the long run, then you must specify a value for the attribute "Fields" and use the page <em>export-V2.php</em>.',
 	'UI:Schema:Title' => 'iTop схема объектов',
 	'UI:Schema:CategoryMenuItem' => 'Категория <b>%1$s</b>',
 	'UI:Schema:Relationships' => 'Отношения',
@@ -714,7 +703,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:ManageObjectsOf_Class_LinkedWith_Class_Instance' => 'Управление %1$s объектами связанными с %2$s: %3$s',
 	'UI:AddLinkedObjectsOf_Class' => 'Добавить %1$s...',
 	'UI:RemoveLinkedObjectsOf_Class' => 'Удалить выбранные объекты',
-	'UI:Message:EmptyList:UseAdd' => 'Список пуст, используте кнопку "Добавить ...", для добавения новых элементов.',
+	'UI:Message:EmptyList:UseAdd' => 'Список пуст, используте кнопку "Добавить ..." для добавления новых элементов.',
 	'UI:Message:EmptyList:UseSearchForm' => 'Используйте форму поиска выше для поиска объектов, которые будут добавлены.',
 	'UI:Wizard:FinalStepTitle' => 'Последний шаг: подтверждение',
 	'UI:Title:DeletionOf_Object' => 'Удаление %1$s',
@@ -760,7 +749,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:ErrorPageTitle' => 'iTop - Ошибка',
 	'UI:ObjectDoesNotExist' => 'Извните, этот объект не существует (или вы не можете его видеть).',
 	'UI:SearchResultsPageTitle' => 'iTop - Результаты поиска',
+	'UI:SearchResultsTitle' => 'Результаты поиска',
+	'UI:SearchResultsTitle+' => 'Результаты полнотекстового поиска',
 	'UI:Search:NoSearch' => 'Ничего не найдено',
+	'UI:Search:NeedleTooShort' => 'The search string "%1$s" is too short. Please type at least %2$d characters.',
+	'UI:Search:Ongoing' => 'Searching for "%1$s"',
+	'UI:Search:Enlarge' => 'Broaden the search',
 	'UI:FullTextSearchTitle_Text' => 'Результаты для "%1$s":',
 	'UI:Search:Count_ObjectsOf_Class_Found' => '%1$d объект(ы) класса %2$s найдено.',
 	'UI:Search:NoObjectFound' => 'Объекты не найдены.',
@@ -781,7 +775,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:ObjectCouldNotBeWritten' => 'Объект не может быть записан: %1$s',
 	'UI:PageTitle:FatalError' => 'iTop - Критическая ошибка',
 	'UI:SystemIntrusion' => 'Доступ запрещён. Вы пытаетесь выполнить неразрешённую операцию.',
-	'UI:FatalErrorMessage' => 'Фатальная ошибка, iTop не может продолжать.',
+	'UI:FatalErrorMessage' => 'Критическая ошибка, iTop не может продолжать работу.',
 	'UI:Error_Details' => 'Ошибка: %1$s.',
 
 	'UI:PageTitle:ClassProjections'	=> 'iTop управление пользователями - проектирование классов',
@@ -824,8 +818,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:UserManagement:LinkBetween_User_And_Profile' => 'Связь между %1$s и %2$s',
 	'UI:UserManagement:LinkBetween_User_And_Org' => 'Связь между %1$s и %2$s',
 
-	'Menu:AdminTools' => 'Инструменты админа',
-	'Menu:AdminTools+' => 'Административные инструменты',
+	'Menu:AdminTools' => 'Инструменты администратора',
+	'Menu:AdminTools+' => 'Инструменты администратора',
 	'Menu:AdminTools?' => 'Инструменты доступны только для пользователей, имеющих профиль администратора',
 
 	'UI:ChangeManagementMenu' => 'Управление изменениями',
@@ -842,28 +836,28 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI-ConfigurationManagementMenu-InfraByType' => 'Объекты инфраструктуры по типу',
 	'UI-ConfigurationManagementMenu-InfraByStatus' => 'Объекты инфраструктуры по статусу',
 
-'UI:ConfigMgmtMenuOverview:Title' => 'Панель управления конфигурациями',
-'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => 'Элементы конфигурации по статусу',
-'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => 'Элементы конфигурации по типу',
+	'UI:ConfigMgmtMenuOverview:Title' => 'Панель управления конфигурациями',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => 'Элементы конфигурации по статусу',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => 'Элементы конфигурации по типу',
 
-'UI:RequestMgmtMenuOverview:Title' => 'Панель управления запросами',
-'UI-RequestManagementOverview-RequestByService' => 'Пользовательские запросы по сервису',
-'UI-RequestManagementOverview-RequestByPriority' => 'Пользовательские запросы по приоритету',
-'UI-RequestManagementOverview-RequestUnassigned' => 'Пользовательские запросы не назначенные не на один агент',
+	'UI:RequestMgmtMenuOverview:Title' => 'Панель управления запросами',
+	'UI-RequestManagementOverview-RequestByService' => 'Пользовательские запросы по сервису',
+	'UI-RequestManagementOverview-RequestByPriority' => 'Пользовательские запросы по приоритету',
+	'UI-RequestManagementOverview-RequestUnassigned' => 'Пользовательские запросы не назначенные не на один агент',
 
-'UI:IncidentMgmtMenuOverview:Title' => 'Панель управления инцидентами',
-'UI-IncidentManagementOverview-IncidentByService' => 'Инциденты по сервису',
-'UI-IncidentManagementOverview-IncidentByPriority' => 'Инциденты по приоритету',
-'UI-IncidentManagementOverview-IncidentUnassigned' => 'Инциденты не назначенные не на один агент',
+	'UI:IncidentMgmtMenuOverview:Title' => 'Панель управления инцидентами',
+	'UI-IncidentManagementOverview-IncidentByService' => 'Инциденты по сервису',
+	'UI-IncidentManagementOverview-IncidentByPriority' => 'Инциденты по приоритету',
+	'UI-IncidentManagementOverview-IncidentUnassigned' => 'Инциденты не назначенные не на один агент',
 
-'UI:ChangeMgmtMenuOverview:Title' => 'Панель управления изменениями',
-'UI-ChangeManagementOverview-ChangeByType' => 'Изменения по типу',
-'UI-ChangeManagementOverview-ChangeUnassigned' => 'Изменения не назначенные не на один агент',
-'UI-ChangeManagementOverview-ChangeWithOutage' => 'Отключения в связи с изменениями',
+	'UI:ChangeMgmtMenuOverview:Title' => 'Панель управления изменениями',
+	'UI-ChangeManagementOverview-ChangeByType' => 'Изменения по типу',
+	'UI-ChangeManagementOverview-ChangeUnassigned' => 'Изменения не назначенные не на один агент',
+	'UI-ChangeManagementOverview-ChangeWithOutage' => 'Отключения в связи с изменениями',
 
-'UI:ServiceMgmtMenuOverview:Title' => 'Панель управления сервисами',
-'UI-ServiceManagementOverview-CustomerContractToRenew' => 'Договора с клиентами, которые будут обновлены в течении 30 дней',
-'UI-ServiceManagementOverview-ProviderContractToRenew' => 'Договора с провайдерами, которые будут обновлены в течении 30 дней',
+	'UI:ServiceMgmtMenuOverview:Title' => 'Панель управления сервисами',
+	'UI-ServiceManagementOverview-CustomerContractToRenew' => 'Договоры с клиентами, которые будут обновлены в течении 30 дней',
+	'UI-ServiceManagementOverview-ProviderContractToRenew' => 'Договоры с провайдерами, которые будут обновлены в течении 30 дней',
 
 	'UI:ContactsMenu' => 'Договора',
 	'UI:ContactsMenu+' => 'Договора',
@@ -908,36 +902,32 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:NotificationsMenu:Actions' => 'Действия',
 	'UI:NotificationsMenu:AvailableActions' => 'Доступные действия',
 
-	'Menu:AuditCategories' => 'Категории аудита',
-	'Menu:AuditCategories+' => 'Категории аудита',
-	'Menu:Notifications:Title' => 'Категории аудита',
+	'Menu:AuditCategories' => 'Категории аудита', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:AuditCategories+' => 'Категории аудита', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:Notifications:Title' => 'Категории аудита', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:RunQueriesMenu' => 'Выполнение запросов',
-	'Menu:RunQueriesMenu+' => 'Выполнение любых запросов',
+	'Menu:RunQueriesMenu' => 'Выполнение запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:RunQueriesMenu+' => 'Выполнение любых запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:QueryMenu' => 'Книга запросов',
-	'Menu:QueryMenu+' => 'Книга запросов',
+	'Menu:QueryMenu' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:QueryMenu+' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:DataAdministration' => 'Администрирование данных',
-	'Menu:DataAdministration+' => 'Администрирование данных',
+	'Menu:DataAdministration' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:DataAdministration+' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:UniversalSearchMenu' => 'Универсальный поиск',
-	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...',
+	'Menu:UniversalSearchMenu' => 'Универсальный поиск', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:ApplicationLogMenu' => 'Логирование приложения',
-	'Menu:ApplicationLogMenu+' => 'Логирование приложения',
-	'Menu:ApplicationLogMenu:Title' => 'Логирование приложения',
+	'Menu:UserManagementMenu' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserManagementMenu+' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:UserManagementMenu' => 'Управление пользователями',
-	'Menu:UserManagementMenu+' => 'Управление пользователями',
+	'Menu:ProfilesMenu' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:ProfilesMenu+' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:ProfilesMenu:Title' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'Menu:ProfilesMenu' => 'Профили пользователей',
-	'Menu:ProfilesMenu+' => 'Профили пользователей',
-	'Menu:ProfilesMenu:Title' => 'Профили пользователей',
-
-	'Menu:UserAccountsMenu' => 'Учетные записи пользователей',
-	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей',
-	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей',
+	'Menu:UserAccountsMenu' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
 
 	'UI:iTopVersion:Short' => 'iTop версия %1$s',
 	'UI:iTopVersion:Long' => 'iTop версия %1$s-%2$s основан на %3$s',
@@ -961,7 +951,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:RelationshipList' => 'Список',
 	'UI:RelationGroups' => 'Группы',
 	'UI:OperationCancelled' => 'Операция отменена',
-	'UI:ElementsDisplayed' => 'Фильтрация',
+	'UI:ElementsDisplayed' => 'Фильтр',
 
 	'UI:RelationGroupNumber_N' => 'Группа #%1$d',
 	'UI:Relation:ExportAsPDF' => 'Экспорт в PDF...',
@@ -1000,6 +990,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:ShowOngoing' => 'Показать открытые запросы',
 	'Portal:ShowClosed' => 'Показать закрытые запросы',
 	'Portal:CreateNewRequest' => 'Создать новый запрос',
+	'Portal:CreateNewRequestItil' => 'Создать новый запрос',
+	'Portal:CreateNewIncidentItil' => 'Создать новый инцидент',
 	'Portal:ChangeMyPassword' => 'Изменить пароль',
 	'Portal:Disconnect' => 'Выйти',
 	'Portal:OpenRequests' => 'Мои открытые запросы',
@@ -1023,6 +1015,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:AddAttachment' => 'Добавить вложения',
 	'Portal:RemoveAttachment' => ' Удалить вложения',
 	'Portal:Attachment_No_To_Ticket_Name' => 'Вложение #%1$d to %2$s (%3$s)~~',
+	'Portal:SelectRequestTemplate' => 'Select a template for %1$s~~',
 	'Enum:Undefined' => 'Неопределён',
 	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s Days %2$s час %3$s мин %4$s сек~~',
 	'UI:ModifyAllPageTitle' => 'Изменить все',
@@ -1062,8 +1055,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:HierarchyOf_Class' => 'Иерархия по: %1$s~~',
 	'UI:Preferences' => 'Дополнительно...~~',
 	'UI:FavoriteOrganizations' => 'Избранные организации',
-	'UI:FavoriteOrganizations+' => 'Check in the list below the organizations that you want to see in the drop-down menu for a quick access. '.
-								   'Note that this is not a security setting, objects from any organization are still visible and can be accessed by selecting "All Organizations" in the drop-down list.',
+	'UI:FavoriteOrganizations+' => 'Check in the list below the organizations that you want to see in the drop-down menu for a quick access. Note that this is not a security setting, objects from any organization are still visible and can be accessed by selecting "All Organizations" in the drop-down list.',
 	'UI:FavoriteLanguage' => 'Язык пользовательского интерфейса',
 	'UI:Favorites:SelectYourLanguage' => 'Выберите Ваш язык',
 	'UI:FavoriteOtherSettings' => 'Другие настройки',
@@ -1075,6 +1067,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:OrderByHint_Values' => 'Sort order: %1$s~~',
 	'UI:Menu:AddToDashboard' => 'Добавить на дашборд...',
 	'UI:Button:Refresh' => 'Обновить',
+	'UI:Button:GoPrint' => 'Print...',
+	'UI:ExplainPrintable' => 'Click onto the %1$s icon to hide items from the print.<br/>Use the "print preview" feature of your browser to preview before printing.<br/>Note: this header and the other tuning controls will not be printed.',
 
 	'UI:ConfigureThisList' => 'Настроить список...',
 	'UI:ListConfigurationTitle' => 'Настройка списка',
@@ -1194,6 +1188,28 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Month-11' => 'Ноябрь',
 	'Month-12' => 'Декабрь',
 
+	// Short version for the DatePicker
+	'DayOfWeek-Sunday-Min' => 'Вс',
+	'DayOfWeek-Monday-Min' => 'Пн',
+	'DayOfWeek-Tuesday-Min' => 'Вт',
+	'DayOfWeek-Wednesday-Min' => 'Ср',
+	'DayOfWeek-Thursday-Min' => 'Чт',
+	'DayOfWeek-Friday-Min' => 'Пт',
+	'DayOfWeek-Saturday-Min' => 'Сб',
+	'Month-01-Short' => 'Янв.',
+	'Month-02-Short' => 'Фев.',
+	'Month-03-Short' => 'Мар.',
+	'Month-04-Short' => 'Апр.',
+	'Month-05-Short' => 'Май',
+	'Month-06-Short' => 'Июн.',
+	'Month-07-Short' => 'Июл.',
+	'Month-08-Short' => 'Авг.',
+	'Month-09-Short' => 'Сен.',
+	'Month-10-Short' => 'Окт.',
+	'Month-11-Short' => 'Ноя.',
+	'Month-12-Short' => 'Дек.',
+	'Calendar-FirstDayOfWeek' => '1', // 0 = Sunday, 1 = Monday, etc...
+
 	'UI:Menu:ShortcutList' => 'Добавить в избранное...',
 	'UI:ShortcutRenameDlg:Title' => 'Переименовать ссылку',
 	'UI:ShortcutListDlg:Title' => 'Добавить в избранное ссылку на список',
@@ -1211,8 +1227,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ShortcutOQL/Attribute:auto_reload/Value:none' => 'Disabled',
 	'Class:ShortcutOQL/Attribute:auto_reload/Value:custom' => 'Custom rate',
 	'Class:ShortcutOQL/Attribute:auto_reload_sec' => 'Automatic refresh interval (seconds)',
-	'Class:ShortcutOQL/Attribute:auto_reload_sec+' => 'The minimum allowed is 5 seconds',
-
+	'Class:ShortcutOQL/Attribute:auto_reload_sec/tip' => 'The minimum allowed is %1$d seconds',
 	'UI:FillAllMandatoryFields' => 'Пожалуйста, заполните все обязательные поля.',
 	'UI:ValueMustBeSet' => 'Пожалуйста, укажите значение',
 	'UI:ValueMustBeChanged' => 'Пожалуйста, измените значение',
@@ -1224,6 +1239,25 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:CSVImportCreated_items' => 'Created: %1$d',
 	'UI:CSVImportModified_items' => 'Modified: %1$d',
 	'UI:CSVImportUnchanged_items' => 'Unchanged: %1$d',
+	'UI:CSVImport:DateAndTimeFormats' => 'Date and time format',
+	'UI:CSVImport:DefaultDateTimeFormat_Format_Example' => 'Default format: %1$s (e.g. %2$s)',
+	'UI:CSVImport:CustomDateTimeFormat' => 'Custom format: %1$s',
+	'UI:CSVImport:CustomDateTimeFormatTooltip' => 'Available placeholders:<table>
+<tr><td>Y</td><td>year (4 digits, e.g. 2016)</td></tr>
+<tr><td>y</td><td>year (2 digits, e.g. 16 for 2016)</td></tr>
+<tr><td>m</td><td>month (2 digits, e.g. 01..12)</td></tr>
+<tr><td>n</td><td>month (1 or 2 digits no leading zero, e.g. 1..12)</td></tr>
+<tr><td>d</td><td>day (2 digits, e.g. 01..31)</td></tr>
+<tr><td>j</td><td>day (1 or 2 digits no leading zero, e.g. 1..31)</td></tr>
+<tr><td>H</td><td>hour (24 hour, 2 digits, e.g. 00..23)</td></tr>
+<tr><td>h</td><td>hour (12 hour, 2 digits, e.g. 01..12)</td></tr>
+<tr><td>G</td><td>hour (24 hour, 1 or 2 digits no leading zero, e.g. 0..23)</td></tr>
+<tr><td>g</td><td>hour (12 hour, 1 or 2 digits no leading zero, e.g. 1..12)</td></tr>
+<tr><td>a</td><td>hour, am or pm (lowercase)</td></tr>
+<tr><td>A</td><td>hour, AM or PM (uppercase)</td></tr>
+<tr><td>i</td><td>minutes (2 digits, e.g. 00..59)</td></tr>
+<tr><td>s</td><td>seconds (2 digits, e.g. 00..59)</td></tr>
+</table>',
 
 	'UI:Button:Remove' => 'Удалить',
 	'UI:AddAnExisting_Class' => 'Добавить объекты класса %1$s...',
@@ -1236,6 +1270,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:About:Licenses' => 'Лицензии',
 	'UI:About:Modules' => 'Установленные модули',
 
+	'UI:DisconnectedDlgMessage' => 'Вы отключены. Вы должны идентифицировать себя для продолжения использования приложения.',
+	'UI:DisconnectedDlgTitle' => 'Внимание!',
+	'UI:LoginAgain' => 'Войти снова',
+	'UI:StayOnThePage' => 'Остаться на этой странице',
+
 	'ExcelExporter:ExportMenu' => 'Экспорт в Excel...',
 	'ExcelExporter:ExportDialogTitle' => 'Экспорт в Excel',
 	'ExcelExporter:ExportButton' => 'Экспорт',
@@ -1246,4 +1285,27 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'ExcelExport:AutoDownload' => 'Начать загрузку файла автоматически по готовности',
 	'ExcelExport:PreparingExport' => 'Подготовка к экспорту...',
 	'ExcelExport:Statistics' => 'Статистика',
+	'portal:legacy_portal' => 'Пользовательский портал',
+	'portal:backoffice' => 'iTop Back-Office интерфейс',
+
+	'UI:CurrentObjectIsLockedBy_User' => 'Объект заблокирован, поскольку в настоящее время редактируется пользователем %1$s.',
+	'UI:CurrentObjectIsLockedBy_User_Explanation' => 'Объект в настоящее время редактируется пользователем %1$s. Ваши изменения не будут сохранены, поскольку они могут быть перезаписаны.',
+	'UI:CurrentObjectLockExpired' => 'Срок блокировки для предотвращения одновременного изменения объекта истек.',
+	'UI:CurrentObjectLockExpired_Explanation' => 'Срок блокировки для предотвращения одновременного изменения объекта истек. Вы больше не можете сохранить свои изменения, поскольку другим пользователям теперь разрешено изменять данный объект.',
+	'UI:ConcurrentLockKilled' => 'Блокировка для предотвращения изменений текущего объекта снята.',
+	'UI:Menu:KillConcurrentLock' => 'Снять блокировку одноврем. измен.!',
+
+	'UI:Menu:ExportPDF' => 'Экспорт в PDF...',
+	'UI:Menu:PrintableVersion' => 'Версия для печати',
+
+	'UI:BrowseInlineImages' => 'Обзор...',
+	'UI:UploadInlineImageLegend' => 'Загрузить новое изображение',
+	'UI:SelectInlineImageToUpload' => 'Выберите изображение для загрузки',
+	'UI:AvailableInlineImagesLegend' => 'Доступные изображения',
+	'UI:NoInlineImage' => 'На сервере нет доступных изображений. С помощью кнопки "Обзор..." выше выберите изображение на вашем компьютере, чтобы загрузить его на сервер.',
+
+	'UI:ToggleFullScreen' => 'Развернуть / Свернуть',
+	'UI:Button:ResetImage' => 'Восстановить предыдущее изображение',
+	'UI:Button:RemoveImage' => 'Удалить изображение',
+	'UI:UploadNotSupportedInThisMode' => 'Изменение изображений и файлов не поддерживается в этом режиме.',
 ));

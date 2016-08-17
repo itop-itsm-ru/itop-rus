@@ -3,19 +3,10 @@
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
- * @author   Vladimir Kunin <v.b.kunin@gmail.com>
- * @license   http://opensource.org/licenses/AGPL-3.0
- *
- *
- * Инструкция по установке
- *
- * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
- * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
- * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
- *  3. Перейдите по адресу "http://адрес/вашего/itop/setup", при этом файл "путь/до/вашего/itop/conf/production/config-itop.php" должен быть доступен для записи.
- *  4. На второй странице установщика выберите "Upgrade an existing iTop instance" и следуйте дальнейшим инструкциям установщика.
- *
- * Ответы на вопросы по установке и использованию переводов, а также на любые другие вопросы по iTop всегда можно получить на сайте сообщества iTop по-русски http://community.itop-itsm.ru.
+ * @author      Vladimir Kunin <v.b.kunin@gmail.com>
+ * @link        http://community.itop-itsm.ru  iTop Russian Community
+ * @link        https://github.com/itop-itsm-ru/itop-rus
+ * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
 
@@ -373,6 +364,23 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:EventWebService/Attribute:data+' => 'Результаты данных',
 ));
 
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:EventRestService' => 'REST/JSON call',
+	'Class:EventRestService+' => 'Trace of a REST/JSON service call',
+	'Class:EventRestService/Attribute:operation' => 'Operation',
+	'Class:EventRestService/Attribute:operation+' => 'Argument \'operation\'',
+	'Class:EventRestService/Attribute:version' => 'Version',
+	'Class:EventRestService/Attribute:version+' => 'Argument \'version\'',
+	'Class:EventRestService/Attribute:json_input' => 'Input',
+	'Class:EventRestService/Attribute:json_input+' => 'Argument \'json_data\'',
+	'Class:EventRestService/Attribute:code' => 'Code',
+	'Class:EventRestService/Attribute:code+' => 'Result code',
+	'Class:EventRestService/Attribute:json_output' => 'Response',
+	'Class:EventRestService/Attribute:json_output+' => 'HTTP response (json)',
+	'Class:EventRestService/Attribute:provider' => 'Provider',
+	'Class:EventRestService/Attribute:provider+' => 'PHP class implementing the expected operation',
+));
+
 //
 // Class: EventLoginUsage
 //
@@ -481,6 +489,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:TriggerOnObject/Attribute:target_class+' => 'Класс объектов, для которых будет срабатывать данный триггер',
 	'Class:TriggerOnObject/Attribute:filter' => 'Фильтр OQL',
 	'Class:TriggerOnObject/Attribute:filter+' => 'Позволяет ограничить список объектов, для которых будет срабатывать триггер',
+	'TriggerOnObject:WrongFilterQuery' => 'Направильный запрос фильтра: %1$s',
+	'TriggerOnObject:WrongFilterClass' => 'Запрос фильтра должен возвращать объекты класса "%1$s"',
 ));
 
 //
@@ -784,4 +794,80 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:Duration_Minutes_Seconds'	=>'%1$d мин %2$d с',
 	'Core:Duration_Hours_Minutes_Seconds' => '%1$d ч %2$d мин %3$d с',
 	'Core:Duration_Days_Hours_Minutes_Seconds' => '%1$s д %2$d ч %3$d мин %4$d с',
+
+		// Explain working time computing
+	'Core:ExplainWTC:ElapsedTime' => 'Time elapsed (stored as "%1$s")',
+	'Core:ExplainWTC:StopWatch-TimeSpent' => 'Time spent for "%1$s"',
+	'Core:ExplainWTC:StopWatch-Deadline' => 'Deadline for "%1$s" at %2$d%%',
+
+	// Bulk export
+	'Core:BulkExport:MissingParameter_Param' => 'Missing parameter "%1$s"',
+	'Core:BulkExport:InvalidParameter_Query' => 'Invalid value for the parameter "query". There is no Query Phrasebook corresponding to the id: "%1$s".',
+	'Core:BulkExport:ExportFormatPrompt' => 'Export format:',
+	'Core:BulkExportOf_Class' => '%1$s Export',
+	'Core:BulkExport:ClickHereToDownload_FileName' => 'Click here to download %1$s',
+	'Core:BulkExport:ExportResult' => 'Result of the export:',
+	'Core:BulkExport:RetrievingData' => 'Retrieving data...',
+	'Core:BulkExport:HTMLFormat' => 'Web Page (*.html)',
+	'Core:BulkExport:CSVFormat' => 'Comma Separated Values (*.csv)',
+	'Core:BulkExport:XLSXFormat' => 'Excel 2007 or newer (*.xlsx)',
+	'Core:BulkExport:PDFFormat' => 'PDF Document (*.pdf)',
+	'Core:BulkExport:DragAndDropHelp' => 'Drag and drop the columns\' headers to arrange the columns. Preview of %1$s lines. Total number of lines to export: %2$s.',
+	'Core:BulkExport:EmptyPreview' => 'Select the columns to be exported from the list above',
+	'Core:BulkExport:ColumnsOrder' => 'Columns order',
+	'Core:BulkExport:AvailableColumnsFrom_Class' => 'Available columns from %1$s',
+	'Core:BulkExport:NoFieldSelected' => 'Select at least one column to be exported',
+	'Core:BulkExport:CheckAll' => 'Check All',
+	'Core:BulkExport:UncheckAll' => 'Uncheck All',
+	'Core:BulkExport:ExportCancelledByUser' => 'Export cancelled by the user',
+	'Core:BulkExport:CSVOptions' => 'CSV Options',
+	'Core:BulkExport:CSVLocalization' => 'Localization',
+	'Core:BulkExport:PDFOptions' => 'PDF Options',
+	'Core:BulkExport:PDFPageFormat' => 'Page Format',
+	'Core:BulkExport:PDFPageSize' => 'Page Size:',
+	'Core:BulkExport:PageSize-A4' => 'A4',
+	'Core:BulkExport:PageSize-A3' => 'A3',
+	'Core:BulkExport:PageSize-Letter' => 'Letter',
+	'Core:BulkExport:PDFPageOrientation' => 'Page Orientation:',
+	'Core:BulkExport:PageOrientation-L' => 'Landscape',
+	'Core:BulkExport:PageOrientation-P' => 'Portrait',
+	'Core:BulkExport:XMLFormat' => 'XML file (*.xml)',
+	'Core:BulkExport:XMLOptions' => 'XML Options',
+	'Core:BulkExport:SpreadsheetFormat' => 'Spreadsheet HTML format (*.html)',
+	'Core:BulkExport:SpreadsheetOptions' => 'Spreadsheet Options',
+	'Core:BulkExport:OptionNoLocalize' => 'Do not localize the values (for Enumerated fields)',
+	'Core:BulkExport:OptionLinkSets' => 'Include linked objects',
+	'Core:BulkExport:OptionFormattedText' => 'Preserve text formatting',
+	'Core:BulkExport:ScopeDefinition' => 'Definition of the objects to export',
+	'Core:BulkExportLabelOQLExpression' => 'OQL Query:',
+	'Core:BulkExportLabelPhrasebookEntry' => 'Query Phrasebook Entry:',
+	'Core:BulkExportMessageEmptyOQL' => 'Please enter a valid OQL query.',
+	'Core:BulkExportMessageEmptyPhrasebookEntry' => 'Please select a valid phrasebook entry.',
+	'Core:BulkExportQueryPlaceholder' => 'Type an OQL query here...',
+	'Core:BulkExportCanRunNonInteractive' => 'Click here to run the export in non-interactive mode.',
+	'Core:BulkExportLegacyExport' => 'Click here to access the legacy export.',
+	'Core:BulkExport:XLSXOptions' => 'Excel Options',
+	'Core:BulkExport:TextFormat' => 'Text fields containing some HTML markup',
+	'Core:BulkExport:DateTimeFormat' => 'Date and Time format',
+	'Core:BulkExport:DateTimeFormatDefault_Example' => 'Default format (%1$s), e.g. %2$s',
+	'Core:BulkExport:DateTimeFormatCustom_Format' => 'Custom format: %1$s',
+
+	'Core:DateTime:Placeholder_d' => 'DD', // Day of the month: 2 digits (with leading zero)
+	'Core:DateTime:Placeholder_j' => 'D', // Day of the month: 1 or 2 digits (without leading zero)
+	'Core:DateTime:Placeholder_m' => 'MM', // Month on 2 digits i.e. 01-12
+	'Core:DateTime:Placeholder_n' => 'M', // Month on 1 or 2 digits 1-12
+	'Core:DateTime:Placeholder_Y' => 'YYYY', // Year on 4 digits
+	'Core:DateTime:Placeholder_y' => 'YY', // Year on 2 digits
+	'Core:DateTime:Placeholder_H' => 'hh', // Hour 00..23
+	'Core:DateTime:Placeholder_h' => 'h', // Hour 01..12
+	'Core:DateTime:Placeholder_G' => 'hh', // Hour 0..23
+	'Core:DateTime:Placeholder_g' => 'h', // Hour 1..12
+	'Core:DateTime:Placeholder_a' => 'am/pm', // am/pm (lowercase)
+	'Core:DateTime:Placeholder_A' => 'AM/PM', // AM/PM (uppercase)
+	'Core:DateTime:Placeholder_i' => 'mm', // minutes, 2 digits: 00..59
+	'Core:DateTime:Placeholder_s' => 'ss', // seconds, 2 digits 00..59
+	'Core:Validator:Default' => 'Wrong format',
+	'Core:Validator:Mandatory' => 'Please, fill this field',
+	'Core:Validator:MustBeInteger' => 'Must be an integer',
+	'Core:Validator:MustSelectOne' => 'Please, select one',
 ));

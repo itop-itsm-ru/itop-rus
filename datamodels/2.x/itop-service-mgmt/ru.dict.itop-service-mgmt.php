@@ -3,31 +3,12 @@
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
- * @author   Vladimir Kunin <v.b.kunin@gmail.com>
- * @license   http://opensource.org/licenses/AGPL-3.0
- *
- *
- * Инструкция по установке
- *
- * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
- * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
- * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
- *  3. Перейдите по адресу "http://адрес/вашего/itop/setup", при этом файл "путь/до/вашего/itop/conf/production/config-itop.php" должен быть доступен для записи.
- *  4. На второй странице установщика выберите "Upgrade an existing iTop instance" и следуйте дальнейшим инструкциям установщика.
- *
- * Ответы на вопросы по установке и использованию переводов, а также на любые другие вопросы по iTop всегда можно получить на сайте сообщества iTop по-русски http://community.itop-itsm.ru.
+ * @author      Vladimir Kunin <v.b.kunin@gmail.com>
+ * @link        http://community.itop-itsm.ru  iTop Russian Community
+ * @link        https://github.com/itop-itsm-ru/itop-rus
+ * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-
-// Dictionnay conventions
-// Class:<class_name>
-// Class:<class_name>+
-// Class:<class_name>/Attribute:<attribute_code>
-// Class:<class_name>/Attribute:<attribute_code>+
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>
-// Class:<class_name>/Attribute:<attribute_code>/Value:<value>+
-// Class:<class_name>/Stimulus:<stimulus_code>
-// Class:<class_name>/Stimulus:<stimulus_code>+
 
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
@@ -39,8 +20,6 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
 'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
 
-'Menu:ServiceType' => 'Типы услуг',
-'Menu:ServiceType+' => 'Типы услуг',
 'Menu:ProviderContract' => 'Договоры с поставщиками',
 'Menu:ProviderContract+' => 'Договоры с поставщиками',
 'Menu:CustomerContract' => 'Договоры с заказчиками',
@@ -122,7 +101,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Contract/Attribute:contracttype_id+' => '',
 	'Class:Contract/Attribute:contracttype_name' => 'Тип договора',
 	'Class:Contract/Attribute:contracttype_name+' => '',
-	'Class:Contract/Attribute:billing_frequency' => 'Частота платежей',
+	'Class:Contract/Attribute:billing_frequency' => 'Периодичность платежей',
 	'Class:Contract/Attribute:billing_frequency+' => '',
 	'Class:Contract/Attribute:cost_unit' => 'Единица стоимости',
 	'Class:Contract/Attribute:cost_unit+' => '',
@@ -149,7 +128,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:CustomerContract' => 'Договор с заказчиком',
 	'Class:CustomerContract+' => '',
 	'Class:CustomerContract/Attribute:services_list' => 'Услуги',
-	'Class:CustomerContract/Attribute:services_list+' => 'Связанные услуги',
+	'Class:CustomerContract/Attribute:services_list+' => 'Все услуги, предоставляемые по договору',
 ));
 
 //
@@ -160,10 +139,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ProviderContract' => 'Договор с поставщиком',
 	'Class:ProviderContract+' => '',
 	'Class:ProviderContract/Attribute:functionalcis_list' => 'КЕ',
-	'Class:ProviderContract/Attribute:functionalcis_list+' => 'Связанные конфигурационные единицы',
+	'Class:ProviderContract/Attribute:functionalcis_list+' => 'Конфигурационные единицы, охватываемые договором',
 	'Class:ProviderContract/Attribute:sla' => 'SLA',
 	'Class:ProviderContract/Attribute:sla+' => 'Соглашение об уровне услуги (Service Level Agreement)',
-	'Class:ProviderContract/Attribute:coverage' => 'Время работы',
+	'Class:ProviderContract/Attribute:coverage' => 'Время обслуживания',
 	'Class:ProviderContract/Attribute:coverage+' => '',
 	'Class:ProviderContract/Attribute:contracttype_id' => 'Тип договора',
 	'Class:ProviderContract/Attribute:contracttype_id+' => '',
@@ -267,11 +246,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:Service/Attribute:status/Value:production+' => 'Эксплуатация',
 	'Class:Service/Attribute:customercontracts_list' => 'Договоры с заказчиками',
-	'Class:Service/Attribute:customercontracts_list+' => 'Договоры с заказчиками',
+	'Class:Service/Attribute:customercontracts_list+' => 'Договоры с заказчиками, по которым предоставляется услуга',
 	'Class:Service/Attribute:providercontracts_list' => 'Договоры с поставщиками',
-	'Class:Service/Attribute:providercontracts_list+' => 'Договоры с поставщиками',
+	'Class:Service/Attribute:providercontracts_list+' => 'Договоры с поставщиками, по которым поддерживается услуга',
 	'Class:Service/Attribute:functionalcis_list' => 'Зависимость от КЕ',
-	'Class:Service/Attribute:functionalcis_list+' => 'Зависимость услуги от конфигурационных единиц',
+	'Class:Service/Attribute:functionalcis_list+' => 'Конфигурационные единицы, которые используются для предоставления услуги',
 	'Class:Service/Attribute:servicesubcategories_list' => 'Подкатегории услуги',
 	'Class:Service/Attribute:servicesubcategories_list+' => 'Подкатегории услуги',
 ));
@@ -339,6 +318,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceSubcategory/Attribute:status/Value:obsolete+' => 'Устаревшее',
 	'Class:ServiceSubcategory/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:ServiceSubcategory/Attribute:status/Value:production+' => 'Эксплуатация',
+	'Class:ServiceSubcategory/Attribute:service_provider' => 'Поставщик',
+	'Class:ServiceSubcategory/Attribute:service_org_id' => 'Поставщик',
 ));
 
 //
@@ -357,9 +338,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SLA/Attribute:organization_name' => 'Поставщик',
 	'Class:SLA/Attribute:organization_name+' => '',
 	'Class:SLA/Attribute:slts_list' => 'SLT',
-	'Class:SLA/Attribute:slts_list+' => 'Целевой показатель уровня услуги (Service Level Target)',
+	'Class:SLA/Attribute:slts_list+' => 'Целевые показатели уровня услуги (Service Level Target)',
 	'Class:SLA/Attribute:customercontracts_list' => 'Договоры с заказчиками',
-	'Class:SLA/Attribute:customercontracts_list+' => 'Договоры с заказчиками',
+	'Class:SLA/Attribute:customercontracts_list+' => 'Договоры с заказчиками, в которых используется SLA',
 ));
 
 //
@@ -390,17 +371,17 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SLT/Attribute:metric' => 'Метрика',
 	'Class:SLT/Attribute:metric+' => '',
 	'Class:SLT/Attribute:metric/Value:tto' => 'TTO',
-	'Class:SLT/Attribute:metric/Value:tto+' => 'TTO',
+	'Class:SLT/Attribute:metric/Value:tto+' => 'Time-To-Own - время до назначения агента (принятия в работу)',
 	'Class:SLT/Attribute:metric/Value:ttr' => 'TTR',
-	'Class:SLT/Attribute:metric/Value:ttr+' => 'TTR',
+	'Class:SLT/Attribute:metric/Value:ttr+' => 'Time-To-Resolve - время до решения',
 	'Class:SLT/Attribute:value' => 'Значение',
 	'Class:SLT/Attribute:value+' => '',
 	'Class:SLT/Attribute:unit' => 'Единицы',
 	'Class:SLT/Attribute:unit+' => '',
 	'Class:SLT/Attribute:unit/Value:hours' => 'Часы',
-	'Class:SLT/Attribute:unit/Value:hours+' => 'часов',
+	'Class:SLT/Attribute:unit/Value:hours+' => 'Часы',
 	'Class:SLT/Attribute:unit/Value:minutes' => 'Минуты',
-	'Class:SLT/Attribute:unit/Value:minutes+' => 'минут',
+	'Class:SLT/Attribute:unit/Value:minutes+' => 'Минуты',
 ));
 
 //
@@ -491,9 +472,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:DeliveryModel/Attribute:description' => 'Описание',
 	'Class:DeliveryModel/Attribute:description+' => '',
 	'Class:DeliveryModel/Attribute:contacts_list' => 'Контакты',
-	'Class:DeliveryModel/Attribute:contacts_list+' => 'Связанные контакты',
+	'Class:DeliveryModel/Attribute:contacts_list+' => 'Контакты (команды и персоны), которые участвуют в предоставлении услуг по этой модели',
 	'Class:DeliveryModel/Attribute:customers_list' => 'Заказчики',
-	'Class:DeliveryModel/Attribute:customers_list+' => 'Связанные заказчик',
+	'Class:DeliveryModel/Attribute:customers_list+' => 'Заказчики, которым предоставляются услуги по этой модели',
 ));
 
 //

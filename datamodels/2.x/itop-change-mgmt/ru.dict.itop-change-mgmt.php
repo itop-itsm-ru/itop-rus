@@ -3,19 +3,10 @@
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
- * @author   Vladimir Kunin <v.b.kunin@gmail.com>
- * @license   http://opensource.org/licenses/AGPL-3.0
- *
- *
- * Инструкция по установке
- *
- * Процесс установки заключается в замене имеющихся локализационных файлов полученными и последующем запуске процедуры обновления iTop для перекомпиляции кода.
- * 	1. Скопируйте с заменой два полученных файла из "itop-rus/dictionaries" в "путь/до/вашего/itop/dictionaries".
- * 	2. Скопируйте с заменой полученные файлы "itop-rus/datamodels/2.x/название-модуля/ru.dict.название-модуля.php" в "путь/до/вашего/itop/datamodels/2.x/название-модуля".
- *  3. Перейдите по адресу "http://адрес/вашего/itop/setup", при этом файл "путь/до/вашего/itop/conf/production/config-itop.php" должен быть доступен для записи.
- *  4. На второй странице установщика выберите "Upgrade an existing iTop instance" и следуйте дальнейшим инструкциям установщика.
- *
- * Ответы на вопросы по установке и использованию переводов, а также на любые другие вопросы по iTop всегда можно получить на сайте сообщества iTop по-русски http://community.itop-itsm.ru.
+ * @author      Vladimir Kunin <v.b.kunin@gmail.com>
+ * @link        http://community.itop-itsm.ru  iTop Russian Community
+ * @link        https://github.com/itop-itsm-ru/itop-rus
+ * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
 
@@ -29,13 +20,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:SearchChanges+' => 'Поиск запросов на изменения',
 	'Menu:Change:Shortcuts' => 'Ярлыки',
 	'Menu:Change:Shortcuts+' => 'Ярлыки',
-	'Menu:WaitingAcceptance' => 'Изменения, ожидающие принятия',
+	'Menu:WaitingAcceptance' => 'Ожидающие принятия',
 	'Menu:WaitingAcceptance+' => 'Изменения, ожидающие принятия',
-	'Menu:WaitingApproval' => 'Изменения, ожидающие утверждения',
+	'Menu:WaitingApproval' => 'Ожидающие утверждения',
 	'Menu:WaitingApproval+' => 'Изменения, ожидающие утверждения',
-	'Menu:Changes' => 'Открытые изменения',
+	'Menu:Changes' => 'Открытые',
 	'Menu:Changes+' => 'Открытые изменения',
-	'Menu:MyChanges' => 'Изменения, назначенные мне',
+	'Menu:MyChanges' => 'Назначенные мне',
 	'Menu:MyChanges+' => 'Изменения, назначенные мне',
 	'UI-ChangeManagementOverview-ChangeByCategory-last-7-days' => 'Изменения по категориям за 7 дней',
 	'UI-ChangeManagementOverview-Last-7-days' => 'Количество изменений за 7 дней',
@@ -78,17 +69,17 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Change/Attribute:category' => 'Категория',
 	'Class:Change/Attribute:category+' => '',
 	'Class:Change/Attribute:category/Value:application' => 'Приложение',
-	'Class:Change/Attribute:category/Value:application+' => 'приложение',
-	'Class:Change/Attribute:category/Value:hardware' => 'Железо',
-	'Class:Change/Attribute:category/Value:hardware+' => 'аппаратное обеспечение',
+	'Class:Change/Attribute:category/Value:application+' => 'Приложение',
+	'Class:Change/Attribute:category/Value:hardware' => 'Оборудование',
+	'Class:Change/Attribute:category/Value:hardware+' => 'Оборудование',
 	'Class:Change/Attribute:category/Value:network' => 'Сеть',
-	'Class:Change/Attribute:category/Value:network+' => 'сеть',
+	'Class:Change/Attribute:category/Value:network+' => 'Сеть',
 	'Class:Change/Attribute:category/Value:other' => 'Другое',
-	'Class:Change/Attribute:category/Value:other+' => 'другое',
-	'Class:Change/Attribute:category/Value:software' => 'ПО',
-	'Class:Change/Attribute:category/Value:software+' => 'программное обеспечение',
+	'Class:Change/Attribute:category/Value:other+' => 'Другое',
+	'Class:Change/Attribute:category/Value:software' => 'Программное обеспечение',
+	'Class:Change/Attribute:category/Value:software+' => 'Программное обеспечение',
 	'Class:Change/Attribute:category/Value:system' => 'Система',
-	'Class:Change/Attribute:category/Value:system+' => 'система',
+	'Class:Change/Attribute:category/Value:system+' => 'Система',
 	'Class:Change/Attribute:reject_reason' => 'Причина отклонения',
 	'Class:Change/Attribute:reject_reason+' => '',
 	'Class:Change/Attribute:changemanager_id' => 'Менеджер изменения',
@@ -97,11 +88,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Change/Attribute:changemanager_email+' => '',
 	'Class:Change/Attribute:parent_id' => 'Родительское изменение',
 	'Class:Change/Attribute:parent_id+' => '',
-	'Class:Change/Attribute:parent_name' => 'Имя родительского изменения',
+	'Class:Change/Attribute:parent_name' => 'Родительское изменение',
 	'Class:Change/Attribute:parent_name+' => '',
-	'Class:Change/Attribute:creation_date' => 'Создан',
+	'Class:Change/Attribute:creation_date' => 'Дата создания',
 	'Class:Change/Attribute:creation_date+' => '',
-	'Class:Change/Attribute:approval_date' => 'Утверждение',
+	'Class:Change/Attribute:approval_date' => 'Дата утверждения',
 	'Class:Change/Attribute:approval_date+' => '',
 	'Class:Change/Attribute:fallback_plan' => 'План отката',
 	'Class:Change/Attribute:fallback_plan+' => '',
@@ -125,6 +116,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Change/Stimulus:ev_reopen+' => '',
 	'Class:Change/Stimulus:ev_approve' => 'Утвердить',
 	'Class:Change/Stimulus:ev_approve+' => '',
-	'Class:Change/Stimulus:ev_finish' => 'Закончить',
+	'Class:Change/Stimulus:ev_finish' => 'Закрыть',
 	'Class:Change/Stimulus:ev_finish+' => '',
+	'Class:Change/Attribute:outage' => 'Простой услуги',
+	'Class:Change/Attribute:outage+' => '',
+	'Class:Change/Attribute:outage/Value:no' => 'Нет',
+	'Class:Change/Attribute:outage/Value:no+' => '',
+	'Class:Change/Attribute:outage/Value:yes' => 'Да',
+	'Class:Change/Attribute:outage/Value:yes+' => '',
 ));
