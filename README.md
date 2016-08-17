@@ -58,6 +58,6 @@ itop/datamodels/2.x/itop-portal-base/portal/src/views/bricks/browse/mode_tree.ht
 
 
 ### Ссылки
- - [Обсуждение локализации интерфейса](http://community.itop-itsm.ru/t/lokalizacziya-interfejsa)
+ - [Обсуждение локализации интерфейса](http://community.itop-itsm.ru/t/lokalizacziya-interfejsa/25)
  - [Официальный сайт Combodo iTop](http://www.combodo.com/itop)
  - [Cайт сообщества iTop по-русски](http://community.itop-itsm.ru)
