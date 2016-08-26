@@ -214,14 +214,14 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ResponseTicketTTR/Interface:iMetricComputer' => 'Time To Resolve~~',
 	'Class:ResponseTicketTTR/Interface:iMetricComputer+' => 'Goal based on a SLT of type TTR~~',
 
-	'portal:itop-portal' => 'Стандартный портал', // This is the portal name that will be displayed in portal dispatcher (eg. URL in menus)
+	'portal:itop-portal' => 'Пользовательский портал', // This is the portal name that will be displayed in portal dispatcher (eg. URL in menus)
 	'Page:DefaultTitle' => 'iTop - Пользовательский портал',
 	'Brick:Portal:UserProfile:Title' => 'Мой профиль',
 	'Brick:Portal:NewRequest:Title' => 'Новый запрос',
-	'Brick:Portal:NewRequest:Title+' => '<p>Нужна помощь?</p><p>Выберите услугу из каталога и отправьте свой запрос команде поддержки.</p>',
+	'Brick:Portal:NewRequest:Title+' => '<p>Нужна помощь?</p><p>Выберите услугу из&nbsp;каталога и&nbsp;отправьте свой запрос команде поддержки.</p>',
 	'Brick:Portal:OngoingRequests:Title' => 'Текущие запросы',
-	'Brick:Portal:OngoingRequests:Title+' => '<p>Следите за открытыми запросами.</p><p>Проверяйте ход решения, добавляйте комментарии и вложения, подтверждайте решение.</p>',
-	'Brick:Portal:OngoingRequests:Tab:OnGoing' => 'Текущие',
+	'Brick:Portal:OngoingRequests:Title+' => '<p>Следите за&nbsp;открытыми запросами.</p><p>Проверяйте ход решения, добавляйте комментарии и&nbsp;вложения, подтверждайте решение.</p>',
+	'Brick:Portal:OngoingRequests:Tab:OnGoing' => 'В работе',
 	'Brick:Portal:OngoingRequests:Tab:Resolved' => 'Решенные',
 	'Brick:Portal:ClosedRequests:Title' => 'Закрытые запросы',
 

@@ -779,9 +779,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:SynchroReplica/Attribute:status_last_warning' => 'Предупреждения',
 	'Class:SynchroReplica/Attribute:info_creation_date' => 'Дата создания',
 	'Class:SynchroReplica/Attribute:info_last_modified' => 'Дата последнего изменения',
-	'Class:appUserPreferences' => 'Свойства пользователей',
+	'Class:appUserPreferences' => 'Предпочтения пользователя',
 	'Class:appUserPreferences/Attribute:userid' => 'Пользователь',
-	'Class:appUserPreferences/Attribute:preferences' => 'Свойства',
+	'Class:appUserPreferences/Attribute:preferences' => 'Предпочтения',
 	'Core:ExecProcess:Code1' => 'Неверная команда или команда завершена с ошибкой (возможно, неверное имя скрипта)',
 	'Core:ExecProcess:Code255' => 'Ошибка PHP (parsing, or runtime)~~',
 ));
