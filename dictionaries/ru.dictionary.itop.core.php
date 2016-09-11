@@ -866,8 +866,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:DateTime:Placeholder_A' => 'AM/PM', // AM/PM (uppercase)
 	'Core:DateTime:Placeholder_i' => 'mm', // minutes, 2 digits: 00..59
 	'Core:DateTime:Placeholder_s' => 'ss', // seconds, 2 digits 00..59
-	'Core:Validator:Default' => 'Wrong format',
-	'Core:Validator:Mandatory' => 'Please, fill this field',
-	'Core:Validator:MustBeInteger' => 'Must be an integer',
-	'Core:Validator:MustSelectOne' => 'Please, select one',
+	'Core:Validator:Default' => 'Неправильный формат',
+	'Core:Validator:Mandatory' => 'Пожалуйста, заполните это поле',
+	'Core:Validator:MustBeInteger' => 'Должно быть целым числом',
+	'Core:Validator:MustSelectOne' => 'Пожалуйста, выберите значение',
 ));
