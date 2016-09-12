@@ -15,7 +15,7 @@
 //////////////////////////////////////////////////////////////////////
 //
 
-Dict::Add('EN US', 'English', 'English', array(
+Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Relation:impacts/Description' => 'Элементы, на которые влияет',
 	'Relation:impacts/DownStream' => 'Влияет на...',
 	'Relation:impacts/UpStream' => 'Зависит от...',

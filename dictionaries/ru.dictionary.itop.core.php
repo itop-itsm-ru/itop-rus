@@ -39,7 +39,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Core:AttributeClass+' => 'Class',
 
 	'Core:AttributeApplicationLanguage' => 'Язык пользователя',
-	'Core:AttributeApplicationLanguage+' => 'Language and country (EN US)',
+	'Core:AttributeApplicationLanguage+' => 'Язык и страна (EN US)',
 
 	'Core:AttributeFinalClass' => 'Класс (авто)',
 	'Core:AttributeFinalClass+' => 'Real class of the object (automatically created by the core)',
