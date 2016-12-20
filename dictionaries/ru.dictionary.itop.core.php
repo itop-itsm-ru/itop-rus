@@ -510,7 +510,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:TriggerOnStateChange' => 'Триггер (изменение статуса)',
 	'Class:TriggerOnStateChange+' => 'Триггер на изменение статуса объекта',
 	'Class:TriggerOnStateChange/Attribute:state' => 'Статус',
-	'Class:TriggerOnStateChange/Attribute:state+' => 'Код статуса объекта, например "resolved"',
+	'Class:TriggerOnStateChange/Attribute:state+' => 'Код статуса объекта, например \'resolved\'',
 ));
 
 //
@@ -548,9 +548,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:TriggerOnThresholdReached' => 'Триггер (на пороговое значение)',
 	'Class:TriggerOnThresholdReached+' => 'Триггер на достижение секундомером порогового значения (TTO, TTR)',
 	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code' => 'Секундомер',
-	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code+' => 'По умолчанию для Инцидентов и Запросов доступны "ttr" и "tto"',
+	'Class:TriggerOnThresholdReached/Attribute:stop_watch_code+' => 'По умолчанию для Инцидентов и Запросов доступны \'ttr\' и \'tto\'',
 	'Class:TriggerOnThresholdReached/Attribute:threshold_index' => 'Порог',
-	'Class:TriggerOnThresholdReached/Attribute:threshold_index+' => 'Пороговое значние секундомера, по умолчанию "75" и "100"',
+	'Class:TriggerOnThresholdReached/Attribute:threshold_index+' => 'Пороговое значние секундомера в %, по умолчанию \'75\' и \'100\'',
 ));
 
 //
