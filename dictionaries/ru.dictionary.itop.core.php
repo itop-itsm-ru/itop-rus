@@ -137,11 +137,11 @@ Operators:<br/>
 	'Core:AttributePropertySet' => 'Свойства~~',
 	'Core:AttributePropertySet+' => 'List of untyped properties (name and value)',
 
-	'Core:AttributeFriendlyName' => 'Виден как~~',
-	'Core:AttributeFriendlyName+' => 'Attribute created automatically ; the friendly name is computed after several attributes',
+	'Core:AttributeFriendlyName' => 'Полное название',
+	'Core:AttributeFriendlyName+' => 'Атрибут создается автоматически; полное название вычисляется из нескольких атрибутов',
 
-	'Core:FriendlyName-Label' => 'Виден как~~',
-	'Core:FriendlyName-Description' => 'Виден как~~',
+	'Core:FriendlyName-Label' => 'Полное название',
+	'Core:FriendlyName-Description' => 'Полное название',
 ));
 
 

@@ -1017,7 +1017,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:Attachment_No_To_Ticket_Name' => 'Вложение #%1$d to %2$s (%3$s)~~',
 	'Portal:SelectRequestTemplate' => 'Select a template for %1$s~~',
 	'Enum:Undefined' => 'Неопределён',
-	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s Days %2$s час %3$s мин %4$s сек~~',
+	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s д %2$s ч %3$s мин %4$s с',
 	'UI:ModifyAllPageTitle' => 'Изменить все',
 	'UI:Modify_N_ObjectsOf_Class' => 'Изменение %1$d объектов класса %2$s~~',
 	'UI:Modify_M_ObjectsOf_Class_OutOf_N' => 'Изменение %1$d объектов класса %2$s из %3$d~~',
