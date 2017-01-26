@@ -465,7 +465,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Login:ForgotPwdForm' => 'Восстановление пароля',
 	'UI:Login:ForgotPwdForm+' => 'Введите свой логин для входа в систему и нажмите "Отправить". iTop отправит email с инструкциями по восстановлению пароля на ваш электронный адрес.',
 	'UI:Login:ResetPassword' => 'Отправить',
-	'UI:Login:ResetPwdFailed' => 'Не удалось оптравить email: %1$s',
+	'UI:Login:ResetPwdFailed' => 'Не удалось отправить email: %1$s',
 
 	'UI:ResetPwd-Error-WrongLogin' => 'учетная запись с логином "%1$s" не найдена.',
 	'UI:ResetPwd-Error-NotPossible' => 'восстановление пароля для внешних учётных записей недоступно.',
