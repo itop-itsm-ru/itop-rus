@@ -1038,7 +1038,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:BulkModify:Value_Exists_N_Times' => '%1$s, %2$d time(s)~~',
 	'UI:BulkModify:N_MoreValues' => '%1$d more values...~~',
 	'UI:AttemptingToSetAReadOnlyAttribute_Name' => 'Attempting to set the read-only field: %1$s~~',
-	'UI:FailedToApplyStimuli' => 'The action has failed.~~',
+	'UI:FailedToApplyStimuli' => 'Операция не может быть выполнена.',
 	'UI:StimulusModify_N_ObjectsOf_Class' => '%1$s: Modifying %2$d objects of class %3$s~~',
 	'UI:CaseLogTypeYourTextHere' => 'Введите свой текст:',
 	'UI:CaseLog:DateFormat' => 'Y-m-d H:i:s~~',
@@ -1106,7 +1106,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:DashboardEdit:DashboardTitle' => 'Заголовок',
 	'UI:DashboardEdit:AutoReload' => 'Обновлять автоматически',
 	'UI:DashboardEdit:AutoReloadSec' => 'Интервал обновления (секунды)',
-	'UI:DashboardEdit:AutoReloadSec+' => 'Минимальный интервал 5 секунд',
+	'UI:DashboardEdit:AutoReloadSec+' => 'Минимальный интервал %1$d секунд',
 
 	'UI:DashboardEdit:Layout' => 'Макет',
 	'UI:DashboardEdit:Properties' => 'Свойства дашборда',
