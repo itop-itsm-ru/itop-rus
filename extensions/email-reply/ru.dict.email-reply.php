@@ -14,7 +14,7 @@
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-        'Class:TriggerOnLogUpdate' => 'Триггер (на обновление журнала)',
+        'Class:TriggerOnLogUpdate' => 'Триггер на обновление журнала',
         'Class:TriggerOnLogUpdate+' => 'Триггер на обновление журнала пользователем',
         'Class:TriggerOnLogUpdate/Attribute:target_log' => 'Журнал',
         'Class:TriggerOnLogUpdate/Attribute:target_log+' => 'Укажите код атрибута журнала для отслеживания, например, public_log',

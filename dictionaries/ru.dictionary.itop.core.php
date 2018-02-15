@@ -604,7 +604,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
     'Class:SynchroDataSource/Attribute:description' => 'Описание',
     'Class:SynchroDataSource/Attribute:status' => 'Статус',
     'Class:SynchroDataSource/Attribute:status/Value:implementation' => 'Внедрение',
-    'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревшее',
+    'Class:SynchroDataSource/Attribute:status/Value:obsolete' => 'Устаревший',
     'Class:SynchroDataSource/Attribute:status/Value:production' => 'Эксплуатация',
     'Class:SynchroDataSource/Attribute:scope_class' => 'Целевой класс',
     'Class:SynchroDataSource/Attribute:scope_restriction' => 'Объем ограничений', // не используется пока
