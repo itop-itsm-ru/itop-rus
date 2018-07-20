@@ -110,9 +110,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:User/Attribute:status+' => 'Учетная запись пользователя включена или отключена.',
 	'Class:User/Attribute:status/Value:enabled' => 'Включен',
 	'Class:User/Attribute:status/Value:disabled' => 'Отключен',
+
 	'Class:User/Error:LoginMustBeUnique' => 'Логин должен быть уникальным - "%1s" уже используется.',
 	'Class:User/Error:AtLeastOneProfileIsNeeded' => 'Как минимум один профиль должен быть назначен данному пользователю.',
-
+	'Class:User/Error:AtLeastOneOrganizationIsNeeded' => 'At least one organization must be assigned to this user.',
+	'Class:User/Error:OrganizationNotAllowed' => 'Organization not allowed.',
+	'Class:User/Error:UserOrganizationNotAllowed' => 'The user account does not belong to your allowed organizations.',
 	'Class:UserInternal' => 'Внутренний пользователь',
 	'Class:UserInternal+' => 'Учетная запись создана внутри iTop',
 ));
@@ -350,6 +353,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Button:SimulateImport' => ' Эмулировать импорт ',
 	'UI:Button:Test' => 'Тестировать!',
 	'UI:Button:Evaluate' => ' Оценка ',
+	'UI:Button:Evaluate:Title' => ' Оценка (Ctrl+Enter)',
 	'UI:Button:AddObject' => ' Добавить... ',
 	'UI:Button:BrowseObjects' => ' Обзор... ',
 	'UI:Button:Add' => ' Добавить ',
@@ -432,11 +436,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Menu:CSVExport' => 'Экспорт в CSV',
 	'UI:Menu:Modify' => 'Изменить...',
 	'UI:Menu:Delete' => 'Удалить...',
-	'UI:Menu:Manage' => 'Управление...',
 	'UI:Menu:BulkDelete' => 'Удалить...',
 	'UI:UndefinedObject' => 'неопределённый',
 	'UI:Document:OpenInNewWindow:Download' => 'Открыть в новом окне: %1$s, Загрузка: %2$s',
-	'UI:SelectAllToggle+' => 'Выбрать всё / Отменить всё',
 	'UI:SplitDateTime-Date' => 'дата~~',
 	'UI:SplitDateTime-Time' => 'время~~',
 	'UI:TruncatedResults' => '%1$d объектов отображено из %2$d',
@@ -692,6 +694,13 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Schema:LifeCycleAttributeMustChange' => 'Необходимо изменить',
 	'UI:Schema:LifeCycleAttributeMustPrompt' => 'Пользователю будет предложено изменить значение',
 	'UI:Schema:LifeCycleEmptyList' => 'пустой список',
+	'UI:Schema:ClassFilter' => 'Class:~~',
+	'UI:Schema:DisplayLabel' => 'Display:~~',
+	'UI:Schema:DisplaySelector/LabelAndCode' => 'Label and code~~',
+	'UI:Schema:DisplaySelector/Label' => 'Label~~',
+	'UI:Schema:DisplaySelector/Code' => 'Code~~',
+	'UI:Schema:Attribute/Filter' => 'Filter~~',
+	'UI:Schema:DefaultNullValue' => 'Default null : "%1$s"~~',
 	'UI:LinksWidget:Autocomplete+' => 'Введите первые 3 символа...',
 	'UI:Edit:TestQuery' => 'Проверить запрос',
 	'UI:Combo:SelectValue' => '--- выбор значения ---',
@@ -749,6 +758,14 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:DetailsPageTitle' => 'iTop - %1$s - %2$s подробности',
 	'UI:ErrorPageTitle' => 'iTop - Ошибка',
 	'UI:ObjectDoesNotExist' => 'Извните, этот объект не существует (или вы не можете его видеть).',
+	'UI:ObjectArchived' => 'This object has been archived. Please enable the archive mode or contact your administrator.~~',
+	'Tag:Archived' => 'Archived~~',
+	'Tag:Archived+' => 'Can be accessed only in archive mode~~',
+	'Tag:Obsolete' => 'Obsolete~~',
+	'Tag:Obsolete+' => 'Excluded from the impact analysis and search results~~',
+	'Tag:Synchronized' => 'Synchronized~~',
+	'ObjectRef:Archived' => 'Archived~~',
+	'ObjectRef:Obsolete' => 'Obsolete~~',
 	'UI:SearchResultsPageTitle' => 'iTop - Результаты поиска',
 	'UI:SearchResultsTitle' => 'Результаты поиска',
 	'UI:SearchResultsTitle+' => 'Результаты полнотекстового поиска',
@@ -930,8 +947,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-	'UI:iTopVersion:Short' => 'iTop версия %1$s',
-	'UI:iTopVersion:Long' => 'iTop версия %1$s-%2$s основан на %3$s',
+	'UI:iTopVersion:Short' => '%1$s версия %2$s',
+	'UI:iTopVersion:Long' => '%1$s версия %2$s-%3$s основан на %4$s',
 	'UI:PropertiesTab' => 'Свойства',
 
 	'UI:OpenDocumentInNewWindow_' => 'Открыть этот документ в новом окне: %1$s',
@@ -1055,12 +1072,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Pagination:All' => 'Все',
 	'UI:HierarchyOf_Class' => 'Иерархия по: %1$s~~',
 	'UI:Preferences' => 'Дополнительно...~~',
+	'UI:ArchiveModeOn' => 'Activate archive mode~~',
+	'UI:ArchiveModeOff' => 'Deactivate archive mode~~',
+	'UI:ArchiveMode:Banner' => 'Archive mode~~',
+	'UI:ArchiveMode:Banner+' => 'Archived objects are visible, and no modification is allowed~~',
 	'UI:FavoriteOrganizations' => 'Избранные организации',
 	'UI:FavoriteOrganizations+' => 'Check in the list below the organizations that you want to see in the drop-down menu for a quick access. Note that this is not a security setting, objects from any organization are still visible and can be accessed by selecting "All Organizations" in the drop-down list.',
 	'UI:FavoriteLanguage' => 'Язык пользовательского интерфейса',
 	'UI:Favorites:SelectYourLanguage' => 'Выберите Ваш язык',
 	'UI:FavoriteOtherSettings' => 'Другие настройки',
 	'UI:Favorites:Default_X_ItemsPerPage' => 'Длина списка по-умолчанию: %1$s элементов на страницу.',
+	'UI:Favorites:ShowObsoleteData' => 'Show obsolete data~~',
+	'UI:Favorites:ShowObsoleteData+' => 'Show obsolete data in search results and lists of items to select~~',
 	'UI:NavigateAwayConfirmationMessage' => 'Все изменения будут отменены.',
 	'UI:CancelConfirmationMessage' => 'Настройки НЕ будут сохранены. Продолжить?',
 	'UI:AutoApplyConfirmationMessage' => 'Некоторые изменения не вступили в силу. Применить их немедленно?',
@@ -1309,4 +1332,125 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Button:ResetImage' => 'Восстановить предыдущее изображение',
 	'UI:Button:RemoveImage' => 'Удалить изображение',
 	'UI:UploadNotSupportedInThisMode' => 'Изменение изображений и файлов не поддерживается в этом режиме.',
+
+    // Search form
+    'UI:Search:Toggle' => 'Развернуть / Свернуть',
+    'UI:Search:AutoSubmit:DisabledHint' => 'Auto submit has been disabled for this class',
+    'UI:Search:Criterion:MoreMenu:AddCriteria' => 'Добавить критерий',
+    // - Add new criteria button
+    'UI:Search:AddCriteria:List:RecentlyUsed:Title' => 'Недавние',
+    'UI:Search:AddCriteria:List:MostPopular:Title' => 'Популярные',
+    'UI:Search:AddCriteria:List:Others:Title' => 'Остальные',
+    'UI:Search:AddCriteria:List:RecentlyUsed:Placeholder' => 'Пока нет',
+
+    // - Criteria titles
+    //   - Default widget
+    'UI:Search:Criteria:Title:Default:Any' => '%1$s: все',
+    'UI:Search:Criteria:Title:Default:Empty' => '%1$s пусто',
+    'UI:Search:Criteria:Title:Default:NotEmpty' => '%1$s не пусто',
+    'UI:Search:Criteria:Title:Default:Equals' => '%1$s равно %2$s',
+    'UI:Search:Criteria:Title:Default:Contains' => '%1$s содержит %2$s',
+    'UI:Search:Criteria:Title:Default:StartsWith' => '%1$s начинается с %2$s',
+    'UI:Search:Criteria:Title:Default:EndsWith' => '%1$s заканчивается на %2$s',
+    'UI:Search:Criteria:Title:Default:RegExp' => '%1$s соответствует %2$s',
+    'UI:Search:Criteria:Title:Default:GreaterThan' => '%1$s > %2$s',
+    'UI:Search:Criteria:Title:Default:GreaterThanOrEquals' => '%1$s >= %2$s',
+    'UI:Search:Criteria:Title:Default:LessThan' => '%1$s < %2$s',
+    'UI:Search:Criteria:Title:Default:LessThanOrEquals' => '%1$s <= %2$s',
+    'UI:Search:Criteria:Title:Default:Different' => '%1$s ≠ %2$s',
+    'UI:Search:Criteria:Title:Default:Between' => '%1$s между [%2$s]',
+    'UI:Search:Criteria:Title:Default:BetweenDates' => '%1$s [%2$s]',
+    'UI:Search:Criteria:Title:Default:BetweenDates:All' => '%1$s: все',
+    'UI:Search:Criteria:Title:Default:BetweenDates:From' => '%1$s с %2$s',
+    'UI:Search:Criteria:Title:Default:BetweenDates:Until' => '%1$s по %2$s',
+    'UI:Search:Criteria:Title:Default:Between:All' => '%1$s: все',
+    'UI:Search:Criteria:Title:Default:Between:From' => '%1$s от %2$s',
+    'UI:Search:Criteria:Title:Default:Between:Until' => '%1$s до %2$s',
+    //   - Numeric widget
+    //   None yet
+    //   - DateTime widget
+    'UI:Search:Criteria:Title:DateTime:Between' => '%2$s <= 1$s <= %3$s',
+    //   - Enum widget
+    'UI:Search:Criteria:Title:Enum:In' => '%1$s: %2$s',
+    'UI:Search:Criteria:Title:Enum:In:Many' => '%1$s: %2$s и %3$s других',
+    'UI:Search:Criteria:Title:Enum:In:All' => '%1$s: любой',
+    //   - External key widget
+    'UI:Search:Criteria:Title:ExternalKey:Empty' => '%1$s is defined',
+    'UI:Search:Criteria:Title:ExternalKey:NotEmpty' => '%1$s is not defined',
+    'UI:Search:Criteria:Title:ExternalKey:Equals' => '%1$s %2$s',
+    'UI:Search:Criteria:Title:ExternalKey:In' => '%1$s: %2$s',
+    'UI:Search:Criteria:Title:ExternalKey:In:Many' => '%1$s: %2$s and %3$s others',
+    'UI:Search:Criteria:Title:ExternalKey:In:All' => '%1$s: Any',
+    //   - Hierarchical key widget
+    'UI:Search:Criteria:Title:HierarchicalKey:Empty' => '%1$s is defined',
+    'UI:Search:Criteria:Title:HierarchicalKey:NotEmpty' => '%1$s is not defined',
+    'UI:Search:Criteria:Title:HierarchicalKey:Equals' => '%1$s %2$s',
+    'UI:Search:Criteria:Title:HierarchicalKey:In' => '%1$s: %2$s',
+    'UI:Search:Criteria:Title:HierarchicalKey:In:Many' => '%1$s: %2$s and %3$s others',
+    'UI:Search:Criteria:Title:HierarchicalKey:In:All' => '%1$s: Any',
+
+    // - Criteria operators
+    //   - Default widget
+    'UI:Search:Criteria:Operator:Default:Empty' => 'Пусто',
+    'UI:Search:Criteria:Operator:Default:NotEmpty' => 'Не пусто',
+    'UI:Search:Criteria:Operator:Default:Equals' => 'Равно',
+    'UI:Search:Criteria:Operator:Default:Between' => 'Между',
+    //   - String widget
+    'UI:Search:Criteria:Operator:String:Contains' => 'Содержит',
+    'UI:Search:Criteria:Operator:String:StartsWith' => 'Начинается с',
+    'UI:Search:Criteria:Operator:String:EndsWith' => 'Заканч. на',
+    'UI:Search:Criteria:Operator:String:RegExp' => 'Регуляр. выраж.',
+    //   - Numeric widget
+    'UI:Search:Criteria:Operator:Numeric:Equals' => 'Равно',  // => '=',
+    'UI:Search:Criteria:Operator:Numeric:GreaterThan' => 'Больше',  // => '>',
+    'UI:Search:Criteria:Operator:Numeric:GreaterThanOrEquals' => 'Больше / равно',  // > '>=',
+    'UI:Search:Criteria:Operator:Numeric:LessThan' => 'Меньше',  // => '<',
+    'UI:Search:Criteria:Operator:Numeric:LessThanOrEquals' => 'Меньше / равно',  // > '<=',
+    'UI:Search:Criteria:Operator:Numeric:Different' => 'Не равно',  // => '≠',
+
+    // - Other translations
+    'UI:Search:Value:Filter:Placeholder' => 'Filter...',
+    'UI:Search:Value:Search:Placeholder' => 'Search...',
+    'UI:Search:Value:Autocomplete:StartTyping' => 'Start typing for possible values.',
+    'UI:Search:Value:Autocomplete:Wait' => 'Please wait...',
+    'UI:Search:Value:Autocomplete:NoResult' => 'No result.',
+    'UI:Search:Value:Toggler:CheckAllNone' => 'Check all / none',
+    'UI:Search:Value:Toggler:CheckAllNoneFiltered' => 'Check all / none visibles',
+
+    // - Widget other translations
+    'UI:Search:Criteria:Numeric:From' => 'From',
+    'UI:Search:Criteria:Numeric:Until' => 'To',
+    'UI:Search:Criteria:Numeric:PlaceholderFrom' => 'Any',
+    'UI:Search:Criteria:Numeric:PlaceholderUntil' => 'Any',
+    'UI:Search:Criteria:DateTime:From' => 'From',
+    'UI:Search:Criteria:DateTime:FromTime' => 'From',
+    'UI:Search:Criteria:DateTime:Until' => 'until',
+    'UI:Search:Criteria:DateTime:UntilTime' => 'until',
+    'UI:Search:Criteria:DateTime:PlaceholderFrom' => 'Any date',
+    'UI:Search:Criteria:DateTime:PlaceholderFromTime' => 'Any date',
+    'UI:Search:Criteria:DateTime:PlaceholderUntil' => 'Any date',
+    'UI:Search:Criteria:DateTime:PlaceholderUntilTime' => 'Any date',
+    'UI:Search:Criteria:HierarchicalKey:ChildrenIncluded:Hint' => 'Children of the selected objects will be included.',
+
+    'UI:Search:Criteria:Raw:Filtered' => 'Filtered',
+    'UI:Search:Criteria:Raw:FilteredOn' => 'Filtered on %1$s',
+));
+
+//
+// Expression to Natural language
+//
+Dict::Add('EN US', 'English', 'English', array(
+    'Expression:Operator:AND' => ' AND ',
+    'Expression:Operator:OR' => ' OR ',
+
+    'Expression:Unit:Short:DAY' => 'd',
+    'Expression:Unit:Short:WEEK' => 'w',
+    'Expression:Unit:Short:MONTH' => 'm',
+    'Expression:Unit:Short:YEAR' => 'y',
+
+    'Expression:Unit:Long:DAY' => 'day(s)',
+    'Expression:Unit:Long:HOUR' => 'hour(s)',
+    'Expression:Unit:Long:MINUTE' => 'minute(s)',
+
+    'Expression:Verb:NOW' => 'now',
 ));
