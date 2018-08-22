@@ -12,21 +12,25 @@
 
 // Portal
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-    'Page:DefaultTitle' => 'Пользовательский портал iTop',
+    'Page:DefaultTitle' => 'Пользовательский портал %1$s',
     'Page:PleaseWait' => 'Пожалуйста, подождите...',
     'Page:Home' => 'Домашняя страница',
     'Page:GoPortalHome' => 'Домашняя страница',
     'Page:GoPreviousPage' => 'Предыдущяя страница',
+    'Page:ReloadPage' => 'Перезагрузить страницу',
     'Portal:Button:Submit' => 'Применить',
+    'Portal:Button:Apply' => 'Обновить',
     'Portal:Button:Cancel' => 'Отменить',
     'Portal:Button:Close' => 'Закрыть',
     'Portal:Button:Add' => 'Добавить',
     'Portal:Button:Remove' => 'Удалить',
     'Portal:Button:Delete' => 'Удалить',
+    'Error:HTTP:401' => 'Ошибка аутентификации',
     'Error:HTTP:404' => 'Страница не найдена',
     'Error:HTTP:500' => 'Упс! Произошла ошибка.',
-    'Error:XHR:Fail' => 'Не удалось загрузить данные. Пожалуйста, свяжитесь с вашим администратором iTop.',
-    'Error:HTTP:GetHelp' => 'Пожалуйста, свяжитесь с вашим администратором iTop, если проблема сохраняется.',
+    'Error:XHR:Fail' => 'Не удалось загрузить данные. Пожалуйста, свяжитесь с вашим администратором %1$s.',
+    'Error:HTTP:GetHelp' => 'Пожалуйста, свяжитесь с вашим администратором %1$s, если проблема сохраняется.',
+    'Portal:ErrorUserLoggedOut' => 'Вы вышли из системы. Выполните вход, чтобы продолжить работу.',
     'Portal:Datatables:Language:Processing' => 'Пожалуйста, подождите...',
     'Portal:Datatables:Language:Search' => 'Фильтр :',
     'Portal:Datatables:Language:LengthMenu' => 'Показывать _MENU_ элементов на странице',
@@ -54,8 +58,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
     'Brick:Portal:UserProfile:Password:Title' => 'Пароль',
     'Brick:Portal:UserProfile:Password:ChoosePassword' => 'Введите новый пароль',
     'Brick:Portal:UserProfile:Password:ConfirmPassword' => 'Подтвердите новый пароль',
-    'Brick:Portal:UserProfile:Password:CantChangeContactAdministrator' => 'Пожалуйста, свяжитесь с вашим администратором iTop для изменения пароля.',
-    'Brick:Portal:UserProfile:Password:CantChangeForUnknownReason' => 'Не удалось изменить пароль, пожалуйста, свяжитесь с вашим администратором iTop.',
+    'Brick:Portal:UserProfile:Password:CantChangeContactAdministrator' => 'Пожалуйста, свяжитесь с вашим администратором %1$s для изменения пароля.',
+    'Brick:Portal:UserProfile:Password:CantChangeForUnknownReason' => 'Не удалось изменить пароль, пожалуйста, свяжитесь с вашим администратором %1$s.',
     'Brick:Portal:UserProfile:PersonalInformations:Title' => 'Персональная информация',
     'Brick:Portal:UserProfile:Photo:Title' => 'Фотография',
 ));
@@ -65,6 +69,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
     'Brick:Portal:Browse:Name' => 'Просмотр элементов',
     'Brick:Portal:Browse:Mode:List' => 'Список',
     'Brick:Portal:Browse:Mode:Tree' => 'Дерево',
+    'Brick:Portal:Browse:Mode:Mosaic' => 'Плитки',
     'Brick:Portal:Browse:Action:Drilldown' => 'Детализация',
     'Brick:Portal:Browse:Action:View' => 'Подробно',
     'Brick:Portal:Browse:Action:Edit' => 'Изменить',
@@ -79,6 +84,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 Dict::Add('RU RU', 'Russian', 'Русский', array(
     'Brick:Portal:Manage:Name' => 'Управление элементами',
     'Brick:Portal:Manage:Table:NoData' => 'Нет элементов',
+    'Brick:Portal:Manage:Table:ItemActions' => 'Actions~~',
+    'Brick:Portal:Manage:DisplayMode:list' => 'List~~',
+    'Brick:Portal:Manage:DisplayMode:pie-chart' => 'Pie Chart~~',
+    'Brick:Portal:Manage:DisplayMode:bar-chart' => 'Bar Chart',
+    'Brick:Portal:Manage:Others' => 'Others~~',
+    'Brick:Portal:Manage:All' => 'All~~',
+    'Brick:Portal:Manage:Group' => 'Group~~',
+    'Brick:Portal:Manage:fct:count' => 'Total~~',
+    'Brick:Portal:Manage:fct:sum' => 'Sum~~',
+    'Brick:Portal:Manage:fct:avg' => 'Average~~',
+    'Brick:Portal:Manage:fct:min' => 'Min~~',
+    'Brick:Portal:Manage:fct:max' => 'Max~~',
 ));
 
 // ObjectBrick brick
@@ -96,4 +113,12 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 // CreateBrick brick
 Dict::Add('RU RU', 'Russian', 'Русский', array(
     'Brick:Portal:Create:Name' => 'Быстрое создание',
+    'Brick:Portal:Create:ChooseType' => 'Пожалуйста, выберите тип',
+));
+
+// Filter brick
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+    'Brick:Portal:Filter:Name' => 'Prefilter a brick~~',
+    'Brick:Portal:Filter:SearchInput:Placeholder' => 'eg. connect wifi~~',
+    'Brick:Portal:Filter:SearchInput:Submit' => 'Search~~',
 ));
