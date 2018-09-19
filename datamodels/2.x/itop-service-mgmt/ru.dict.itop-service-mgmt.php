@@ -210,6 +210,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceFamily+' => '',
 	'Class:ServiceFamily/Attribute:name' => 'Название',
 	'Class:ServiceFamily/Attribute:name+' => '',
+	'Class:ServiceFamily/Attribute:icon' => 'Иконка',
+	'Class:ServiceFamily/Attribute:icon+' => 'Используется на клиентском портале',
 	'Class:ServiceFamily/Attribute:services_list' => 'Услуги',
 	'Class:ServiceFamily/Attribute:services_list+' => 'Связанные услуги',
 ));
@@ -245,6 +247,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:status/Value:obsolete+' => 'Устаревший',
 	'Class:Service/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:Service/Attribute:status/Value:production+' => 'Эксплуатация',
+	'Class:Service/Attribute:icon' => 'Иконка',
+	'Class:Service/Attribute:icon+' => 'Используется на клиентском портале',
 	'Class:Service/Attribute:customercontracts_list' => 'Договоры с заказчиками',
 	'Class:Service/Attribute:customercontracts_list+' => 'Договоры с заказчиками, по которым предоставляется услуга',
 	'Class:Service/Attribute:providercontracts_list' => 'Договоры с поставщиками',
