@@ -1338,6 +1338,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
     // Search form
     'UI:Search:Toggle' => 'Развернуть / Свернуть',
     'UI:Search:AutoSubmit:DisabledHint' => 'Автоматический запуск поиска отключен для данного класса',
+    'UI:Search:NoAutoSubmit:ExplainText' => 'Добавьте критерии поиска или нажмите кнопку поиска, чтобы просмотреть объекты.',
     'UI:Search:Criterion:MoreMenu:AddCriteria' => 'Добавить критерий',
     // - Add new criteria button
     'UI:Search:AddCriteria:List:RecentlyUsed:Title' => 'Недавние',
