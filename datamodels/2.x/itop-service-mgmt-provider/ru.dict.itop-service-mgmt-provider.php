@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
@@ -9,36 +8,43 @@
  * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-
-
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-'Menu:ServiceManagement' => 'Управление услугами',
-'Menu:ServiceManagement+' => 'Управление услугами',
-'Menu:Service:Overview' => 'Обзор',
-'Menu:Service:Overview+' => 'Управление услугами - Обзор',
-'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуги',
-'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
-'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
+	'Menu:ServiceManagement' => 'Управление услугами',
+	'Menu:ServiceManagement+' => 'Управление услугами',
+	'Menu:Service:Overview' => 'Обзор',
+	'Menu:Service:Overview+' => 'Управление услугами - Обзор',
+	'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуги',
+	'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
+	'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
 
-'Menu:ProviderContract' => 'Договоры с поставщиками',
-'Menu:ProviderContract+' => 'Договоры с поставщиками',
-'Menu:CustomerContract' => 'Договоры с заказчиками',
-'Menu:CustomerContract+' => 'Договоры с заказчиками',
-'Menu:ServiceSubcategory' => 'Подкатегории услуг',
-'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
-'Menu:Service' => 'Услуги',
-'Menu:Service+' => 'Услуги',
-'Menu:ServiceElement' => 'Элементы услуг',
-'Menu:ServiceElement+' => 'Элементы услуг',
-'Menu:SLA' => 'SLA',
-'Menu:SLA+' => 'Соглашения об уровне услуг',
-'Menu:SLT' => 'SLT',
-'Menu:SLT+' => 'Целевые показатели уровня услуг',
-'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
+	'Menu:ProviderContract' => 'Договоры с поставщиками',
+	'Menu:ProviderContract+' => 'Договоры с поставщиками',
+	'Menu:CustomerContract' => 'Договоры с заказчиками',
+	'Menu:CustomerContract+' => 'Договоры с заказчиками',
+	'Menu:ServiceSubcategory' => 'Подкатегории услуг',
+	'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
+	'Menu:Service' => 'Услуги',
+	'Menu:Service+' => 'Услуги',
+	'Menu:ServiceElement' => 'Элементы услуг',
+	'Menu:ServiceElement+' => 'Элементы услуг',
+	'Menu:SLA' => 'SLA',
+	'Menu:SLA+' => 'Соглашения об уровне услуг',
+	'Menu:SLT' => 'SLT',
+	'Menu:SLT+' => 'Целевые показатели уровня услуг',
+	'Menu:DeliveryModel' => 'Модели предоставления услуг',
+	'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
 
 ));
 
+
+/*
+	'UI:ServiceManagementMenu' => 'Gestion des Services',
+	'UI:ServiceManagementMenu+' => 'Gestion des Services',
+	'UI:ServiceManagementMenu:Title' => 'Résumé des services & contrats',
+	'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Contrats par niveau de service',
+	'UI-ServiceManagementMenu-ContractsByStatus' => 'Contrats par état',
+	'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Contrats se terminant dans moins de 30 jours',
+*/
 
 //
 // Class: Organization
@@ -208,6 +214,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceFamily+' => '',
 	'Class:ServiceFamily/Attribute:name' => 'Название',
 	'Class:ServiceFamily/Attribute:name+' => '',
+	'Class:ServiceFamily/Attribute:icon' => 'Изображение',
+	'Class:ServiceFamily/Attribute:icon+' => '',
 	'Class:ServiceFamily/Attribute:services_list' => 'Услуги',
 	'Class:ServiceFamily/Attribute:services_list+' => 'Связанные услуги',
 ));
@@ -243,6 +251,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Service/Attribute:status/Value:obsolete+' => 'Устаревший',
 	'Class:Service/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:Service/Attribute:status/Value:production+' => 'Эксплуатация',
+	'Class:Service/Attribute:icon' => 'Изображение',
+	'Class:Service/Attribute:icon+' => '',
 	'Class:Service/Attribute:customercontracts_list' => 'Договоры с заказчиками',
 	'Class:Service/Attribute:customercontracts_list+' => 'Договоры с заказчиками, по которым предоставляется услуга',
 	'Class:Service/Attribute:servicesubcategories_list' => 'Подкатегории услуги',
@@ -314,7 +324,6 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceSubcategory/Attribute:request_type/Value:service_request+' => 'Запрос на обслуживание',
 	'Class:ServiceSubcategory/Attribute:service_provider' => 'Поставщик',
 	'Class:ServiceSubcategory/Attribute:service_org_id' => 'Поставщик',
-
 ));
 
 //

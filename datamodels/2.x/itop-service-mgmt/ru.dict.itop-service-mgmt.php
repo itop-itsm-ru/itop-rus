@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
@@ -9,37 +8,35 @@
  * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-
-
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-'Menu:ServiceManagement' => 'Управление услугами',
-'Menu:ServiceManagement+' => 'Управление услугами',
-'Menu:Service:Overview' => 'Обзор',
-'Menu:Service:Overview+' => 'Управление услугами - Обзор',
-'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуг',
-'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
-'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
+	'Menu:ServiceManagement' => 'Управление услугами',
+	'Menu:ServiceManagement+' => 'Управление услугами',
+	'Menu:Service:Overview' => 'Обзор',
+	'Menu:Service:Overview+' => 'Управление услугами - Обзор',
+	'UI-ServiceManagementMenu-ContractsBySrvLevel' => 'Договоры по уровню услуг',
+	'UI-ServiceManagementMenu-ContractsByStatus' => 'Договоры по статусу',
+	'UI-ServiceManagementMenu-ContractsEndingIn30Days' => 'Договоры, оканчивающиеся в течение 30-ти дней',
 
-'Menu:ProviderContract' => 'Договоры с поставщиками',
-'Menu:ProviderContract+' => 'Договоры с поставщиками',
-'Menu:CustomerContract' => 'Договоры с заказчиками',
-'Menu:CustomerContract+' => 'Договоры с заказчиками',
-'Menu:ServiceSubcategory' => 'Подкатегории услуг',
-'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
-'Menu:Service' => 'Услуги',
-'Menu:Service+' => 'Услуги',
-'Menu:ServiceElement' => 'Элементы услуг',
-'Menu:ServiceElement+' => 'Элементы услуг',
-'Menu:SLA' => 'SLA',
-'Menu:SLA+' => 'Соглашения об уровне услуг',
-'Menu:SLT' => 'SLT',
-'Menu:SLT+' => 'Целевые показатели уровня услуг',
-'Menu:DeliveryModel' => 'Модели предоставления услуг',
-'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
-'Menu:ServiceFamily' => 'Пакеты услуг',
-'Menu:ServiceFamily+' => 'Пакеты услуг',
-'Menu:Procedure' => 'Каталог процедур',
-'Menu:Procedure+' => 'Каталог процедур',
+	'Menu:ProviderContract' => 'Договоры с поставщиками',
+	'Menu:ProviderContract+' => 'Договоры с поставщиками',
+	'Menu:CustomerContract' => 'Договоры с заказчиками',
+	'Menu:CustomerContract+' => 'Договоры с заказчиками',
+	'Menu:ServiceSubcategory' => 'Подкатегории услуг',
+	'Menu:ServiceSubcategory+' => 'Подкатегории услуг',
+	'Menu:Service' => 'Услуги',
+	'Menu:Service+' => 'Услуги',
+	'Menu:ServiceElement' => 'Элементы услуг',
+	'Menu:ServiceElement+' => 'Элементы услуг',
+	'Menu:SLA' => 'SLA',
+	'Menu:SLA+' => 'Соглашения об уровне услуг',
+	'Menu:SLT' => 'SLT',
+	'Menu:SLT+' => 'Целевые показатели уровня услуг',
+	'Menu:DeliveryModel' => 'Модели предоставления услуг',
+	'Menu:DeliveryModel+' => 'Модели предоставления услуг (Delivery Models)',
+	'Menu:ServiceFamily' => 'Пакеты услуг',
+	'Menu:ServiceFamily+' => 'Пакеты услуг',
+	'Menu:Procedure' => 'Каталог процедур',
+	'Menu:Procedure+' => 'Каталог процедур',
 
 
 
@@ -322,8 +319,6 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ServiceSubcategory/Attribute:status/Value:obsolete+' => 'Устаревший',
 	'Class:ServiceSubcategory/Attribute:status/Value:production' => 'Эксплуатация',
 	'Class:ServiceSubcategory/Attribute:status/Value:production+' => 'Эксплуатация',
-	'Class:ServiceSubcategory/Attribute:service_provider' => 'Поставщик',
-	'Class:ServiceSubcategory/Attribute:service_org_id' => 'Поставщик',
 ));
 
 //

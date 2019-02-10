@@ -8,12 +8,6 @@
  * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-//
-// Class: UserLocal
-//
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Class:UserLocal' => 'Пользователь iTop',
-	'Class:UserLocal+' => 'Пользователь, аутентифицируемый через iTop',
-	'Class:UserLocal/Attribute:password' => 'Пароль',
-	'Class:UserLocal/Attribute:password+' => 'Строка аутентификации пользователя',
+	// Dictionary entries go here
 ));

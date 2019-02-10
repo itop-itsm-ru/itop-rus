@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Локализация интерфейса Combodo iTop подготовлена сообществом iTop по-русски http://community.itop-itsm.ru.
  *
@@ -9,31 +8,20 @@
  * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
  *
  */
-
 //////////////////////////////////////////////////////////////////////
 // Relations for iTop version >= 2.2.0
 //////////////////////////////////////////////////////////////////////
 //
-
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Relation:impacts/Description' => 'Элементы, на которые влияет',
 	'Relation:impacts/DownStream' => 'Влияет на...',
+	'Relation:impacts/DownStream+' => 'Элементы, на которые влияет',
 	'Relation:impacts/UpStream' => 'Зависит от...',
+	'Relation:impacts/UpStream+' => 'Элементы, от которых зависит',
+	// Legacy entries
 	'Relation:depends on/Description' => 'Элементы, от которых зависит',
 	'Relation:depends on/DownStream' => 'Зависит от...',
 	'Relation:depends on/UpStream' => 'Влияет на...',
-));
-
-//////////////////////////////////////////////////////////////////////
-// Relations for iTop version < 2.2.0
-//////////////////////////////////////////////////////////////////////
-//
-
-Dict::Add('RU RU', 'Russian', 'Русский', array(
-	'Relation:impacts/VerbUp' => 'Влияние...',
-	'Relation:impacts/VerbDown' => 'Элементы, на которые влияет...',
-	'Relation:depends on/VerbUp' => 'Зависимость...',
-	'Relation:depends on/VerbDown' => 'Влияние...',
 ));
 
 
@@ -46,6 +34,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 // Class:<class_name>/Attribute:<attribute_code>/Value:<value>+
 // Class:<class_name>/Stimulus:<stimulus_code>
 // Class:<class_name>/Stimulus:<stimulus_code>+
+// Class:<class_name>/UniquenessRule:<rule_code>
+// Class:<class_name>/UniquenessRule:<rule_code>+
 
 //////////////////////////////////////////////////////////////////////
 // Classes in 'bizmodel'
@@ -61,6 +51,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 // Class:<class_name>/Attribute:<attribute_code>/Value:<value>+
 // Class:<class_name>/Stimulus:<stimulus_code>
 // Class:<class_name>/Stimulus:<stimulus_code>+
+// Class:<class_name>/UniquenessRule:<rule_code>
+// Class:<class_name>/UniquenessRule:<rule_code>+
 
 //////////////////////////////////////////////////////////////////////
 // Note: The classes have been grouped by categories: bizmodel
@@ -98,6 +90,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Organization/Attribute:deliverymodel_name+' => 'Модель предоставления услуг',
 	'Class:Organization/Attribute:parent_id_friendlyname' => 'Вышестоящая',
 	'Class:Organization/Attribute:parent_id_friendlyname+' => 'Вышестоящая организация',
+	'Class:Organization/Attribute:overview' => 'Обзор',
+	'Organization:Overview:FunctionalCIs' => 'Конфигурационные единицы этой организации',
+	'Organization:Overview:FunctionalCIs:subtitle' => 'по типу',
+	'Organization:Overview:Users' => 'Пользователи iTop этой организации',
 ));
 
 //
@@ -181,8 +177,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Person/Attribute:name+' => '',
 	'Class:Person/Attribute:first_name' => 'Имя',
 	'Class:Person/Attribute:first_name+' => '',
-	'Class:Person/Attribute:employee_number' => 'ID сотрудника',
-	'Class:Person/Attribute:employee_number+' => '',
+	'Class:Person/Attribute:employee_number' => 'Номер сотрудника',
+	'Class:Person/Attribute:employee_number+' => 'Табельный номер сотрудника или т.п.',
 	'Class:Person/Attribute:mobile_phone' => 'Мобильный телефон',
 	'Class:Person/Attribute:mobile_phone+' => '',
 	'Class:Person/Attribute:location_id' => 'Расположение',
@@ -201,6 +197,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Person/Attribute:manager_id_friendlyname+' => '',
 	'Class:Person/Attribute:picture' => 'Фотография',
 	'Class:Person/Attribute:picture+' => '',
+	'Class:Person/UniquenessRule:employee_number+' => 'Номер сотрудника должен быть уникальным в организации',
+	'Class:Person/UniquenessRule:employee_number' => 'В организации \'$this->org_name$\' уже есть персона с таким номером сотрудника',
+	'Class:Person/UniquenessRule:name+' => 'Имя сотрудника должно быть уникальным внутри организации',
+	'Class:Person/UniquenessRule:name' => 'В организации \'$this->org_name$\' уже есть персона с таким именем',
 ));
 
 //
@@ -1292,6 +1292,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Brand+' => '',
 	'Class:Brand/Attribute:physicaldevices_list' => 'Устройства',
 	'Class:Brand/Attribute:physicaldevices_list+' => 'Все устройства этого бренда',
+	'Class:Brand/UniquenessRule:name+' => 'Название должно быть уникальным',
+	'Class:Brand/UniquenessRule:name' => 'Этот бренд уже существует',
 ));
 
 //
@@ -1345,6 +1347,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Model/Attribute:type/Value:Phone+' => 'Телефон',
 	'Class:Model/Attribute:physicaldevices_list' => 'Устройства',
 	'Class:Model/Attribute:physicaldevices_list+' => 'Все устройства этой модели',
+	'Class:Model/UniquenessRule:name_brand+' => 'Название должно быть уникальным внутри бренда',
+	'Class:Model/UniquenessRule:name_brand' => 'эта модель уже существует для этого бренда',
 ));
 
 //
@@ -1749,6 +1753,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:Group/Attribute:type' => 'Тип',
 	'Class:Group/Attribute:type+' => '',
 	'Class:Group/Attribute:parent_id' => 'Родительская группа',
+
 	'Class:Group/Attribute:parent_id+' => '',
 	'Class:Group/Attribute:parent_name' => 'Родительская группа',
 	'Class:Group/Attribute:parent_name+' => '',
@@ -1783,88 +1788,88 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 //
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-'Menu:DataAdministration' => 'Администрирование данных',
-'Menu:DataAdministration+' => 'Администрирование данных',
-'Menu:Catalogs' => 'Каталоги',
-'Menu:Catalogs+' => 'Каталоги',
-'Menu:Audit' => 'Аудит',
-'Menu:Audit+' => 'Аудит',
-'Menu:CSVImport' => 'Импорт CSV',
-'Menu:CSVImport+' => 'Массовое создание или обновление объектов',
-'Menu:Organization' => 'Организации',
-'Menu:Organization+' => 'Все организации',
-'Menu:Application' => 'Приложения',
-'Menu:Application+' => 'Все приложения',
-'Menu:DBServer' => 'Серверы баз данных',
-'Menu:DBServer+' => 'Серверы баз данных',
-'Menu:ConfigManagement' => 'Управление конфигурациями',
-'Menu:ConfigManagement+' => 'Управление конфигурациями',
-'Menu:ConfigManagementOverview' => 'Обзор',
-'Menu:ConfigManagementOverview+' => 'Обзор',
-'Menu:Contact' => 'Контакты',
-'Menu:Contact+' => 'Контакты',
-'Menu:Contact:Count' => '%1$d Контактов',
-'Menu:Person' => 'Персоны',
-'Menu:Person+' => 'Все персоны',
-'Menu:Team' => 'Команды',
-'Menu:Team+' => 'Все команды',
-'Menu:Document' => 'Документы',
-'Menu:Document+' => 'Все документы',
-'Menu:Location' => 'Расположения',
+	'Menu:DataAdministration' => 'Администрирование данных',
+	'Menu:DataAdministration+' => 'Администрирование данных',
+	'Menu:Catalogs' => 'Каталоги',
+	'Menu:Catalogs+' => 'Каталоги',
+	'Menu:Audit' => 'Аудит',
+	'Menu:Audit+' => 'Аудит',
+	'Menu:CSVImport' => 'Импорт CSV',
+	'Menu:CSVImport+' => 'Массовое создание или обновление объектов',
+	'Menu:Organization' => 'Организации',
+	'Menu:Organization+' => 'Все организации',
+	'Menu:Application' => 'Приложения',
+	'Menu:Application+' => 'Все приложения',
+	'Menu:DBServer' => 'Серверы баз данных',
+	'Menu:DBServer+' => 'Серверы баз данных',
+	'Menu:ConfigManagement' => 'Управление конфигурациями',
+	'Menu:ConfigManagement+' => 'Управление конфигурациями',
+	'Menu:ConfigManagementOverview' => 'Обзор',
+	'Menu:ConfigManagementOverview+' => 'Обзор',
+	'Menu:Contact' => 'Контакты',
+	'Menu:Contact+' => 'Контакты',
+	'Menu:Contact:Count' => '%1$d Контактов',
+	'Menu:Person' => 'Персоны',
+	'Menu:Person+' => 'Все персоны',
+	'Menu:Team' => 'Команды',
+	'Menu:Team+' => 'Все команды',
+	'Menu:Document' => 'Документы',
+	'Menu:Document+' => 'Все документы',
+	'Menu:Location' => 'Расположения',
 
-'Menu:Location+' => 'Все расположения',
-'Menu:ConfigManagementCI' => 'Конфигурационные единицы',
-'Menu:ConfigManagementCI+' => 'Конфигурационные единицы',
-'Menu:BusinessProcess' => 'Бизнес-процессы',
-'Menu:BusinessProcess+' => 'Все бизнес-процессы',
-'Menu:ApplicationSolution' => 'Прикладные решения',
-'Menu:ApplicationSolution+' => 'Все прикладные решения',
-'Menu:ConfigManagementSoftware' => 'Управление программным обеспечением',
-'Menu:Licence' => 'Лицензии',
-'Menu:Licence+' => 'Все лицензии',
-'Menu:Patch' => 'Патчи',
-'Menu:Patch+' => 'Все патчи',
-'Menu:ApplicationInstance' => 'Установленное ПО',
-'Menu:ApplicationInstance+' => 'Приложения и сервера БД',
-'Menu:ConfigManagementHardware' => 'Управление инфраструктурой',
-'Menu:Subnet' => 'Подсети',
-'Menu:Subnet+' => 'Все подсети',
-'Menu:NetworkDevice' => 'Сетевые устройства',
-'Menu:NetworkDevice+' => 'Все сетевые устройства',
-'Menu:Server' => 'Серверы',
-'Menu:Server+' => 'Все серверы',
-'Menu:Printer' => 'Принтеры',
-'Menu:Printer+' => 'Все принтеры',
-'Menu:MobilePhone' => 'Мобильные телефоны',
-'Menu:MobilePhone+' => 'Все мобильные телефоны',
-'Menu:PC' => 'Персональные компьютеры',
-'Menu:PC+' => 'Все ПК',
-'Menu:NewContact' => 'Новый контакт',
-'Menu:NewContact+' => 'Новый контакт',
-'Menu:SearchContacts' => 'Поиск контактов',
-'Menu:SearchContacts+' => 'Поиск контактов',
-'Menu:NewCI' => 'Новая КЕ',
-'Menu:NewCI+' => 'Новая КЕ',
-'Menu:SearchCIs' => 'Поиск КЕ',
-'Menu:SearchCIs+' => 'Поиск КЕ',
-'Menu:ConfigManagement:Devices' => 'Устройства',
-'Menu:ConfigManagement:AllDevices' => 'Все устройства',
-'Menu:ConfigManagement:virtualization' => 'Виртуализация',
-'Menu:ConfigManagement:EndUsers' => 'Пользовательские устройства',
-'Menu:ConfigManagement:SWAndApps' => 'Программное обеспечение и приложения',
-'Menu:ConfigManagement:Misc' => 'Разное',
-'Menu:Group' => 'Группы КЕ',
-'Menu:Group+' => 'Группы КЕ',
-'Menu:ConfigManagement:Shortcuts' => 'Ярлыки',
-'Menu:ConfigManagement:AllContacts' => 'Все контакты: %1$d',
-'Menu:Typology' => 'Типология',
-'Menu:Typology+' => 'Типология',
-'Menu:OSVersion' => 'Версия ОС',
-'Menu:OSVersion+' => 'Версия ОС',
-'Menu:Software' => 'Каталог ПО',
-'Menu:Software+' => 'Каталог ПО',
-'UI_WelcomeMenu_AllConfigItems' => 'Все конфигурационные единицы',
-'Menu:ConfigManagement:Typology' => 'Настройка типологии',
+	'Menu:Location+' => 'Все расположения',
+	'Menu:ConfigManagementCI' => 'Конфигурационные единицы',
+	'Menu:ConfigManagementCI+' => 'Конфигурационные единицы',
+	'Menu:BusinessProcess' => 'Бизнес-процессы',
+	'Menu:BusinessProcess+' => 'Все бизнес-процессы',
+	'Menu:ApplicationSolution' => 'Прикладные решения',
+	'Menu:ApplicationSolution+' => 'Все прикладные решения',
+	'Menu:ConfigManagementSoftware' => 'Управление программным обеспечением',
+	'Menu:Licence' => 'Лицензии',
+	'Menu:Licence+' => 'Все лицензии',
+	'Menu:Patch' => 'Патчи',
+	'Menu:Patch+' => 'Все патчи',
+	'Menu:ApplicationInstance' => 'Установленное ПО',
+	'Menu:ApplicationInstance+' => 'Приложения и сервера БД',
+	'Menu:ConfigManagementHardware' => 'Управление инфраструктурой',
+	'Menu:Subnet' => 'Подсети',
+	'Menu:Subnet+' => 'Все подсети',
+	'Menu:NetworkDevice' => 'Сетевые устройства',
+	'Menu:NetworkDevice+' => 'Все сетевые устройства',
+	'Menu:Server' => 'Серверы',
+	'Menu:Server+' => 'Все серверы',
+	'Menu:Printer' => 'Принтеры',
+	'Menu:Printer+' => 'Все принтеры',
+	'Menu:MobilePhone' => 'Мобильные телефоны',
+	'Menu:MobilePhone+' => 'Все мобильные телефоны',
+	'Menu:PC' => 'Персональные компьютеры',
+	'Menu:PC+' => 'Все ПК',
+	'Menu:NewContact' => 'Новый контакт',
+	'Menu:NewContact+' => 'Новый контакт',
+	'Menu:SearchContacts' => 'Поиск контактов',
+	'Menu:SearchContacts+' => 'Поиск контактов',
+	'Menu:NewCI' => 'Новая КЕ',
+	'Menu:NewCI+' => 'Новая КЕ',
+	'Menu:SearchCIs' => 'Поиск КЕ',
+	'Menu:SearchCIs+' => 'Поиск КЕ',
+	'Menu:ConfigManagement:Devices' => 'Устройства',
+	'Menu:ConfigManagement:AllDevices' => 'Все устройства',
+	'Menu:ConfigManagement:virtualization' => 'Виртуализация',
+	'Menu:ConfigManagement:EndUsers' => 'Пользовательские устройства',
+	'Menu:ConfigManagement:SWAndApps' => 'Программное обеспечение и приложения',
+	'Menu:ConfigManagement:Misc' => 'Разное',
+	'Menu:Group' => 'Группы КЕ',
+	'Menu:Group+' => 'Группы КЕ',
+	'Menu:ConfigManagement:Shortcuts' => 'Ярлыки',
+	'Menu:ConfigManagement:AllContacts' => 'Все контакты: %1$d',
+	'Menu:Typology' => 'Типология',
+	'Menu:Typology+' => 'Типология',
+	'Menu:OSVersion' => 'Версия ОС',
+	'Menu:OSVersion+' => 'Версия ОС',
+	'Menu:Software' => 'Каталог ПО',
+	'Menu:Software+' => 'Каталог ПО',
+	'UI_WelcomeMenu_AllConfigItems' => 'Все конфигурационные единицы',
+	'Menu:ConfigManagement:Typology' => 'Настройка типологии',
 
 ));
 
@@ -1872,18 +1877,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 // Add translation for Fieldsets
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
-'Server:baseinfo' => 'Основное',
-'Server:Date' => 'Даты',
-'Server:moreinfo' => 'Спецификация',
-'Server:otherinfo' => 'Дополнительно',
-'Server:power' => 'Электропитание',
-'Person:info' => 'Основное',
-'Person:notifiy' => 'Уведомления',
-'Person:personal_info' => 'Персональная информация',
-'Class:Subnet/Tab:IPUsage' => 'Использование IP-адресов',
-'Class:Subnet/Tab:IPUsage-explain' => 'Интерфейсы с IP-адресом в диапазоне: <em>%1$s</em> - <em>%2$s</em>',
-'Class:Subnet/Tab:FreeIPs' => 'Свободные IP-адреса',
-'Class:Subnet/Tab:FreeIPs-count' => 'Свободных IP-адресов: %1$s',
-'Class:Subnet/Tab:FreeIPs-explain' => 'Вот выборка из 10 свободных IP-адресов',
-'Class:Document:PreviewTab' => 'Просмотр',
+	'Server:baseinfo' => 'Основное',
+	'Server:Date' => 'Даты',
+	'Server:moreinfo' => 'Спецификация',
+	'Server:otherinfo' => 'Дополнительно',
+	'Server:power' => 'Электропитание',
+	'Person:info' => 'Основное',
+	'Person:personal_info' => 'Персональная информация',
+	'Person:notifiy' => 'Уведомления',
+	'Class:Subnet/Tab:IPUsage' => 'Использование IP-адресов',
+	'Class:Subnet/Tab:IPUsage-explain' => 'Интерфейсы с IP-адресом в диапазоне: <em>%1$s</em> - <em>%2$s</em>',
+	'Class:Subnet/Tab:FreeIPs' => 'Свободные IP-адреса',
+	'Class:Subnet/Tab:FreeIPs-count' => 'Свободных IP-адресов: %1$s',
+	'Class:Subnet/Tab:FreeIPs-explain' => 'Вот выборка из 10 свободных IP-адресов',
+	'Class:Document:PreviewTab' => 'Просмотр',
 ));
