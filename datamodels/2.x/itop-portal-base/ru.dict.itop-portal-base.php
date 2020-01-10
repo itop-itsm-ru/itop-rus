@@ -50,9 +50,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:Autocomplete:NoResult' => 'Нет данных',
 	'Portal:Attachments:DropZone:Message' => 'Перетащите файл для добавления вложения',
 	'Portal:File:None' => 'Нет файла',
-	'Portal:File:DisplayInfo' => '<a href="%2$s" class="file_download_link">%1$s</a>~~',
+	'Portal:File:DisplayInfo' => '<a href="%2$s" class="file_download_link">%1$s</a>',
 	'Portal:File:DisplayInfo+' => '%1$s (%2$s) <a href="%3$s" class="file_open_link" target="_blank">Открыть</a> / <a href="%4$s" class="file_download_link">Скачать</a>',
 	'Portal:Calendar-FirstDayOfWeek' => 'ru', //work with moment.js locales
+	'Portal:Form:Close:Warning' => 'Вы действительно хотите закрыть эту форму? Введённые данные могут быть утеряны.',
 ));
 
 // UserProfile brick
@@ -118,6 +119,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Brick:Portal:Object:Form:Message:Saved' => 'Сохранено',
 	'Brick:Portal:Object:Search:Regular:Title' => 'Выбрать %1$s (%2$s)',
 	'Brick:Portal:Object:Search:Hierarchy:Title' => 'Выбрать %1$s (%2$s)',
+	'Brick:Portal:Object:Copy:TextToCopy' => '%1$s: %2$s',
+	'Brick:Portal:Object:Copy:Tooltip' => 'Скопировать ссылку на объект',
+	'Brick:Portal:Object:Copy:CopiedTooltip' => 'Ссылка скопирована'
 ));
 
 // CreateBrick brick

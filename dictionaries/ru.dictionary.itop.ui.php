@@ -35,6 +35,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:AuditRule/Attribute:name+' => 'Краткое название этого правила',
 	'Class:AuditRule/Attribute:description' => 'Описание правила аудита',
 	'Class:AuditRule/Attribute:description+' => 'Полное описание этого правила аудита',
+	'Class:TagSetFieldData/Attribute:finalclass' => 'Класс тега',
+	'Class:TagSetFieldData/Attribute:obj_class' => 'Класс объекта',
+	'Class:TagSetFieldData/Attribute:obj_attcode' => 'Код поля',
 	'Class:AuditRule/Attribute:query' => 'Запрос для выполнения',
 	'Class:AuditRule/Attribute:query+' => 'OQL выражение, выполняющее проверку набора объектов категории аудита',
 	'Class:AuditRule/Attribute:valid_flag' => 'Валидные объекты?',
@@ -83,17 +86,19 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:User/Attribute:finalclass' => 'Тип аккаунта',
 	'Class:User/Attribute:finalclass+' => '',
 	'Class:User/Attribute:contactid' => 'Персона',
-	'Class:User/Attribute:contactid+' => 'Персона из списка контактов',
+	'Class:User/Attribute:contactid+' => '',
+	'Class:User/Attribute:org_id' => 'Организация',
+	'Class:User/Attribute:org_id+' => 'Организация связанной персоны',
 	'Class:User/Attribute:last_name' => 'Фамилия',
-	'Class:User/Attribute:last_name+' => 'Фамилия соответсвующего контакта',
+	'Class:User/Attribute:last_name+' => 'Фамилия связанной персоны',
 	'Class:User/Attribute:first_name' => 'Имя',
-	'Class:User/Attribute:first_name+' => 'Имя соответсвующего контакта',
+	'Class:User/Attribute:first_name+' => 'Имя связанной персоны',
 	'Class:User/Attribute:email' => 'email',
-	'Class:User/Attribute:email+' => 'email соответсвующего контакта',
+	'Class:User/Attribute:email+' => 'email связанной персоны',
 	'Class:User/Attribute:login' => 'Логин',
-	'Class:User/Attribute:login+' => 'строка идентификации пользователя',
+	'Class:User/Attribute:login+' => 'Уникальный логин пользователя',
 	'Class:User/Attribute:language' => 'Язык',
-	'Class:User/Attribute:language+' => 'язык пользователя',
+	'Class:User/Attribute:language+' => 'Язык пользователя',
 	'Class:User/Attribute:language/Value:EN US' => 'Английский',
 	'Class:User/Attribute:language/Value:EN US+' => 'Английский (США)',
 	'Class:User/Attribute:language/Value:FR FR' => 'Французский',
@@ -430,6 +435,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Error:Invalid_Stimulus_On_Object_In_State' => 'Ошибка: недействительный стимул "%1$s" на объекте %2$s в состоянии "%3$s".',
 	'UI:Error:InvalidDashboardFile' => 'Ошибка: недопустимый файл дашборда',
 	'UI:Error:InvalidDashboard' => 'Ошибка: недопустимый дашборд',
+	'UI:Error:MaintenanceMode' => 'Приложение в режиме технического обслуживания',
+	'UI:Error:MaintenanceTitle' => 'Техническое обслуживание',
 
 	'UI:GroupBy:Count' => 'Количество',
 	'UI:GroupBy:Count+' => 'Количество элементов',
@@ -496,6 +503,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Login:ForgotPwdForm+' => 'Введите свой логин для входа в систему и нажмите "Отправить". iTop отправит email с инструкциями по восстановлению пароля на ваш электронный адрес.',
 	'UI:Login:ResetPassword' => 'Отправить',
 	'UI:Login:ResetPwdFailed' => 'Не удалось отправить email: %1$s',
+	'UI:Login:SeparatorOr' => 'или',
 
 	'UI:ResetPwd-Error-WrongLogin' => 'учетная запись с логином "%1$s" не найдена.',
 	'UI:ResetPwd-Error-NotPossible' => 'восстановление пароля для внешних учётных записей недоступно.',
@@ -504,7 +512,6 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:ResetPwd-Error-NoEmailAtt' => 'аккаунт не ассоциирован с персоной, имеющей атрибут электронной почты. Пожалуйста, обратитесь к администратору.',
 	'UI:ResetPwd-Error-NoEmail' => 'отсутствует адрес электронной почты. Пожалуйста, обратитесь к администратору.',
 	'UI:ResetPwd-Error-Send' => 'технические проблемы с отправкой электронной почты. Пожалуйста, обратитесь к администратору.',
-	'UI:ResetPwd-EmailSent' => 'Пожалуйста, проверьте свой почтовый ящик и следуйте инструкциям.',
 	'UI:ResetPwd-EmailSubject' => 'Восстановление пароля',
 	'UI:ResetPwd-EmailBody' => '<body><p>Вы запросили восстановление пароля iTop.</p><p>Пожалуйста, воспользуйтесь <a href="%1$s">этой ссылкой</a> для задания нового пароля.</p></body>',
 
@@ -532,6 +539,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Button:Login' => 'Войти',
 	'UI:Login:Error:AccessRestricted' => 'Доступ к iTop ограничен. Пожалуйста, свяжитесь с администратором iTop.',
 	'UI:Login:Error:AccessAdmin' => 'Доступ ограничен для лиц с административными привилегиями. Пожалуйста, свяжитесь с администратором iTop.',
+	'UI:Login:Error:WrongOrganizationName' => 'Неизвестная организация',
+	'UI:Login:Error:MultipleContactsHaveSameEmail' => 'Несколько контактов имеют один и тот же адрес электронной почты',
+	'UI:Login:Error:NoValidProfiles' => 'Нет допустимого профиля',
 	'UI:CSVImport:MappingSelectOne' => '-- выбрать один --',
 	'UI:CSVImport:MappingNotApplicable' => '-- игнорировать это поле --',
 	'UI:CSVImport:NoData' => 'Пустой набор данных..., пожалуйста введите что-нибудь!',
@@ -657,11 +667,15 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:RunQuery:HeaderOQLExpression+' => 'Запрос в синтаксисе OQL',
 	'UI:RunQuery:ExpressionToEvaluate' => 'Оценка выражения: ',
 	'UI:RunQuery:MoreInfo' => 'Подробная информация о запросе: ',
-	'UI:RunQuery:DevelopedQuery' => 'Переработанное выражение запроса: ',
-	'UI:RunQuery:SerializedFilter' => 'Сериализованные фильты: ',
+	'UI:RunQuery:DevelopedQuery' => 'Декомпилированный запрос OQL: ',
+	'UI:RunQuery:SerializedFilter' => 'Сериализованная версия: ',
+	'UI:RunQuery:DevelopedOQL' => 'Подготовленный OQL: ',
+	'UI:RunQuery:DevelopedOQLCount' => 'Подготовленный OQL для count: ',
+	'UI:RunQuery:ResultSQLCount' => 'Результирующий SQL для count: ',
+	'UI:RunQuery:ResultSQL' => 'Результирующий SQL: ',
 	'UI:RunQuery:Error' => 'Ошибка при выполнении запроса: %1$s',
-	'UI:Query:UrlForExcel' => 'URL to use for MS-Excel web queries~~',
-	'UI:Query:UrlV1' => 'The list of fields has been left unspecified. The page <em>export-V2.php</em> cannot be invoked without this information. Therefore, the URL suggested here below points to the legacy page: <em>export.php</em>. This legacy version of the export has the following limitation: the list of exported fields may vary depending on the output format and the data model of iTop. <br/>Should you want to garantee that the list of exported columns will remain stable on the long run, then you must specify a value for the attribute "Fields" and use the page <em>export-V2.php</em>.',
+	'UI:Query:UrlForExcel' => 'URL-адрес для использования в веб-запросах MS-Excel',
+	'UI:Query:UrlV1' => 'Список полей был оставлен неопределенным. Страница <em>export-V2.php</em> не может быть вызван без этой информации. Поэтому URL-адрес, предложенный здесь ниже, указывает на устаревшую страницу: <em>export.php</ем>. Эта устаревшая версия экспорта имеет следующее ограничение: список экспортируемых полей может варьироваться в зависимости от формата вывода и модели данных iTop. если вы хотите гарантировать, что список экспортируемых столбцов будет оставаться стабильным в долгосрочной перспективе, то вы должны указать значение атрибута "Экспорт. поля" и использовать страницу <em>export-V2.php</ем>.',
 	'UI:Schema:Title' => 'iTop схема объектов',
 	'UI:Schema:CategoryMenuItem' => 'Категория <b>%1$s</b>',
 	'UI:Schema:Relationships' => 'Отношения',
@@ -819,7 +833,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:FatalErrorMessage' => 'Критическая ошибка, iTop не может продолжать работу.',
 	'UI:Error_Details' => 'Ошибка: %1$s.',
 
-	'UI:PageTitle:ClassProjections'	=> 'iTop управление пользователями - проектирование классов',
+	'UI:PageTitle:ClassProjections' => 'iTop управление пользователями - проектирование классов',
 	'UI:PageTitle:ProfileProjections' => 'iTop управление пользователями - проектирование профилей',
 	'UI:UserManagement:Class' => 'Классs',
 	'UI:UserManagement:Class+' => 'Класс объектов',
@@ -862,6 +876,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:AdminTools' => 'Инструменты администратора', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:AdminTools+' => 'Инструменты администратора', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:AdminTools?' => 'Инструменты доступны только для пользователей, имеющих профиль администратора', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:System' => 'Система',
 
 	'UI:ChangeManagementMenu' => 'Управление изменениями',
 	'UI:ChangeManagementMenu+' => 'Управление изменениями',
@@ -952,28 +967,28 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:AuditCategories+' => 'Категории аудита', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:Notifications:Title' => 'Категории аудита', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:RunQueriesMenu' => 'Выполнение запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:RunQueriesMenu+' => 'Выполнение любых запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:RunQueriesMenu' => 'Выполнение запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:RunQueriesMenu+' => 'Выполнение любых запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:QueryMenu' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:QueryMenu+' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:QueryMenu' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:QueryMenu+' => 'Книга запросов', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:DataAdministration' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:DataAdministration+' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:DataAdministration' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:DataAdministration+' => 'Администрирование данных', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:UniversalSearchMenu' => 'Универсальный поиск', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UniversalSearchMenu' => 'Универсальный поиск', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UniversalSearchMenu+' => 'Поиск чего угодно...', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:UserManagementMenu' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:UserManagementMenu+' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserManagementMenu' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserManagementMenu+' => 'Управление пользователями', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:ProfilesMenu' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:ProfilesMenu+' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:ProfilesMenu:Title' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:ProfilesMenu' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:ProfilesMenu+' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:ProfilesMenu:Title' => 'Профили пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
 
-    'Menu:UserAccountsMenu' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:UserAccountsMenu+' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
-    'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserAccountsMenu' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей', // Duplicated into itop-welcome-itil (will be removed from here...)	
 
 	'UI:iTopVersion:Short' => '%1$s версия %2$s',
 	'UI:iTopVersion:Long' => '%1$s версия %2$s-%3$s основан на %4$s',
@@ -1039,8 +1054,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:ChangeMyPassword' => 'Изменить пароль',
 	'Portal:Disconnect' => 'Выйти',
 	'Portal:OpenRequests' => 'Мои открытые запросы',
-	'Portal:ClosedRequests'  => 'Мои закрытые запросы',
-	'Portal:ResolvedRequests'  => 'Мои решённые запросы',
+	'Portal:ClosedRequests' => 'Мои закрытые запросы',
+	'Portal:ResolvedRequests' => 'Мои решённые запросы',
 	'Portal:SelectService' => 'Выберите услугу из каталога:',
 	'Portal:PleaseSelectOneService' => 'Пожалуйста, выберите услугу для создания запроса',
 	'Portal:SelectSubcategoryFrom_Service' => 'Выберите подкатегорию услуги %1$s:',
@@ -1406,6 +1421,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Search form
 	'UI:Search:Toggle' => 'Развернуть / Свернуть',
 	'UI:Search:AutoSubmit:DisabledHint' => 'Автоматический запуск поиска отключен для данного класса',
+	'UI:Search:Obsolescence:DisabledHint' => '<span class="fas fa-eye-slash fa-1x"></span> Устаревшие данные скрыты в соответствии с вашими предпочтениями',
 	'UI:Search:NoAutoSubmit:ExplainText' => 'Добавьте критерии поиска или нажмите кнопку поиска, чтобы просмотреть объекты.',
 	'UI:Search:Criterion:MoreMenu:AddCriteria' => 'Добавить критерий',
 	// - Add new criteria button

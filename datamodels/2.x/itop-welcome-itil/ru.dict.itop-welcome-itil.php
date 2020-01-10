@@ -42,6 +42,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей',
 	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей',
 	'Menu:MyShortcuts' => 'Избранное',
+	'Menu:UserManagement' => 'Управление пользователями',
+	'Menu:Queries' => 'Запросы OQL',
+	'Menu:Configuration' => 'Конфигурация',
 ));
 
 //
@@ -68,5 +71,14 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:ResourceRunQueriesMenu' => 'Меню Выполнение запросов',
-	'Class:ResourceRunQueriesMenu+' => '~~',
+	'Class:ResourceRunQueriesMenu+' => '',
+));
+
+//
+// Class: Action
+//
+
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:ResourceSystemMenu' => 'Меню Система',
+	'Class:ResourceSystemMenu+' => '',
 ));
