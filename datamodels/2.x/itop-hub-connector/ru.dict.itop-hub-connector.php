@@ -5,19 +5,19 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	// Dictionary entries go here
 	'Menu:iTopHub' => 'iTop Hub',
     'Menu:iTopHub:Register' => 'Подключение к iTop Hub',
-    'Menu:iTopHub:Register+' => 'Go to iTop Hub to update your iTop instance~~',
+    'Menu:iTopHub:Register+' => 'Перейдите в iTop Hub, чтобы обновить ваш экземпляр iTop',
     'Menu:iTopHub:Register:Description' => '<p>Get access to your community platform iTop Hub!</br>Find all the content and information you need, manage your instances through personalized tools & install more extensions.</br><br/>By connecting to the Hub from this page, you will push information about this iTop instance into the Hub.</p>~~',
     'Menu:iTopHub:MyExtensions' => 'Установленные расширения',
-    'Menu:iTopHub:MyExtensions+' => 'See the list of extensions deployed on this instance of iTop~~',
+    'Menu:iTopHub:MyExtensions+' => 'Расширения, развернутые на данном экземпляре iTop',
     'Menu:iTopHub:BrowseExtensions' => 'Получить расширения из iTop Hub',
-    'Menu:iTopHub:BrowseExtensions+' => 'Browse for more extensions on iTop Hub~~',
+    'Menu:iTopHub:BrowseExtensions+' => 'Найдите дополнительные расширения на iTop Hub',
     'Menu:iTopHub:BrowseExtensions:Description' => '<p>Look into iTop Hub’s store, your one stop place to find wonderful iTop extensions !</br>Find the ones that will help you customize and adapt iTop to your processes.</br><br/>By connecting to the Hub from this page, you will push information about this iTop instance into the Hub.</p>~~',
     'iTopHub:GoBtn' => 'Go To iTop Hub~~',
 	'iTopHub:CloseBtn' => 'Close~~',
@@ -35,7 +35,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'iTopHub:Landing:Install' => 'Deploying extensions...~~',
 	'iTopHub:CompiledOK' => 'Compilation successful.~~',
 	'iTopHub:ConfigurationSafelyReverted' => 'Error detected during deployment!<br/>iTop configuration has NOT been modified.~~',
-	
+	'iTopHub:FailAuthent' => 'Authentication failed for this action.~~',
+
 	'iTopHub:InstalledExtensions' => 'Extensions deployed on this instance~~',
 	'iTopHub:ExtensionCategory:Manual' => 'Extensions deployed manually~~',
 	'iTopHub:ExtensionCategory:Manual+' => 'The following extensions have been deployed by copying them manually in the %1$s directory of iTop:~~',

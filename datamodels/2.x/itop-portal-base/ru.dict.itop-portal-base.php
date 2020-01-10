@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 // Portal
@@ -25,6 +25,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Portal:Button:Delete' => 'Удалить',
 	'Portal:EnvironmentBanner:Title' => 'Вы находитесь в режиме <strong>%1$s</strong>',
 	'Portal:EnvironmentBanner:GoToProduction' => 'Вернуться в режим PRODUCTION',
+	'Error:HTTP:400' => 'Некорректный запрос',
 	'Error:HTTP:401' => 'Ошибка аутентификации',
 	'Error:HTTP:404' => 'Страница не найдена',
 	'Error:HTTP:500' => 'Упс! Произошла ошибка.',

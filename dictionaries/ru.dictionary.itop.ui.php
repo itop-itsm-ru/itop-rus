@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 //
@@ -747,10 +747,11 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'UI:Title:BulkDeletionOf_Count_ObjectsOf_Class' => 'Пакетное удаление %1$d объектов класса %2$s',
 	'UI:Delete:NotAllowedToDelete' => 'Вы не можете удалить этот объект',
 	'UI:Delete:NotAllowedToUpdate_Fields' => 'Вы не можете обновить следующее(ие) поле(я): %1$s',
-	'UI:Error:NotEnoughRightsToDelete' => 'Этот объект не может быть удален, потому что текущий пользователь не имеет достаточных прав',
-	'UI:Error:CannotDeleteBecause' => 'This object could not be deleted because: %1$s',
-	'UI:Error:CannotDeleteBecauseOfDepencies' => 'Этот объект не может быть удален, потому что некоторые ручные операции должны быть выполнены до этого',
-	'UI:Error:CannotDeleteBecauseManualOpNeeded' => 'This object could not be deleted because some manual operations must be performed prior to that~~',
+	'UI:Error:ActionNotAllowed' => 'У вас недостаточно прав для выполнения это действия',
+	'UI:Error:NotEnoughRightsToDelete' => 'Не удалось удалить этот объект, так как текущий пользователь не обладает необходимыми правами.',
+	'UI:Error:CannotDeleteBecause' => 'Не удалось удалить этот объект: %1$s',
+	'UI:Error:CannotDeleteBecauseOfDepencies' => 'Не удалось удалить этот объект, поскольку перед удалением необходимо выполнить некоторые операции вручную (в отношении зависимостей от объекта).',
+	'UI:Error:CannotDeleteBecauseManualOpNeeded' => 'Не удалось удалить этот объект, поскольку перед удалением необходимо выполнить некоторые операции вручную.',
 	'UI:Archive_User_OnBehalfOf_User' => '%1$s от имени %2$s',
 	'UI:Delete:Deleted' => 'удален~~',
 	'UI:Delete:AutomaticallyDeleted' => 'автоматически удалён',

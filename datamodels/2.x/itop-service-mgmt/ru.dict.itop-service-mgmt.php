@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
@@ -396,8 +396,18 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Class:lnkSLAToSLT/Attribute:sla_name+' => '',
 	'Class:lnkSLAToSLT/Attribute:slt_id' => 'SLT',
 	'Class:lnkSLAToSLT/Attribute:slt_id+' => '',
-	'Class:lnkSLAToSLT/Attribute:slt_name' => 'SLT',
+	'Class:lnkSLAToSLT/Attribute:slt_name' => 'Название SLT',
 	'Class:lnkSLAToSLT/Attribute:slt_name+' => '',
+	'Class:lnkSLAToSLT/Attribute:slt_metric' => 'Метрика SLT',
+	'Class:lnkSLAToSLT/Attribute:slt_metric+' => '',
+	'Class:lnkSLAToSLT/Attribute:slt_request_type' => 'Тип тикета',
+	'Class:lnkSLAToSLT/Attribute:slt_request_type+' => '',
+	'Class:lnkSLAToSLT/Attribute:slt_ticket_priority' => 'Приоритет тикета',
+	'Class:lnkSLAToSLT/Attribute:slt_ticket_priority+' => '',
+	'Class:lnkSLAToSLT/Attribute:slt_value' => 'Значение SLT',
+	'Class:lnkSLAToSLT/Attribute:slt_value+' => '',
+	'Class:lnkSLAToSLT/Attribute:slt_value_unit' => 'Единицы SLT',
+	'Class:lnkSLAToSLT/Attribute:slt_value_unit+' => '',
 ));
 
 //

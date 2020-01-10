@@ -8,6 +8,3 @@
  * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
-Dict::Add('RU RU', 'Russian', 'Русский', array(
-	// Dictionary entries go here
-));

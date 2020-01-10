@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
@@ -42,4 +42,31 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Menu:UserAccountsMenu+' => 'Учетные записи пользователей',
 	'Menu:UserAccountsMenu:Title' => 'Учетные записи пользователей',
 	'Menu:MyShortcuts' => 'Избранное',
+));
+
+//
+// Class: AbstractResource
+//
+
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:AbstractResource' => 'Ресурс',
+	'Class:AbstractResource+' => '',
+));
+
+//
+// Class: ResourceAdminMenu
+//
+
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:ResourceAdminMenu' => 'Меню Инструменты администратора',
+	'Class:ResourceAdminMenu+' => '',
+));
+
+//
+// Class: ResourceRunQueriesMenu
+//
+
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:ResourceRunQueriesMenu' => 'Меню Выполнение запросов',
+	'Class:ResourceRunQueriesMenu+' => '~~',
 ));

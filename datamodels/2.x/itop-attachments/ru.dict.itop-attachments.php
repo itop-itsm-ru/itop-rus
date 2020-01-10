@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
@@ -22,4 +22,26 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'Attachment:Max_Ko' => '(Максимальный размер файла: %1$s кБ)',
 	'Attachments:NoAttachment' => 'Нет вложений.',
 	'Attachments:PreviewNotAvailable' => 'Предварительный просмотр не доступен для этого типа вложений.',
+	'Attachments:Error:FileTooLarge' => 'Файл слишком велик для загрузки. %1$s',
+));
+
+//
+// Class: Attachment
+//
+
+Dict::Add('RU RU', 'Russian', 'Русский', array(
+	'Class:Attachment' => 'Вложение',
+	'Class:Attachment+' => '',
+	'Class:Attachment/Attribute:expire' => 'Истекает',
+	'Class:Attachment/Attribute:expire+' => '',
+	'Class:Attachment/Attribute:temp_id' => 'Временный Id',
+	'Class:Attachment/Attribute:temp_id+' => '',
+	'Class:Attachment/Attribute:item_class' => 'Класс объекта',
+	'Class:Attachment/Attribute:item_class+' => '',
+	'Class:Attachment/Attribute:item_id' => 'Id объекта',
+	'Class:Attachment/Attribute:item_id+' => '',
+	'Class:Attachment/Attribute:item_org_id' => 'Id организации объекта',
+	'Class:Attachment/Attribute:item_org_id+' => '',
+	'Class:Attachment/Attribute:contents' => 'Содержимое',
+	'Class:Attachment/Attribute:contents+' => '',
 ));

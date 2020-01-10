@@ -5,7 +5,7 @@
  * @author      Vladimir Kunin <v.b.kunin@gmail.com>
  * @link        http://community.itop-itsm.ru  iTop Russian Community
  * @link        https://github.com/itop-itsm-ru/itop-rus
- * @license     http://www.opensource.org/licenses/gpl-3.0.html LGPL
+ * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
 Dict::Add('RU RU', 'Russian', 'Русский', array(
@@ -22,4 +22,5 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'config-reverted' => 'Изменения были сброшены.',
 	'config-parse-error' => 'Строка %2$d: %1$s.<br/>Файл не был обновлен.',
 	'config-current-line' => 'Редактируемая строка: %1$s',
+	'config-saved-warning-db-password' => 'Изменения успешно сохранены, но резервная копия не будет работать из-за неподдерживаемых символов в пароле базы данных.',
 ));
