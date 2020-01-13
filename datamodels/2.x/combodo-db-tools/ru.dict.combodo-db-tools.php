@@ -57,10 +57,10 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'DBTools:LostAttachments:Button:Restore:Confirm' => 'Это действие не может быть отменено. Пожалуйста, подтвердите, что вы хотите восстановить выбранные файлы.',
 	'DBTools:LostAttachments:Button:Busy' => 'Пожалуйста, подождите...',
 
-	'DBTools:LostAttachments:Step:Analyze' => 'Во-первых, просканируйте базу данных на наличие потерянных вложений.',
+	'DBTools:LostAttachments:Step:Analyze' => 'Для начала просканируйте базу данных на наличие потерянных вложений.',
 
-	'DBTools:LostAttachments:Step:AnalyzeResults' => 'Результаты анализа:',
-	'DBTools:LostAttachments:Step:AnalyzeResults:None' => 'Отлично! Кажется, все в порядке.',
+	'DBTools:LostAttachments:Step:AnalyzeResults' => 'Результат анализа:',
+	'DBTools:LostAttachments:Step:AnalyzeResults:None' => 'Отлично! Похоже, все в порядке.',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Some' => 'Некоторые вложения (%1$d), похоже, находятся не в том месте. Просмотрите следующий список и отметьте те, которые вы хотите переместить.',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Item:Filename' => 'Файл',
 	'DBTools:LostAttachments:Step:AnalyzeResults:Item:CurrentLocation' => 'Текущее местоположение',
