@@ -8,22 +8,29 @@
  * @license     http://opensource.org/licenses/AGPL-3.0
  *
  */
-
 Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'iTopUpdate:UI:PageTitle' => 'Обновление приложения',
 	'itop-core-update:UI:SelectUpdateFile' => 'Обновление',
 	'itop-core-update:UI:ConfirmUpdate' => 'Обновление',
 	'itop-core-update:UI:UpdateCoreFiles' => 'Обновление',
+	'iTopUpdate:UI:MaintenanceModeActive' => 'В настоящее время приложение находится в режиме технического обслуживания, пользователи не могут получить доступ к приложению. Вы должны запустить программу установки или восстановить архив приложения, чтобы вернуться к нормальному режиму.',
 	'itop-core-update:UI:UpdateDone' => 'Обновление завершено',
+
+	'itop-core-update/Operation:SelectUpdateFile/Title' => 'Обновление приложения',
+	'itop-core-update/Operation:ConfirmUpdate/Title' => 'Подтверждение обновления приложения',
+	'itop-core-update/Operation:UpdateCoreFiles/Title' => 'Обновление приложения',
+	'itop-core-update/Operation:UpdateDone/Title' => 'Обновление приложения завершено',
 
 	'iTopUpdate:UI:SelectUpdateFile' => 'Выбор файла обновления',
 	'iTopUpdate:UI:CheckUpdate' => 'Проверить файл обновления',
 	'iTopUpdate:UI:ConfirmInstallFile' => 'Вы собираетесь установить %1$s',
 	'iTopUpdate:UI:DoUpdate' => 'Начать обновление',
 	'iTopUpdate:UI:CurrentVersion' => 'Текущая версия',
+	'iTopUpdate:UI:NewVersion' => 'Новая версия',
 	'iTopUpdate:UI:Back' => 'Назад',
 	'iTopUpdate:UI:Cancel' => 'Отменть',
 	'iTopUpdate:UI:Continue' => 'Продолжить',
+	'iTopUpdate:UI:RunSetup' => 'Запустить установку',
 	'iTopUpdate:UI:WithDBBackup' => 'Резервная копия базы данных',
 	'iTopUpdate:UI:WithFilesBackup' => 'Архив файлов приложения',
 	'iTopUpdate:UI:WithoutBackup' => 'Без резервного копирования',
@@ -31,6 +38,7 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'iTopUpdate:UI:DoFilesArchive' => 'Создать архив файлов приложения',
 	'iTopUpdate:UI:UploadArchive' => 'Выбор пакета для загрузки',
 	'iTopUpdate:UI:ServerFile' => 'Путь к пакету на сервере',
+	'iTopUpdate:UI:WarningReadOnlyDuringUpdate' => 'Во время обновления приложение будет доступно только для чтения.',
 
 	'iTopUpdate:UI:Status' => 'Статус',
 	'iTopUpdate:UI:Action' => 'Обновление',
@@ -45,8 +53,8 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'iTopUpdate:UI:DBDiskSpace' => 'Размер базы данных',
 	'iTopUpdate:UI:FileUploadMaxSize' => 'Максимальный размер загружаемого файла',
 
-	'iTopUpdate:UI:PostMaxSize' => 'Значение PHP ini post_max_size: %1$s~~',
-	'iTopUpdate:UI:UploadMaxFileSize' => 'Значение PHP ini upload_max_filesize: %1$s~~',
+	'iTopUpdate:UI:PostMaxSize' => 'Значение PHP ini post_max_size: %1$s',
+	'iTopUpdate:UI:UploadMaxFileSize' => 'Значение PHP ini upload_max_filesize: %1$s',
 
 	'iTopUpdate:UI:CanCoreUpdate:Loading' => 'Проверка файловой системы',
 	'iTopUpdate:UI:CanCoreUpdate:Error' => 'Ошибка проверки файловой системы (%1$s)',
@@ -61,7 +69,9 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 	'iTopUpdate:UI:SetupMessage:Backup' => 'Резервное копирование базы данных',
 	'iTopUpdate:UI:SetupMessage:FilesArchive' => 'Архивирование файлов приложения',
 	'iTopUpdate:UI:SetupMessage:CopyFiles' => 'Копирование файлов обновления',
-	'iTopUpdate:UI:SetupMessage:Compile' => 'Обновление приложения и базы данных',
+	'iTopUpdate:UI:SetupMessage:CheckCompile' => 'Проверка обновления',
+	'iTopUpdate:UI:SetupMessage:Compile' => 'Обновление приложения',
+	'iTopUpdate:UI:SetupMessage:UpdateDatabase' => 'Обновление базы данных',
 	'iTopUpdate:UI:SetupMessage:ExitMaintenance' => 'Выход из режима технического обслуживания',
 	'iTopUpdate:UI:SetupMessage:UpdateDone' => 'Обновление завершено',
 
@@ -81,7 +91,6 @@ Dict::Add('RU RU', 'Russian', 'Русский', array(
 
 	'iTopUpdate:UI:RestoreArchive' => 'Вы можете восстановить приложение из архива \'%1$s\'',
 	'iTopUpdate:UI:RestoreBackup' => 'Вы можете восстановить базу данных из резервной копии \'%1$s\'',
-	'iTopUpdate:UI:MaintenanceModeActive' => 'В настоящее время приложение находится в режиме технического обслуживания, пользователи не могут получить доступ к приложению. Вы должны запустить программу установки или восстановить архив приложения, чтобы вернуться к нормальному режиму.',
 	'iTopUpdate:UI:UpdateDone' => 'Обновление выполнено успешно',
 	'Menu:iTopUpdate' => 'Обновление приложения',
 	'Menu:iTopUpdate+' => 'Обновление приложения',
